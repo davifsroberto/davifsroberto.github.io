@@ -1,0 +1,17 @@
+{
+  "name": "davifsroberto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"**/*.*\"",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,ts,css,html}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "prettier": "^2.3.0"
+  }
+}
