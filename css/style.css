@@ -541,6 +541,11 @@ p.sub-meta {
 
 /*-- gallery --*/
 /*********************** Demo - 9 *******************/
+.lb-nav .lb-next, .lb-prev {
+  opacity: 1 !important;
+}
+
+
 .box9 .box-content,
 .box9 .icon li,
 .box9 img {
