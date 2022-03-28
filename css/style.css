@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Firsta";
-  src: local(Firsta), url(../fonts/Firsta.ttf);
+  src: local(Firsta), url("../fonts/Firsta.ttf");
 }
 
 html,
@@ -67,7 +67,6 @@ ul {
 }
 
 /*--/navbar--*/
-
 header {
   position: absolute;
   width: 100%;
@@ -75,14 +74,9 @@ header {
 }
 
 /* menu */
-
 ul#menu {
   position: absolute;
-  /* top: 2%; */
-  /* width: 3em; */
-  /* height: 3em; */
   margin: 0;
-  /* background: rgba(21, 30, 37, 0.32); */
   color: #fff;
   z-index: 99;
   right: 14%;
@@ -114,14 +108,12 @@ ul#menu input {
 }
 
 /*show the second levele menu of the selected voice*/
-
 ul#menu input:checked ~ ul.submenu {
   max-height: 360px;
   transition: max-height 0.5s ease-in;
 }
 
 /*style for the second level menu*/
-
 ul.submenu {
   max-height: 0;
   padding: 0;
@@ -160,7 +152,6 @@ ul.submenu li a.active {
 }
 
 /* //menu */
-
 .title-logo {
   color: #fff;
   font-size: 3em;
@@ -220,7 +211,6 @@ a.scroll.bnr-btn i {
 }
 
 /* banner */
-
 .bnr-txt-w3pvt {
   margin: 12em 0 9em;
 }
@@ -244,11 +234,19 @@ a.scroll.bnr-btn i {
 }
 
 .banner-home {
-  background: url(../images/banner.jpg) no-repeat center;
+  background: url("../images/banner.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   background-size: cover;
   position: relative;
+}
+
+h6 {
+  text-transform: initial !important;
+}
+
+h6 span {
+  font-size: 1.5em;
 }
 
 .bnr-w3pvt-txt h2 {
@@ -311,11 +309,9 @@ ul.social_section_1info a span.fa {
   font-size: 13.5px;
   line-height: 40px;
 }
-
 /* //banner */
 
 /*-- about --*/
-
 .about {
   position: relative;
 }
@@ -392,22 +388,20 @@ a.abt-btn {
   letter-spacing: 1px;
   line-height: inherit;
 }
-
 /*-- //about --*/
 
 /*-- experience --*/
-
 .experience {
   background: #f8f9fa;
 }
-.experience .rommanel-logo {
-  width: 6.5em !important;
+.experience .rommanel-logo,
+.mottu-logo,
+.cielo-logo {
+  width: 7em !important;
 }
-
 /*-- //experience --*/
 
 /*--/tabs --*/
-
 .tech-btm h5 {
   font-size: 0.9em;
   line-height: 1.4em;
@@ -543,13 +537,10 @@ p.sub-meta {
     padding: 15px;
   }
 }
-
 /*--//tabs--*/
 
 /*-- gallery --*/
-
 /*********************** Demo - 9 *******************/
-
 .box9 .box-content,
 .box9 .icon li,
 .box9 img {
@@ -671,13 +662,11 @@ p.paragraph:after {
   left: -60px;
   top: 50%;
 }
-
 /*-- //gallery --*/
 
 /*-- quote --*/
-
 .quote {
-  background: url(../images/banner.jpg) 0px 0px;
+  background: url("../images/banner.jpg") 0px 0px;
   background-size: cover;
   position: relative;
 }
@@ -719,31 +708,25 @@ p.paragraph:after {
   margin: 20px 0;
   font-weight: 600;
 }
-
 /*-- quote --*/
 
-/*-- clients --*/
-
-.client {
-  background: #f8f9fa;
-}
-
-.clients-info-grid p {
+/*-- recommendation --*/
+.recommendation-info-grid p {
   color: #666;
   font-size: 17px;
 }
 
-.clients-txt-info p {
+.recommendation-txt-info p {
   font-size: 16px;
 }
 
-.clients-info-grid h4 {
+.recommendation-info-grid h4 {
   font-size: 20px;
   text-transform: capitalize;
   font-weight: 600;
 }
 
-.clients-info-grid {
+.recommendation-info-grid {
   background: #fff;
   padding: 1.5em;
   box-shadow: 0px 2px 15px 0px rgba(76, 110, 245, 0.1);
@@ -753,11 +736,25 @@ p.paragraph:after {
   border-radius: 50%;
   width: 100px;
 }
+/*-- //recommendation --*/
 
-/*-- //clients --*/
+/*-- articles --*/
+.articles {
+  background: #f8f9fa;
+}
+
+.articles .btn-read {
+  color: #fff;
+  background-color: #3b5fa1;
+  border-color: #3b5fa1;
+}
+
+/*-- //articles --*/
 
 /*-- contact --*/
-
+.contact {
+  background: #f8f9fa;
+}
 .contact-form label {
   font-weight: 600;
   letter-spacing: 1px;
@@ -799,11 +796,9 @@ p.paragraph:after {
   padding: 10px;
   border: 4px solid #eee;
 }
-
 /*-- //contact --*/
 
 /*-- footer --*/
-
 footer {
   background: #222;
 }
@@ -849,11 +844,9 @@ h3.wthree-logo a {
 h3.wthree-logo a span {
   font-weight: 800;
 }
-
 /*-- //footer --*/
 
 /*-- move top --*/
-
 .move-top {
   position: relative;
 }
@@ -878,11 +871,9 @@ a.move-top span {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
 }
-
 /*-- //move top --*/
 
 /*-- responsive design --*/
-
 @media (max-width: 1440px) {
 }
 
@@ -962,7 +953,7 @@ a.move-top span {
   .text-info-sec p {
     font-size: 16px;
   }
-  .clients-info-grid p {
+  .recommendation-info-grid p {
     font-size: 16px;
   }
   footer {
@@ -1016,7 +1007,7 @@ a.move-top span {
   .text-info-sec h3 {
     font-size: 2em;
   }
-  .clients-info-grid h4 {
+  .recommendation-info-grid h4 {
     font-size: 18px;
     letter-spacing: 0px;
   }
@@ -1055,7 +1046,7 @@ a.move-top span {
 
 @media (max-width: 600px) {
   .quote {
-    background: url(../images/banner.jpg) center;
+    background: url("../images/banner.jpg") center;
     background-size: cover;
   }
 }
@@ -1171,7 +1162,7 @@ a.move-top span {
   .box9 .title {
     font-size: 17px;
   }
-  .clients-info-grid p {
+  .recommendation-info-grid p {
     font-size: 15px;
     line-height: 1.8em;
   }
@@ -1231,5 +1222,4 @@ a.move-top span {
 
 @media (max-width: 320px) {
 }
-
 /*-- //responsive design --*/

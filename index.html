@@ -39,6 +39,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- custom css -->
     <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- rss embed -->
+    <link rel="stylesheet" href="./css/rss-embed.css" />
     <!-- fontawesome css -->
     <link
       rel="stylesheet"
@@ -73,8 +75,11 @@
                 <li><a href="#about">Sobre Mim</a></li>
                 <li><a href="#experience">Experiência</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#testimonials">Recomendação</a></li>
-                <li><a href="#contact">Meus Contatos</a></li>
+                <li><a href="#articles">Artigos</a></li>
+                <li><a href="#recommendation">Recomendação</a></li>
+                <li>
+                  <a class="font-weight-bold" href="#contact">Meus Contatos</a>
+                </li>
                 <li><a href="CV-DaviRoberto.pdf" target="_blank">CV</a></li>
               </ul>
             </li>
@@ -91,9 +96,9 @@
         <div class="row">
           <div class="col-lg-7 bnr-txt-w3pvt">
             <div class="bnr-w3pvt-txt mt-sm-5">
-              <h6>Olá 😊</h6>
+              <h6>Olá, é um prazer ter você aqui <span>🙂</span></h6>
               <h2>
-                Bem-vindos!<span> <br />Davi Roberto</span>
+                Bem-vindo(a)!<span> <br />Davi Roberto</span>
               </h2>
               <h4>Frontend Engineer</h4>
               <p class="mt-4">Uma breve apresentação sobre mim</p>
@@ -212,7 +217,7 @@
     </section>
     <!-- //about -->
 
-    <!-- process -->
+    <!-- experience -->
     <section class="experience py-5" id="experience">
       <div class="container py-3">
         <p class="paragraph">Experiência</p>
@@ -229,7 +234,42 @@
                       <div class="card">
                         <div class="card-body p-0">
                           <div class="row">
-                            <div class="col-md-6 mt-1">
+                            <div class="col-md-12 mt-1">
+                              <figure class="mb-md-4">
+                                <img
+                                  src="./images/mottu-logo.png"
+                                  alt="Experiência Mottu"
+                                  class="mottu-logo"
+                                />
+                              </figure>
+
+                              <h5 class="my-3 card-title">
+                                Principal Frontend Engineer
+                              </h5>
+
+                              <h6>
+                                09/21 | o momento
+                                <strong>&nbsp;#Angular</strong>
+                              </h6>
+
+                              <p class="card-text">
+                                Desenvolvo aplicações para a frente de delivery,
+                                aplicativos de backoffice e totens de
+                                autoatendimento. Sempre me atento ao
+                                desenvolvimento com testes, performance e boas
+                                práticas. Ajudo desenvolvedores menos
+                                experientes, e trabalho na reestruturação de
+                                projetos antigos para uma arquitetura de
+                                frontend escalável. Quando necessário, crio as
+                                interfaces sem depender de um UI designer. Tenho
+                                noções de UI/UX e gosto do assunto. Algumas
+                                tecnologias que utilizo neste processo: Angular
+                                12+, Monorepo, Nx Workspace (nx.dev), Module
+                                Federation.
+                              </p>
+                            </div>
+
+                            <div class="col-md-12 my-5 text-right">
                               <figure class="mb-md-4">
                                 <img
                                   src="./images/rommanel-logo.png"
@@ -238,39 +278,56 @@
                                 />
                               </figure>
 
-                              <h5 class="my-3 card-title" data-aos="fade-left">
-                                Frontend Engineer
+                              <h5 class="my-3 card-title">
+                                Principal Frontend Engineer
                               </h5>
-                              <p class="card-text" data-aos="fade-left">
-                                Usando o framework
-                                <strong>Angular</strong>, desenvolvo sistemas
-                                para web e mobile por completo, tratando
-                                questões de segurança, performance, UX, UI,
-                                arquitetura da aplicação, modularização e afins.
-                                <br />
-                                Sempre usando boas práticas de desenvolvimento e
-                                metodologias ágeis. Também lidando com os
-                                principais tipos de testes, como: testes
-                                automatizados, unitários, integração e e2e.
+
+                              <h6>
+                                10/20 | 12/21
+                                <strong>&nbsp;#Angular</strong>
+                              </h6>
+
+                              <p class="card-text">
+                                Utilizando o framework Angular, desenvolvia
+                                aplicações para web e mobile por completo,
+                                tratando de questões de segurança, performance,
+                                UI/UX, arquitetura de aplicações, modularização
+                                e afins. Sempre utilizando boas práticas de
+                                desenvolvimento e metodologias ágeis. Lidando
+                                também com os principais tipos de testes como:
+                                testes automatizados, testes unitários,
+                                integração e e2e. Algumas coisas da minha rotina
+                                de desenvolvimento: Angular, PWA, Sass,
+                                Bootstrap, Mobile First, GitHub, CI/CD, Agile
+                                Scrum, testes, protocolo de autorização OAuth2 e
+                                outras tecnologias.
                               </p>
                             </div>
 
-                            <div class="col-md-6 mt-2">
+                            <div class="col-md-12 mt-2">
                               <figure class="mb-md-4">
                                 <img
                                   src="./images/cielo-logo.png"
                                   alt="Experiência Cielo"
+                                  class="cielo-logo"
                                 />
                               </figure>
-                              <h5 class="my-3 card-title" data-aos="fade-left">
-                                Frontend Engineer
-                              </h5>
-                              <p class="card-text" data-aos="fade-left">
-                                Minha missão era analisar e desenvolver sistemas
-                                web voltados para área financeira. <br />
-                                Algumas tecnologias que utilizava nesse
-                                processo: Vue.js, Angular, JavaScript, ES6+, Git
-                                e Rest API.
+
+                              <h5 class="my-3 card-title">Frontend Engineer</h5>
+
+                              <h6>
+                                10/19 | 10/20
+                                <strong>&nbsp;#React, #Angular</strong>
+                              </h6>
+
+                              <p class="card-text">
+                                Desenvolvimento de sistemas para a área
+                                financeira, criação de dashboards, aplicativos
+                                que monitoram os serviços e geram relatórios
+                                sobre as instabilidades dos serviços de
+                                transações financeiras. Utilizava em minha
+                                rotina de desenvolvimento: Angular 2+, React,
+                                UI/UX, Sass, Bootstrap, Agile Scrum.
                               </p>
                             </div>
                           </div>
@@ -285,7 +342,7 @@
         </div>
       </div>
     </section>
-    <!-- //process -->
+    <!-- //experience -->
 
     <!-- banner -->
     <section class="quote py-5">
@@ -296,8 +353,7 @@
             <h4>
               Gosto de solucionar problemas, e tenho prazer em aprender novas
               tecnologias. <br />
-              Acredito em uma boa sinergia com grande troca de ideias. Tenho
-              muito pra receber e doar ao time. <br />
+              Acredito em uma boa sinergia com grande troca de ideias.<br />
             </h4>
             <h5>Frontend Engineer</h5>
           </div>
@@ -313,7 +369,53 @@
         <h3 class="heading mb-sm-5 mb-4">Portfólio</h3>
 
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-6 p-0">
+          <!-- TODO: Add portfólio Mottu TOTEM -->
+          <div class="col-lg-6 col-md-6 col-6 p-0">
+            <div class="box9">
+              <img
+                src="./images/portfolio/mottu/mott-entregas/00_bg.png"
+                alt="portfolio"
+                class="img-fluid"
+              />
+
+              <div class="box-content">
+                <h3 class="title">Mottu Entregas - Integração Meli</h3>
+                <ul class="icon">
+                  <li>
+                    <a
+                      href="./images/portfolio/mottu/mott-entregas/01.png"
+                      data-lightbox="mottu-entregas"
+                    >
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </li>
+                </ul>
+
+                <div>
+                  <div class="container">
+                    <div class="row photos">
+                      <div class="col-sm-6 col-md-4 col-lg-3 item">
+                        <a
+                          href="./images/portfolio/mottu/mott-entregas/02.png"
+                          data-lightbox="mottu-entregas"
+                        ></a>
+                        <a
+                          href="./images/portfolio/mottu/mott-entregas/03.png"
+                          data-lightbox="mottu-entregas"
+                        ></a>
+                        <a
+                          href="./images/portfolio/mottu/mott-entregas/04.png"
+                          data-lightbox="mottu-entregas"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-6 p-0">
             <div class="box9">
               <img
                 src="./images/portfolio/mmr/mmr-01.png"
@@ -366,7 +468,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-6 p-0">
+          <div class="col-lg-6 col-md-6 col-6 p-0">
             <div class="box9">
               <img
                 src="./images/portfolio/cadastro_mmr/cadastro_mmr-01.png"
@@ -411,7 +513,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-6 p-0">
+          <div class="col-lg-6 col-md-6 col-6 p-0">
             <div class="box9">
               <img
                 src="./images/portfolio/mensageria_mmr/mensageria_mmr-01.png"
@@ -460,20 +562,39 @@
     </section>
     <!-- //portfolio -->
 
+    <!-- articles -->
+    <section class="articles py-5" id="articles">
+      <div class="container">
+        <p class="paragraph">Últimos Artigos Publicados</p>
+        <h3 class="heading mb-sm-5 mb-4">Artigos</h3>
+
+        <section
+          id="retainable-rss-embed"
+          data-rss="https://medium.com/feed/@davifsroberto"
+          data-maxcols="3"
+          data-layout="slider"
+          data-poststyle="modal"
+          data-readmore="Ler Artigo"
+          data-buttonclass="btn btn-read"
+        ></section>
+      </div>
+    </section>
+    <!-- //articles -->
+
     <!--recomendacao-->
-    <section class="client py-5" id="testimonials">
+    <section class="recommendation py-5" id="recommendation">
       <div class="container py-lg-5">
         <p class="paragraph">
           Selecionei essa recomendação de meu antigo gerente, dentre outras que
           recebi em meu perfil do
-          <a target="_blank" href="https://www.linkedin.com/in/davifsroberto/"
+          <a target="_blank" href="https://www.linkedin.com/in/davifsroberto"
             >LinkedIn</a
           >
         </p>
         <h3 class="heading mb-sm-5 mb-4">Recomendação</h3>
-        <div class="row client-slider-slide">
+        <div class="row recommendation-slider-slide">
           <div class="col-lg-12 col-md-12 w3layouts-txt-says mb-md-0 mb-5">
-            <div class="clients-info-grid">
+            <div class="recommendation-info-grid">
               <p>
                 Davi sempre demonstrou ser um profissional dedicado, competente
                 e que ama o que faz! <br />
@@ -489,7 +610,7 @@
                 <div class="col-lg-2 col-3 pr-0 img-position mt-3">
                   <img src="images/t1.png" alt="" class="img-fluid" />
                 </div>
-                <div class="col-lg-10 col-9 clients-txt-info">
+                <div class="col-lg-10 col-9 recommendation-txt-info">
                   <h4 class="mt-4">
                     <a
                       target="_blank"
@@ -510,14 +631,14 @@
     </section>
     <!--//recomendacao-->
 
-    <!-- Contact -->
+    <!-- contact -->
     <section class="contact" id="contact">
       <div class="container py-lg-5">
         <p class="paragraph">Moro em Alphaville, Barueri - SP</p>
         <h3 class="heading mb-sm-5 mb-4">Aguardo seu contato 😊</h3>
         <ul class="social_section_1info mt-4">
           <li class="mb-2 linkedin">
-            <a target="_blank" href="https://www.linkedin.com/in/davifsroberto/"
+            <a target="_blank" href="https://www.linkedin.com/in/davifsroberto"
               ><span class="fa fa-linkedin"></span
             ></a>
           </li>
@@ -550,14 +671,15 @@
         </div>
       </div>
     </section>
-    <!-- //Contact -->
+    <!-- //contact -->
 
     <!-- footer -->
     <footer class="copyright py-3 text-center">
       <div class="container">
         <p class="my-2">
-          © 2021 Davi Roberto <br />Desenvolvido por
-          <a href="https://www.linkedin.com/in/davifsroberto/" target="_blank">
+          © 2021/22 | davifsroberto <br />
+          Desenvolvido por
+          <a href="https://www.linkedin.com/in/davifsroberto" target="_blank">
             Davi Roberto
           </a>
         </p>
@@ -573,6 +695,7 @@
     </div>
     <!-- move top -->
 
+    <script src="./js/rss-embed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
