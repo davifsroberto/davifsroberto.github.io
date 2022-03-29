@@ -78,12 +78,12 @@
 #post-container.rtb-modal .rtb-close {
   background: #000;
   border-radius: 50%;
-  width: 2.5em;
-  height: 2.5em;
+  width: 3em;
+  height: 3em;
   line-height: 50px;
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +94,7 @@
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  z-index: 99;
 }
 #post-container.rtb-modal .rtb-close span {
   color: #fff;

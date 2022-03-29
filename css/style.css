@@ -316,17 +316,6 @@ ul.social_section_1info a span.fa {
   position: relative;
 }
 
-h3.position {
-  position: absolute;
-  font-size: 60px;
-  font-weight: 800;
-  letter-spacing: 5px;
-  transform: rotate(90deg);
-  right: -2%;
-  top: 30%;
-  color: #333;
-}
-
 .about-right h4.main {
   font-size: 24px;
   text-transform: capitalize;
@@ -378,6 +367,17 @@ a.abt-btn {
   background-color: #d6d9da;
   border-radius: 0.25rem;
   margin-bottom: 1em;
+  /* animation: progressBar 2s ease-in-out; */
+  animation-fill-mode: both;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .about-right-inner h4.progress-tittle {
@@ -541,10 +541,10 @@ p.sub-meta {
 
 /*-- gallery --*/
 /*********************** Demo - 9 *******************/
-.lb-nav .lb-next, .lb-prev {
+.lb-nav .lb-next,
+.lb-prev {
   opacity: 1 !important;
 }
-
 
 .box9 .box-content,
 .box9 .icon li,
@@ -895,10 +895,6 @@ a.move-top span {
   .about-right {
     padding: 1.5em 2em;
   }
-  h3.position {
-    font-size: 55px;
-    right: -4%;
-  }
 }
 
 @media (max-width: 1080px) {
@@ -933,10 +929,7 @@ a.move-top span {
   .about-right {
     padding: 3em 0em 3em 2em;
   }
-  h3.position {
-    font-size: 50px;
-    right: -6%;
-  }
+
   .about-right-inner h4 {
     font-size: 21px;
     letter-spacing: 0px;
@@ -944,10 +937,6 @@ a.move-top span {
 }
 
 @media (max-width: 991px) {
-  h3.position {
-    font-size: 50px;
-    right: 0%;
-  }
   .tab-main img {
     width: 50px;
   }
@@ -969,13 +958,6 @@ a.move-top span {
   }
 }
 
-@media (max-width: 800px) {
-  h3.position {
-    right: -5%;
-    top: 20%;
-  }
-}
-
 @media (max-width: 768px) {
   .bnr-w3pvt-txt h2 {
     font-size: 45px;
@@ -986,10 +968,6 @@ a.move-top span {
   a.scroll.bnr-btn,
   a.scroll.bnr-btn1 {
     font-size: 15px;
-  }
-  h3.position {
-    right: -9%;
-    top: 20%;
   }
 }
 
@@ -1069,11 +1047,7 @@ a.move-top span {
   .bnr-w3pvt-txt h6 {
     margin-bottom: 25px;
   }
-  h3.position {
-    right: -8%;
-    top: 14%;
-    font-size: 40px;
-  }
+
   .myphoto-sign {
     width: 40%;
     margin-bottom: 2em;
@@ -1095,9 +1069,7 @@ a.move-top span {
     margin-bottom: 20px;
     font-size: 16px;
   }
-  h3.position {
-    right: -11%;
-  }
+
   .tab-main label,
   .tab-main input:checked + label {
     font-size: 16px;
@@ -1136,11 +1108,7 @@ a.move-top span {
   .bnr-w3pvt-txt h6 {
     font-size: 15px;
   }
-  h3.position {
-    font-size: 35px;
-    letter-spacing: 1px;
-    right: -10%;
-  }
+
   .about-right {
     padding: 2em 0em 2em 1em;
   }
@@ -1216,9 +1184,6 @@ a.move-top span {
   }
   .about-right {
     padding: 2em 0em 2em 0em;
-  }
-  h3.position {
-    top: 13%;
   }
 }
 
