@@ -3,6 +3,27 @@
   src: local(Firsta), url("../fonts/Firsta.ttf");
 }
 
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #c4cad6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #46348a;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #385a95;
+}
+/* //custom scrollbar */
+
 html,
 body {
   margin: 0;
@@ -638,7 +659,7 @@ p.sub-meta {
   display: block;
   width: 38px;
   height: 38px;
-  background: #f39c12;
+  background: #46348a;
   font-size: 15px;
   color: #fff;
   margin-right: 5px;
@@ -648,7 +669,7 @@ p.sub-meta {
 
 .box9 .icon a:hover {
   background: #fff;
-  color: #f39c12;
+  color: #46348a;
 }
 
 p.paragraph {
