@@ -1,0 +1,55 @@
+{
+  "name": "davifsroberto",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Davi Roberto",
+    "nickname": "davifsroberto",
+    "email": "davifsroberto@outlook.com",
+    "url": "https://davifsroberto.github.io",
+    "linkedin": "https://linkedin.com/in/davifsroberto",
+    "github": "https://github.com/davifsroberto",
+    "medium": "https://medium.com/@davifsroberto"
+  },
+  "scripts": {
+    "dev": "next dev -p 3050",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src --max-warnings=0",
+    "pretty": "prettier --config ./.prettierrc --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn run pretty"
+    ]
+  },
+  "dependencies": {
+    "next": "12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "17.0.23",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.14",
+    "@types/styled-components": "^5.1.24",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "babel-loader": "^8.2.4",
+    "babel-plugin-styled-components": "^2.0.6",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.1",
+    "typescript": "4.6.3"
+  }
+}
