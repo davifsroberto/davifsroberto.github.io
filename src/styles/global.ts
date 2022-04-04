@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const GlobalStyles = createGlobalStyle`
   /* custom scrollbar */
@@ -18,12 +19,24 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 20px;
     border: 5px solid transparent;
     background-clip: content-box;
-  }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #385a95;
+    &:hover {
+      background-color: #385a95;
+    }
   }
   /* //custom scrollbar */
+
+  /* remove arrows input number */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  /* //remove arrows input number */
 
   * {
     margin: 0;
@@ -37,10 +50,6 @@ const GlobalStyles = createGlobalStyle`
 
   li {
     list-style-type: none;
-  }
-
-  html, body, #__next {
-    height: 100%;
   }
 
   body {

@@ -8,8 +8,9 @@ import { CallToAction } from '../components/CallToAction';
 import { Portfolio } from '../components/Portfolio';
 import { Articles } from '../components/Articles';
 import { Recommendations } from '../components/Recommendations';
-// import { Contact } from '../components/Contact';
+import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
+import { MoveToUp } from '../components/MoveToUp';
 
 const Home: NextPage = () => {
   return (
@@ -30,12 +31,11 @@ const Home: NextPage = () => {
 
       <Recommendations />
 
-      {/*
-        TODO: finalize contact section
-       <Contact />
-      */}
+      <Contact />
 
       <Footer />
+
+      <MoveToUp />
     </main>
   );
 };

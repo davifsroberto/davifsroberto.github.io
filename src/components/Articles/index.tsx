@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
+import axios from 'axios';
 import Carousel from 'react-multi-carousel';
 
 import { Container } from './styles';
-import { api } from './articles.api';
 
 const responsive = {
   superLargeDesktop: {
@@ -54,7 +54,11 @@ export function Articles() {
   }, []);
 
   function getArticles(): void {
-    api.get('@davifsroberto').then((response) => setArticles(response.data));
+    axios
+      .get(
+        'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@davifsroberto'
+      )
+      .then((response) => setArticles(response.data));
   }
 
   return (

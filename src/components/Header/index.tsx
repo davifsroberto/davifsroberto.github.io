@@ -4,7 +4,7 @@ import { Container, Logo } from './styles';
 
 export function Header() {
   return (
-    <Container>
+    <Container id="home">
       <nav className="navbar">
         <div className="container">
           <Logo>Davi Roberto</Logo>

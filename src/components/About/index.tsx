@@ -18,11 +18,11 @@ export function About() {
               atualizado em minha área de atuação.
               <br />
               Aos 17 anos, eu trabalhava como
-              <i>assistente de suporte técnico a computadores</i> em uma empresa
-              na minha cidade, um dia vi meu supervisor fazendo algo que nunca
-              tinha visto antes, quando perguntei o que era aquilo, ele me disse
-              “estou fazendo um programa, isso é programação”. Em seguida fui
-              atrás de estudar por conta, pois foi amor à primeira vista. Em
+              <i> assistente de suporte técnico a computadores</i> em uma
+              empresa na minha cidade, um dia vi meu supervisor fazendo algo que
+              nunca tinha visto antes, quando perguntei o que era aquilo, ele me
+              disse “estou fazendo um programa, isso é programação”. Em seguida
+              fui atrás de estudar por conta, pois foi amor à primeira vista. Em
               seguida entrei na área de desenvolvimento, onde estou há anos.
               <br />
               Gosto muito de música, leitura e tecnologia, atuo com

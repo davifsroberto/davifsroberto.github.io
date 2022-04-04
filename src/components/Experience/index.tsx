@@ -29,15 +29,12 @@ export function Experience() {
             <br />
 
             <p>
-              Desenvolvimento de aplicações web com o framework Angular. Utilizo
-              Angular Material e testes com Jest.
-              <br />
-              Durante desenvolvimento, fico sempre atento as boas práticas para
-              seguir um alto nível de padrão de código.
-              <br />
-              Também auxílio desenvolvedores menos experientes no dia a dia para
-              juntos evoluirmos tecnicamente e entregarmos um projeto altamente
-              escalável.
+              Desenvolvimento de aplicações web com o framework Angular. Durante
+              desenvolvimento, fico sempre atento as boas práticas para seguir
+              um alto nível de padrão de código, e no desenvolvimento com
+              testes. Também auxílio desenvolvedores menos experientes no dia a
+              dia para juntos evoluirmos tecnicamente e entregarmos um projeto
+              altamente escalável.
             </p>
           </section>
 

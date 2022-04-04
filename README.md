@@ -1,3 +1,5 @@
+<!-- TODO: update README -->
+
 # Davi Roberto - Frontend Developer
 
 <a href="https://davifsroberto.github.io" target="_blank">

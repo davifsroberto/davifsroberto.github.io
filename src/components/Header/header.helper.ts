@@ -23,9 +23,9 @@ export function mountMenu(): ItemMenuType[] {
       link: '#recommendations',
     },
     {
-      name: 'Contatos',
+      name: 'Contato',
       link: '#contact',
-      className: 'fw-bold',
+      className: 'fw-bold text-decoration-underline',
     },
     {
       name: 'CV',
