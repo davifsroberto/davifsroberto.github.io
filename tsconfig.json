@@ -15,6 +15,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Articles/rss-embed.ts", "src/components/Footer/index.tss"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/Articles/rss-embed.ts",
+    "src/components/Footer/index.tss"
+  ],
   "exclude": ["node_modules"]
 }
