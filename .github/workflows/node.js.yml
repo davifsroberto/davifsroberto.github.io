@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]        
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -26,11 +26,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run build 
+    - run: npm run build
     - run: npm export
-    
+
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
-        branch: gh-pages # The branch the action should deploy to.
+        branch: master # The branch the action should deploy to.
         folder: out # The folder the action should deploy.
