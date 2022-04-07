@@ -29,7 +29,8 @@ export function mountMenu(): ItemMenuType[] {
     },
     {
       name: 'CV',
-      link: '/DaviRoberto_CV.pdf',
+      link: '/Davi-Roberto_CV.pdf',
+      download: true,
     },
   ];
 }

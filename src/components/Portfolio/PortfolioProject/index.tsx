@@ -11,12 +11,31 @@ type GalleryProps = {
 };
 
 export default function PortfolioProject({ gallery }: GalleryProps) {
+  const [forcedClick, setForcedClick] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [photoIndex, setPhotoIndex] = useState<number>(0);
 
+  // TODO: add ver todos
+  function handlerOpenLightbox(state: boolean): void {
+    setIsOpen(state);
+
+    // pog for lightbox
+    if (!forcedClick) {
+      setForcedClick(true);
+
+      Promise.resolve().then(() => {
+        (
+          document.querySelectorAll(
+            '[title="Next image"]'
+          ) as NodeListOf<HTMLElement>
+        )[0].click();
+      });
+    }
+  }
+
   return (
     <Container
-      onClick={() => setIsOpen(true)}
+      onClick={() => handlerOpenLightbox(true)}
       className="col-lg-4 col-md-4 col-6 p-0"
     >
       {isOpen && (
@@ -28,7 +47,10 @@ export default function PortfolioProject({ gallery }: GalleryProps) {
               (photoIndex + gallery.images.length - 1) % gallery.images.length
             ]
           }
-          onCloseRequest={() => setIsOpen(false)}
+          onCloseRequest={() => {
+            setIsOpen(false);
+            setForcedClick(false);
+          }}
           onMovePrevRequest={() =>
             setPhotoIndex(
               (photoIndex + gallery.images.length - 1) % gallery.images.length
@@ -37,7 +59,7 @@ export default function PortfolioProject({ gallery }: GalleryProps) {
           onMoveNextRequest={() =>
             setPhotoIndex((photoIndex + 1) % gallery.images.length)
           }
-          enableZoom={false}
+          keyRepeatLimit={1}
         />
       )}
 

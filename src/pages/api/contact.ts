@@ -2,7 +2,6 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 import nodemailer from 'nodemailer';
 
-// TODO: add dotenv
 export default function (req: NextApiRequest, res: NextApiResponse) {
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -11,17 +10,18 @@ export default function (req: NextApiRequest, res: NextApiResponse) {
     requireTLS: true,
 
     auth: {
-      user: 'TODO',
-      pass: 'TODO',
+      user: process.env.MAILER_USER,
+      pass: process.env.MAILER_PASS,
     },
   });
 
   const mailData = {
-    from: 'davirobertoteste@gmail.com',
-    to: 'daviroberto11@hotmail.com',
+    from: process.env.MAILER_USER,
+    to: 'davifsroberto@outlook.com',
     subject: `Subject: ${req.body.subject}`,
     html: `
-      <div>${req.body.message}</div>
+      <div>Message:<br />${req.body.message}</div>
+      <br />
       <div>
         <p>
           <strong>Sent from:</strong>

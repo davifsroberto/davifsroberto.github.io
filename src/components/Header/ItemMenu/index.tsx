@@ -9,7 +9,11 @@ type ItemMenuProps = {
 export function ItemMenu({ itemMenu }: ItemMenuProps) {
   return (
     <Container>
-      <a href={itemMenu.link} className={itemMenu.className}>
+      <a
+        href={itemMenu.link}
+        className={itemMenu.className}
+        download={itemMenu.download}
+      >
         {itemMenu.name}
       </a>
     </Container>
