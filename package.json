@@ -1,9 +1,7 @@
 {
   "name": "davifsroberto",
   "version": "1.0.0",
-  "description": "About me, Davi Roberto",
-  "keywords": [],
-  "license": "ISC",
+  "private": true,
   "author": {
     "name": "Davi Roberto",
     "nickname": "davifsroberto",
@@ -14,11 +12,53 @@
     "medium": "https://medium.com/@davifsroberto"
   },
   "scripts": {
-    "start": "browser-sync start --server --files \"**/*.*\"",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json,ts,css,html}\""
+    "dev": "next dev -p 3050",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "eslint src --max-warnings=0",
+    "pretty": "prettier --config ./.prettierrc --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn run pretty"
+    ]
+  },
+  "dependencies": {
+    "@types/nodemailer": "^6.4.4",
+    "axios": "^0.26.1",
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
+    "next": "12.1.4",
+    "nodemailer": "^6.7.3",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-image-lightbox": "^5.1.4",
+    "react-multi-carousel": "^2.8.0",
+    "react-toastify": "^8.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "prettier": "^2.3.0"
+    "@babel/core": "^7.17.8",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "17.0.23",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.14",
+    "@types/styled-components": "^5.1.24",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "babel-loader": "^8.2.4",
+    "babel-plugin-styled-components": "^2.0.6",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.1",
+    "typescript": "4.6.3"
   }
 }
