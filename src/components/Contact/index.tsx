@@ -16,8 +16,12 @@ export function Contact() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
+    console.log(process.env.MAILER_USER);
+    console.log(process.env.MAILER_PASS);
+    console.log(process.env);
+
     axios
-      .post('/api/contact', { name, subject, email, phone, message })
+      .post('/api/contact/', { name, subject, email, phone, message })
       .then(() => {
         toast.success('Mensagem enviada com sucesso!');
 
