@@ -2,8 +2,8 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/davifsroberto.github.io',
-  assetPrefix: '/davifsroberto.github.io',
+  basePath: '',
+  assetPrefix: '/',
   images: {
     loader: 'akamai',
     path: '',
