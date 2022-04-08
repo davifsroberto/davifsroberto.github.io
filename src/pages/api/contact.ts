@@ -3,6 +3,10 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
 export default function (req: NextApiRequest, res: NextApiResponse) {
+  console.log(process.env.MAILER_USER);
+  console.log(process.env.MAILER_PASS);
+  console.log(process.env);
+
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
