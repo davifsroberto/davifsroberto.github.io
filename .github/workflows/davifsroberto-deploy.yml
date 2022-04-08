@@ -27,11 +27,11 @@ jobs:
 
     - run: yarn install --frozen-lockfile
     - run: yarn run build
-    - run: yarn next export -o dist/
-    - run: touch ./dist/.nojekyll
+    - run: yarn run export
+    - run: touch ./out/.nojekyll
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
-        branch: gh-pages 
-        folder: dist
+        branch: gh-pages
+        folder: out
