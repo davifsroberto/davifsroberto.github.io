@@ -16,14 +16,18 @@ export function Contact() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    console.log(process.env.MAILER_USER);
-    console.log(process.env.MAILER_PASS);
-    console.log(process.env);
-
     axios
-      .post('/api/contact/', { name, subject, email, phone, message })
-      .then(() => {
+      .post('https://davifsroberto-github-io.vercel.app/api/contact/', {
+        name,
+        subject,
+        email,
+        phone,
+        message,
+      })
+      .then((res) => {
         toast.success('Mensagem enviada com sucesso!');
+
+        console.log(res);
 
         (document.getElementById('contact-form') as HTMLFormElement).reset();
       })
