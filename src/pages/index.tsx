@@ -1,7 +1,5 @@
-import type { NextPage } from 'next';
-
-import { Banner } from '../components/Banner';
 import { Header } from '../components/Header';
+import { Banner } from '../components/Banner';
 import { About } from '../components/About';
 import { Experience } from '../components/Experience';
 import { CallToAction } from '../components/CallToAction';
@@ -12,7 +10,7 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 import { MoveToUp } from '../components/MoveToUp';
 
-const Home: NextPage = () => {
+export function Home(): JSX.Element {
   return (
     <main>
       <Header />
@@ -38,6 +36,6 @@ const Home: NextPage = () => {
       <MoveToUp />
     </main>
   );
-};
+}
 
 export default Home;
