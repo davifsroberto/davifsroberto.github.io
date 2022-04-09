@@ -1,10 +1,10 @@
+import Image from 'next/image';
 import React, { FormEvent, useState } from 'react';
 
-import axios from 'axios';
 import { toast } from 'react-toastify';
+import { send } from 'emailjs-com';
 
 import { Container } from './styles';
-import Image from 'next/image';
 
 export function Contact() {
   const [name, setName] = useState('');
@@ -13,21 +13,25 @@ export function Contact() {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
+  const form = {
+    name,
+    subject,
+    email,
+    phone,
+    message,
+  };
+
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    axios
-      .post('https://davifsroberto-github-io.vercel.app/api/contact/', {
-        name,
-        subject,
-        email,
-        phone,
-        message,
-      })
-      .then((res) => {
+    send(
+      `${process.env.YOUR_SERVICE_ID}`,
+      `${process.env.YOUR_TEMPLATE_ID}`,
+      form,
+      process.env.YOUR_USER_ID
+    )
+      .then(() => {
         toast.success('Mensagem enviada com sucesso!');
-
-        console.log(res);
 
         (document.getElementById('contact-form') as HTMLFormElement).reset();
       })
