@@ -4,7 +4,7 @@ import { mountSocialMediasUtils } from '../utils/social-medias.utils';
 
 export function Footer() {
   return (
-    <Container className="pb-3 pt-4 text-center">
+    <Container className="pb-3 text-center">
       <div className="container">
         <SocialMedia socialMedia={mountSocialMediasUtils()} />
 
