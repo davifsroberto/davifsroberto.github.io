@@ -24,6 +24,10 @@ export function Contact() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
+    console.log(process.env.YOUR_SERVICE_ID);
+    console.log(process.env.YOUR_TEMPLATE_ID);
+    console.log(process.env.YOUR_USER_ID);
+
     send(
       `${process.env.YOUR_SERVICE_ID}`,
       `${process.env.YOUR_TEMPLATE_ID}`,
