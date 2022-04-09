@@ -29,6 +29,10 @@ jobs:
     - run: yarn run build
     - run: yarn run export
     - run: touch ./out/.nojekyll
+      env:
+        YOUR_SERVICE_ID: ${{ secrets.YOUR_SERVICE_ID }}
+        YOUR_TEMPLATE_ID: ${{ secrets.YOUR_TEMPLATE_ID }}
+        YOUR_USER_ID: ${{ secrets.YOUR_USER_ID }}
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.0
