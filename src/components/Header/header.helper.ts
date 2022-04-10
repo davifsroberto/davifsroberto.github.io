@@ -8,7 +8,7 @@ export function mountMenu(): ItemMenuType[] {
     },
     {
       name: 'Experiência',
-      link: '#experience',
+      link: '#my-experience',
     },
     {
       name: 'Portfólio',
@@ -25,7 +25,7 @@ export function mountMenu(): ItemMenuType[] {
     {
       name: 'Contato',
       link: '#contact',
-      className: 'fw-bold text-decoration-underline',
+      className: ' fw-bold text-decoration-underline ',
     },
     {
       name: 'CV',

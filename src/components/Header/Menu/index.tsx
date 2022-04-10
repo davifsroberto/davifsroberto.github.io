@@ -1,10 +1,13 @@
 import { ItemMenu } from '../ItemMenu';
 
 import { Container, SubMenu } from './styles';
+import { ItemMenuType } from '../ItemMenuType';
 
-import { mountMenu } from '../header.helper';
+type menuProps = {
+  menu?: ItemMenuType[];
+};
 
-export function Menu() {
+export function Menu({ menu }: menuProps) {
   return (
     <Container>
       <li>
@@ -15,7 +18,7 @@ export function Menu() {
         </label>
 
         <SubMenu className="submenu">
-          {mountMenu().map((item) => (
+          {menu?.map((item) => (
             <ItemMenu key={item.name} itemMenu={item} />
           ))}
         </SubMenu>

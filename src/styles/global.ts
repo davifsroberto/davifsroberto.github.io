@@ -72,6 +72,24 @@ const GlobalStyles = createGlobalStyle`
       top: 50%;
     }
   }
+
+  .bg-default {
+    background: #1e3c72;
+    background: -webkit-linear-gradient(135deg, #50217f 1%, #366895);
+    background: linear-gradient(135deg, #50217f 1%, #366895);
+  }
+
+  .btn-default {
+    color: #fff;
+    background: #6669b8;
+    border-radius: 3px;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid #6669b8;
+      color: #6669b8;
+    }
+  }
 `;
 
 export default GlobalStyles;
