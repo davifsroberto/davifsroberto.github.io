@@ -23,7 +23,7 @@ export default function Profile() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa fa-whatsapp"></i>
+            <i className="fa fa-whatsapp fw-bolder"></i>
             &nbsp;Clique para enviar mensagens
           </a>
 
