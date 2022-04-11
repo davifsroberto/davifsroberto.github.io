@@ -14,6 +14,16 @@ const nextConfig = {
     YOUR_TEMPLATE_ID: process.env.YOUR_TEMPLATE_ID,
     YOUR_USER_ID: process.env.YOUR_USER_ID,
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
