@@ -24,6 +24,7 @@ const Home: NextPage = () => {
 
       <PortfolioHome />
 
+      {/* Corrige bug ssr medium */}
       <hr />
 
       {/* <Articles /> */}
