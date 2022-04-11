@@ -8,8 +8,7 @@ const nextConfig = {
     loader: 'akamai',
     path: '',
   },
-  pageExtensions: null,
-
+  pageExtensions: ['tsx', 'jsx'],
   env: {
     YOUR_SERVICE_ID: process.env.YOUR_SERVICE_ID,
     YOUR_TEMPLATE_ID: process.env.YOUR_TEMPLATE_ID,

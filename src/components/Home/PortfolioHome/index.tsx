@@ -13,7 +13,7 @@ export function PortfolioHome() {
 
         <Portfolio gallery={mountPortfolioHomeHelper()} />
 
-        <section className="text-center mt-5 d-none">
+        <section className="text-center mt-5">
           <Link href="/portfolio" passHref>
             <button className="btn btn-default btn-default-big">
               VER PORTFÓLIO COMPLETO &nbsp;
