@@ -18,7 +18,7 @@ export function ExperienceHome() {
           ))}
         </section>
 
-        <section className="text-center mt-4 d-none">
+        <section className="text-center mt-4">
           <Link href="/experience" passHref>
             <button className="btn btn-default btn-default-big">
               VER TODAS EXPERIÊNCIAS &nbsp;
