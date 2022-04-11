@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { Container } from './styles';
-import { Portfolio } from '../../../../components/Portfolio';
+import { Portfolio } from '../../Portfolio';
 import { mountPortfolioHomeHelper } from '../home.helper';
 
 export function PortfolioHome() {

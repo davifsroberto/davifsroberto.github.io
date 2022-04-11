@@ -1,11 +1,10 @@
 import { NextPage } from 'next';
-
-import { Header } from '../../components/Header';
-import { Banner } from './components/Banner';
-import { About } from './components/About';
-import { ExperienceHome } from './components/ExperienceHome';
 import { CallToAction } from '../../components/CallToAction';
-import { PortfolioHome } from './components/PortfolioHome';
+import { Header } from '../../components/Header';
+import { About } from '../../components/Home/About';
+import { Banner } from '../../components/Home/Banner';
+import { ExperienceHome } from '../../components/Home/ExperienceHome';
+import { PortfolioHome } from '../../components/Home/PortfolioHome';
 import { Recommendations } from '../../components/Recommendations';
 
 const HomePage: NextPage = () => {

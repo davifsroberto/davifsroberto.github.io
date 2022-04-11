@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Lightbox from 'react-image-lightbox';
 
 import { Container } from './styles';
-import { PortfolioGalleryType } from '../../../types/portfolio-gallery.type';
+import { PortfolioGallery } from '../PortfolioGallery';
 
 type GalleryProps = {
-  gallery: PortfolioGalleryType;
+  gallery: PortfolioGallery;
 };
 
 export default function PortfolioProject({ gallery }: GalleryProps) {

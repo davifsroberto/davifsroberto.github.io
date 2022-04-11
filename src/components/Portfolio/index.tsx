@@ -1,15 +1,15 @@
 import { Container } from './styles';
-import { PortfolioGalleryType } from '../../types/portfolio-gallery.type';
+import { PortfolioGallery } from './PortfolioGallery';
 import PortfolioProject from './PortfolioProject';
 
 type PortfolioProps = {
-  gallery: PortfolioGalleryType[];
+  gallery: PortfolioGallery[];
 };
 
 export function Portfolio({ gallery }: PortfolioProps) {
   return (
     <Container className="row">
-      {gallery.map((gallery: PortfolioGalleryType) => (
+      {gallery.map((gallery: PortfolioGallery) => (
         <PortfolioProject key={gallery.id} gallery={gallery} />
       ))}
     </Container>
