@@ -1,9 +1,37 @@
 import type { NextPage } from 'next';
 
-import HomePage from './home';
+import { CallToAction } from '../components/CallToAction';
+import { Header } from '../components/Header';
+import { About } from '../components/Home/About';
+// import { Articles } from '../components/Home/Articles';
+import { Banner } from '../components/Home/Banner';
+import { ExperienceHome } from '../components/Home/ExperienceHome';
+import { PortfolioHome } from '../components/Home/PortfolioHome';
+import { Recommendations } from '../components/Recommendations';
 
 const Home: NextPage = () => {
-  return <HomePage />;
+  return (
+    <main>
+      <Header />
+
+      <Banner />
+
+      <About />
+
+      <ExperienceHome />
+
+      <CallToAction />
+
+      <PortfolioHome />
+
+      {/* Corrige bug ssr medium */}
+      <hr />
+
+      {/* <Articles /> */}
+
+      <Recommendations />
+    </main>
+  );
 };
 
 export default Home;
