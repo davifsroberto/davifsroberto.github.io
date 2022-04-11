@@ -25,9 +25,6 @@
     "src/**/*": [
       "yarn lint --fix",
       "yarn run pretty:check"
-    ],
-    "../**/*": [
-      "yarn run build"
     ]
   },
   "dependencies": {
