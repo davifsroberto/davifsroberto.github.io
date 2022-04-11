@@ -24,7 +24,8 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "yarn run pretty:check"
+      "yarn run pretty:check",
+      "next build"
     ]
   },
   "dependencies": {
