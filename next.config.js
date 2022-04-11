@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-const isProduction = process.env.NODE_ENV === 'production';
-
 const nextConfig = {
   reactStrictMode: true,
   basePath: '',
   assetPrefix: '/',
-  pageExtensions: isProduction
-    ? ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
-    : null,
+  pageExtensions: null,
   images: {
     loader: 'akamai',
     path: '',
