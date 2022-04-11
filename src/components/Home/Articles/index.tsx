@@ -58,7 +58,8 @@ export function Articles() {
       .get(
         'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@davifsroberto'
       )
-      .then((response) => setArticles(response.data));
+      .then((response) => setArticles(response.data))
+      .catch((error) => console.error(error));
   }
 
   return (

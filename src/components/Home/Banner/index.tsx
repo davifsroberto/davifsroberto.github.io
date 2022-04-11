@@ -1,6 +1,6 @@
 import { Container } from './styles';
-import { SocialMedia } from '../../../components/SocialMedias';
-import { mountSocialMediasUtils } from '../../../components/utils/social-medias.utils';
+import { SocialMedia } from '../../SocialMedias';
+import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
 
 export function Banner() {
   return (

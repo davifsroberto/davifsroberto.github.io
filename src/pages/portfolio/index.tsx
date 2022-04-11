@@ -1,10 +1,12 @@
-import { Container } from './style';
+import type { NextPage } from 'next';
+
+import { Container } from './styles';
 import { Header } from '../../components/Header';
 import { Portfolio } from '../../components/Portfolio';
 import { mountPortfolioHelper } from './portfolio.helper';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 
-export default function PortfolioPage(): JSX.Element {
+const PortfolioPage: NextPage = () => {
   return (
     <Container>
       <section className="bg-header-default">
@@ -48,4 +50,6 @@ export default function PortfolioPage(): JSX.Element {
       </article>
     </Container>
   );
-}
+};
+
+export default PortfolioPage;

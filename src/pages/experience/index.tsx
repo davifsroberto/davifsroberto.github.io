@@ -1,10 +1,12 @@
+import type { NextPage } from 'next';
+
 import { Container } from './styles';
 import { Experience } from '../../components/Experience';
 import { Header } from '../../components/Header';
 import { mountAllExperienceHelper } from './helper.experience';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 
-export default function ExperiencePage(): JSX.Element {
+const ExperiencePage: NextPage = () => {
   return (
     <Container>
       <section className="bg-header-default">
@@ -38,4 +40,6 @@ export default function ExperiencePage(): JSX.Element {
       </div>
     </Container>
   );
-}
+};
+
+export default ExperiencePage;

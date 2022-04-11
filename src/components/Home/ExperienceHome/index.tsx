@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Experience } from '../../../components/Experience';
+import { Experience } from '../../Experience';
 import { mountExperienceHomeHelper } from '../home.helper';
 
 import { Container } from './styles';
@@ -18,7 +18,7 @@ export function ExperienceHome() {
           ))}
         </section>
 
-        <section className="text-center mt-4">
+        <section className="text-center mt-4 d-none">
           <Link href="/experience" passHref>
             <button className="btn btn-default btn-default-big">
               VER TODAS EXPERIÊNCIAS &nbsp;
