@@ -1,43 +1,32 @@
 import { Container } from './styles';
 import { Experience } from '../../components/Experience';
 import { Header } from '../../components/Header';
-import {
-  mountAllExperienceHelper,
-  mountMenuExperienceHelper,
-} from './helper.experience';
-import { Footer } from '../../components/Footer';
-import { Contact } from '../../components/Contact';
+import { mountAllExperienceHelper } from './helper.experience';
+import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 
 export default function ExperiencePage() {
   return (
     <Container>
-      <section className="bg-default">
-        <Header menuCustom={mountMenuExperienceHelper()} custom />
+      <section className="bg-header-default">
+        <Header menuCustom={mountMenuSecondaryHeaderUtils()} />
       </section>
 
       <div className="container py-5">
         <p className="paragraph">Experiência</p>
         <h3 className="mb-sm-5 mb-4">Minhas Experiências</h3>
 
-        <section className="row mb-5">
+        <div className="row mb-5">
           <section className="col-sm-12">
-            <h4>Lorem ipsum dolor sit amet</h4>
+            <h4>Uma breve observação</h4>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              unde temporibus dolorem natus. Hic voluptatibus laborum, molestias
-              similique ea eius odio. Culpa dolore itaque hic fugiat minus
-              tempora! Culpa, quidem.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              unde temporibus dolorem natus. Hic voluptatibus laborum, molestias
-              similique ea eius odio. Culpa dolore itaque hic fugiat minus
-              tempora! Culpa, quidem.
+              Listo abaixo algumas as experiencias onde estive atuando
+              diretamente como funcionário de uma empresa. Já desenvolvi
+              sistemas atuando como freelancer, mas não está listado porque foi
+              um período pontual.
             </p>
           </section>
-        </section>
+        </div>
 
         <section className="row">
           {mountAllExperienceHelper()
@@ -47,10 +36,6 @@ export default function ExperiencePage() {
             ))}
         </section>
       </div>
-
-      <Contact />
-
-      <Footer />
     </Container>
   );
 }

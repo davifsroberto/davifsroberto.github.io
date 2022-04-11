@@ -1,6 +1,7 @@
-import { ExperienceType } from '../types/ExperienceType';
+import { PortfolioGallery } from '../../components/Portfolio/PortfolioGallery';
+import { ExperienceType } from '../../types/experience.type';
 
-export function mountMyExperience(): ExperienceType[] {
+export function mountExperienceHomeHelper(): ExperienceType[] {
   return [
     {
       id: 1,
@@ -43,7 +44,7 @@ export function mountMyExperience(): ExperienceType[] {
       id: 3,
       company: {
         name: 'Cielo',
-        link: 'https://br.linkedin.com/company/cielo',
+        link: 'https://www.linkedin.com/company/cielo',
         image: {
           src: '/assets/images/experience/cielo-logo.png',
           alt: 'Experiência Cielo',
@@ -51,12 +52,55 @@ export function mountMyExperience(): ExperienceType[] {
           height: 50,
         },
       },
-      title: 'Principal Frontend Engineer',
+      title: 'Frontend Engineer',
       period: '09/21 - 04/22',
       tag: ['#React', '#Angular'],
       description:
         'Desenvolvimento de sistemas para a área financeira, criação de dashboards, aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Utilizava em minha rotina de desenvolvimento: Angular 2+, React, UI/UX, Sass, Bootstrap, Agile Scrum.',
       last: true,
+    },
+  ];
+}
+
+export function mountPortfolioHomeHelper(): PortfolioGallery[] {
+  return [
+    {
+      id: 1,
+      bgBox: '/assets/images/portfolio/mottu/totem/00_bg.png',
+      titleBox: 'Mottu - Totem de Autoatendimento',
+      images: [
+        '/assets/images/portfolio/mottu/totem/01.png',
+        '/assets/images/portfolio/mottu/totem/02.png',
+        '/assets/images/portfolio/mottu/totem/03.png',
+        '/assets/images/portfolio/mottu/totem/04.png',
+        '/assets/images/portfolio/mottu/totem/05.png',
+        '/assets/images/portfolio/mottu/totem/06.png',
+        '/assets/images/portfolio/mottu/totem/07.png',
+      ],
+    },
+    {
+      id: 2,
+      bgBox: '/assets/images/portfolio/rommanel/mmr/00_bg.png',
+      titleBox: 'Meu Mundo Rommanel',
+      images: [
+        '/assets/images/portfolio/rommanel/mmr/01.png',
+        '/assets/images/portfolio/rommanel/mmr/02.png',
+        '/assets/images/portfolio/rommanel/mmr/03.png',
+        '/assets/images/portfolio/rommanel/mmr/04.png',
+        '/assets/images/portfolio/rommanel/mmr/05.png',
+        '/assets/images/portfolio/rommanel/mmr/06.png',
+      ],
+    },
+    {
+      id: 3,
+      bgBox: '/assets/images/portfolio/cielo/dashboard/00_bg.jpg',
+      titleBox: 'Cielo - Dashboard Monitor de Serviços',
+      images: [
+        '/assets/images/portfolio/cielo/dashboard/01.jpg',
+        '/assets/images/portfolio/cielo/dashboard/02.png',
+        '/assets/images/portfolio/cielo/dashboard/03.png',
+        '/assets/images/portfolio/cielo/dashboard/04.png',
+      ],
     },
   ];
 }

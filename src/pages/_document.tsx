@@ -16,16 +16,16 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
 
           <meta name="description" content="Davi Roberto - Frontend Engineer" />
-          <meta name="keywords" content="Davi Roberto" />
+          <meta name="author" content="davifsroberto" />
           <meta
-            name="author"
-            content="Davi Roberto, davifsroberto, github.com/davifsroberto, linkedin.com/in/davifsroberto"
+            name="keywords"
+            content="Davi Roberto, davifsroberto, davifsroberto.github.io, linkedin.com/in/davifsroberto, github.com/davifsroberto"
           />
           <meta property="og:title" content="Davi Roberto" />
           <meta property="og:description" content="Frontend Engineer" />
           <meta
             property="og:image"
-            content="/assets/images/general/site-thumbnail.jpg"
+            content="https://davifsroberto.github.io/assets/images/general/site-thumbnail.jpg"
           />
         </Head>
 

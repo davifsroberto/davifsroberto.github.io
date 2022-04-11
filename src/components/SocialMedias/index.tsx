@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import { SocialMediaType } from '../types/SocialMediaType';
+import { SocialMediaType } from '../../types/social-media.type';
 
 type SocialMediaProps = {
   socialMedia: SocialMediaType[];

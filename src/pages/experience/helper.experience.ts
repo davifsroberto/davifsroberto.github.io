@@ -1,5 +1,4 @@
-import { ItemMenuType } from '../../components/Header/ItemMenuType';
-import { ExperienceType } from '../../components/types/ExperienceType';
+import { ExperienceType } from '../../types/experience.type';
 
 export function mountAllExperienceHelper(): ExperienceType[] {
   return [
@@ -84,8 +83,8 @@ export function mountAllExperienceHelper(): ExperienceType[] {
         image: {
           src: '/assets/images/experience/deevo-logo.png',
           alt: 'Experiência Deevo Studio',
-          width: 160,
-          height: 75,
+          width: 150,
+          height: 50,
         },
       },
       title: 'Frontend Developer',
@@ -186,25 +185,6 @@ export function mountAllExperienceHelper(): ExperienceType[] {
       tag: ['#Angular'],
       description:
         'Desenvolvimento de aplicações web com o framework Angular. Durante desenvolvimento, fico sempre atento as boas práticas para seguir um alto nível de padrão de código, e no desenvolvimento com testes. Também auxílio desenvolvedores menos experientes no dia a dia para juntos evoluirmos tecnicamente e entregarmos um projeto altamente escalável.',
-    },
-  ];
-}
-
-export function mountMenuExperienceHelper(): ItemMenuType[] {
-  return [
-    {
-      name: 'Home',
-      link: '/',
-    },
-    {
-      name: 'Contato',
-      link: '#contact',
-      className: ' fw-bold text-decoration-underline ',
-    },
-    {
-      name: 'CV',
-      link: '/Davi-Roberto_CV.pdf',
-      download: true,
     },
   ];
 }

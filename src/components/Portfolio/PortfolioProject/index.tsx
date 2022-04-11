@@ -15,7 +15,6 @@ export default function PortfolioProject({ gallery }: GalleryProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [photoIndex, setPhotoIndex] = useState<number>(0);
 
-  // TODO: add ver todos
   function handlerOpenLightbox(state: boolean): void {
     setIsOpen(state);
 

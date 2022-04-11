@@ -73,7 +73,8 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  .bg-default {
+  .bg-header-default {
+    height: 6em;
     background: #1e3c72;
     background: -webkit-linear-gradient(135deg, #50217f 1%, #366895);
     background: linear-gradient(135deg, #50217f 1%, #366895);
@@ -88,6 +89,16 @@ const GlobalStyles = createGlobalStyle`
       background: transparent;
       border: 1px solid #6669b8;
       color: #6669b8;
+    }
+  }
+
+  .btn-default-big {
+    font-size: 1.2rem;
+    padding: 0.5em 1.2em;
+    transition: all 0.5s;
+
+    i {
+      transition: all 0.7s;
     }
   }
 `;

@@ -7,6 +7,7 @@ type spinnerProps = {
   text: string;
 };
 
+// TODO: Add pacman spinner
 export default function Spinner({ loading, text }: spinnerProps) {
   return (
     <Container>

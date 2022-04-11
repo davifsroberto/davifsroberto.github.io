@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ExperienceType } from '../types/ExperienceType';
+import { ExperienceType } from '../../types/experience.type';
 
 import { Container } from './styles';
 

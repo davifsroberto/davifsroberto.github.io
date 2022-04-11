@@ -5,17 +5,16 @@ import { ItemMenuType } from './ItemMenuType';
 
 type headerProps = {
   menuCustom?: ItemMenuType[];
-  custom?: boolean;
 };
 
-export function Header({ menuCustom, custom }: headerProps) {
+export function Header({ menuCustom }: headerProps) {
   return (
     <Container id="home">
       <nav className="navbar">
         <div className="container">
           <Logo>Davi Roberto</Logo>
 
-          <Menu menu={custom ? menuCustom : mountMenu()} />
+          <Menu menu={menuCustom ? menuCustom : mountMenu()} />
         </div>
       </nav>
     </Container>

@@ -13,7 +13,6 @@ export function Contact() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-
   const [loading, setLoading] = useState(false);
 
   const form = {

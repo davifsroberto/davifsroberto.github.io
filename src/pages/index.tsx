@@ -1,13 +1,11 @@
 import { Header } from '../components/Header';
-import { Banner } from '../components/Banner';
-import { About } from '../components/About';
-import { MyExperience } from '../components/MyExperience';
+import { Banner } from './home/Banner';
+import { About } from './home/About';
+import { ExperienceHome } from './home/ExperienceHome';
 import { CallToAction } from '../components/CallToAction';
-import { Portfolio } from '../components/Portfolio';
-import { Articles } from '../components/Articles';
+import { PortfolioHome } from './home/PortfolioHome';
+import { Articles } from './home/Articles';
 import { Recommendations } from '../components/Recommendations';
-import { Contact } from '../components/Contact';
-import { Footer } from '../components/Footer';
 
 export function Home(): JSX.Element {
   return (
@@ -18,19 +16,15 @@ export function Home(): JSX.Element {
 
       <About />
 
-      <MyExperience />
+      <ExperienceHome />
 
       <CallToAction />
 
-      <Portfolio />
+      <PortfolioHome />
 
       <Articles />
 
       <Recommendations />
-
-      <Contact />
-
-      <Footer />
     </main>
   );
 }

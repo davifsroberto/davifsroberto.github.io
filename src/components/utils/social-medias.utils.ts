@@ -1,11 +1,5 @@
-import { SocialMediaType } from '../types/SocialMediaType';
+import { SocialMediaType } from '../../types/social-media.type';
 
-/*
-        <a href="tel:+55 11 95356 6668">
-            <i className="fa fa-phone"></i>
-            &nbsp;+55 11 95356 6668
-          </a>
-*/
 export function mountSocialMediasUtils(): SocialMediaType[] {
   return [
     {

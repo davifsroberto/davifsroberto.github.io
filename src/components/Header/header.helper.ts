@@ -8,7 +8,7 @@ export function mountMenu(): ItemMenuType[] {
     },
     {
       name: 'Experiência',
-      link: '#my-experience',
+      link: '#experience',
     },
     {
       name: 'Portfólio',
@@ -29,6 +29,7 @@ export function mountMenu(): ItemMenuType[] {
     },
     {
       name: 'CV',
+      // TODO: create page for CV online
       link: '/Davi-Roberto_CV.pdf',
       download: true,
     },
