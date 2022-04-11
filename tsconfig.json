@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/Articles/rss-embed.ts",
-    "src/components/Footer/index.tss"
+    "src/components/Footer/index.tss",
+    "next.config.js"
   ],
   "exclude": ["node_modules"]
 }

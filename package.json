@@ -17,13 +17,14 @@
     "start": "next start",
     "export": "next export",
     "lint": "eslint src --max-warnings=0",
-    "pretty": "prettier --config ./.prettierrc --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
+    "pretty:format": "prettier --config ./.prettierrc --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
+    "pretty:check": "prettier --config ./.prettierrc --check \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
     "postinstall": "husky install"
   },
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "yarn run pretty"
+      "yarn run pretty:check"
     ]
   },
   "dependencies": {

@@ -4,7 +4,7 @@ import { Header } from '../../components/Header';
 import { mountAllExperienceHelper } from './helper.experience';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 
-export default function ExperiencePage() {
+export default function ExperiencePage(): JSX.Element {
   return (
     <Container>
       <section className="bg-header-default">

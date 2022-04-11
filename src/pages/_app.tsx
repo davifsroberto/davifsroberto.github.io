@@ -9,7 +9,7 @@ import { MoveToUp } from '../components/MoveToUp';
 import { Footer } from '../components/Footer';
 import { Contact } from '../components/Contact';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Component {...pageProps} />

@@ -4,7 +4,7 @@ import { Portfolio } from '../../components/Portfolio';
 import { mountPortfolioHelper } from './portfolio.helper';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 
-export default function PortfolioPage() {
+export default function PortfolioPage(): JSX.Element {
   return (
     <Container>
       <section className="bg-header-default">
