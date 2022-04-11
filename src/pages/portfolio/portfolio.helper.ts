@@ -1,6 +1,6 @@
-import { PortfolioGallery } from '../../components/Portfolio/PortfolioGallery';
+import { PortfolioGalleryType } from '../../types/portfolio-gallery.type';
 
-export function mountPortfolioHelper(): PortfolioGallery[] {
+export function mountPortfolioHelper(): PortfolioGalleryType[] {
   // TODO: otimizar imagens
   return [
     {

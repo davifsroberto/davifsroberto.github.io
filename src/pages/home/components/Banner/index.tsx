@@ -1,6 +1,6 @@
 import { Container } from './styles';
-import { SocialMedia } from '../../SocialMedias';
-import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
+import { SocialMedia } from '../../../../components/SocialMedias';
+import { mountSocialMediasUtils } from '../../../../components/utils/social-medias.utils';
 
 export function Banner() {
   return (
@@ -8,6 +8,7 @@ export function Banner() {
       <div className="container">
         <div className="row">
           <section className="col-lg-7">
+            {/* TODO: diminuir tamanho e trocar o  texto */}
             <h6>
               Olá, é um <strong>prazer</strong> ter você aqui <span>🙂</span>
             </h6>

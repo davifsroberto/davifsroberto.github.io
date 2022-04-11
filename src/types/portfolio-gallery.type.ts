@@ -1,4 +1,4 @@
-export type PortfolioGallery = {
+export type PortfolioGalleryType = {
   id: number;
   bgBox: string;
   titleBox: string;

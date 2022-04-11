@@ -1,5 +1,5 @@
-import { PortfolioGallery } from '../../components/Portfolio/PortfolioGallery';
-import { ExperienceType } from '../../types/experience.type';
+import { ExperienceType } from '../../../types/experience.type';
+import { PortfolioGalleryType } from '../../../types/portfolio-gallery.type';
 
 export function mountExperienceHomeHelper(): ExperienceType[] {
   return [
@@ -62,7 +62,7 @@ export function mountExperienceHomeHelper(): ExperienceType[] {
   ];
 }
 
-export function mountPortfolioHomeHelper(): PortfolioGallery[] {
+export function mountPortfolioHomeHelper(): PortfolioGalleryType[] {
   return [
     {
       id: 1,

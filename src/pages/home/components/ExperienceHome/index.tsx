@@ -1,9 +1,8 @@
 import Link from 'next/link';
 
-import { Experience } from '../../Experience';
-import { mountExperienceHomeHelper } from '../home.helper';
-
 import { Container } from './styles';
+import { Experience } from '../../../../components/Experience';
+import { mountExperienceHomeHelper } from '../home.helper';
 
 export function ExperienceHome() {
   return (
