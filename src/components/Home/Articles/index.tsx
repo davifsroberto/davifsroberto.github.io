@@ -42,7 +42,7 @@ type ArticleType = {
     link: string;
     guid: string;
     author: string;
-    thumbnail: string;
+    thumbnail?: string;
   }[];
 };
 
@@ -58,7 +58,9 @@ export function Articles() {
       .get(
         'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@davifsroberto'
       )
-      .then((response) => setArticles(response.data))
+      .then((response) => {
+        setArticles(response.data);
+      })
       .catch((error) => console.error(error));
   }
 
@@ -67,6 +69,18 @@ export function Articles() {
       <div className="container">
         <p className="paragraph">Artigos</p>
         <h3 className="mb-sm-5 mb-4">Últimos Artigos Publicados</h3>
+
+        {!articles.items && (
+          <h5>
+            <a
+              href="https://medium.com/@davifsroberto"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Click para acesssar meu perfil no Medium 😉
+            </a>
+          </h5>
+        )}
 
         {articles.items && (
           <Carousel responsive={responsive} autoPlaySpeed={99999}>
