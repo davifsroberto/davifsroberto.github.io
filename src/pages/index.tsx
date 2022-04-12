@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import { CallToAction } from '../components/CallToAction';
 import { Header } from '../components/Header';
 import { About } from '../components/Home/About';
-// import { Articles } from '../components/Home/Articles';
+import { Articles } from '../components/Home/Articles';
 import { Banner } from '../components/Home/Banner';
 import { ExperienceHome } from '../components/Home/ExperienceHome';
 import { PortfolioHome } from '../components/Home/PortfolioHome';
@@ -24,10 +24,7 @@ const Home: NextPage = () => {
 
       <PortfolioHome />
 
-      {/* Corrige bug ssr medium */}
-      <hr />
-
-      {/* <Articles /> */}
+      <Articles />
 
       <Recommendations />
     </main>
