@@ -21,7 +21,7 @@ const CvPage: NextPage = () => {
         <Header menuCustom={mountMenuCvHelper()} />
       </section>
 
-      <div className="container py-5">
+      <div className="container-xl py-5">
         <section className="pb-4">
           <p className="paragraph">Meu CV online</p>
           <h3 className="mb-sm-5 mb-4">
@@ -62,7 +62,7 @@ const CvPage: NextPage = () => {
 
           <article className="about pb-4 px-5">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-5">
                 <h2 className="h3 mb-3">Sobre mim</h2>
                 <p>
                   Olá! Me chamo Davi Roberto, gosto muito de música, leitura e
@@ -74,14 +74,15 @@ const CvPage: NextPage = () => {
                 </p>
               </div>
 
-              <div className="col-md-5 offset-md-1 mt-4">
+              {/* TODO: Responsive */}
+              <div className="col-md-7 mt-4">
                 {mountAboutItemsCvHelper().map((item) => (
-                  <div key={item.id} className="row pb-1">
-                    <section className="col-sm-4 text-end">
+                  <div key={item.id} className="row pb-sm-3 pb-1">
+                    <section className="col-md-4 text-md-end">
                       {item.title}
                     </section>
 
-                    <section className="col-sm-8">
+                    <section className="col-md-8">
                       {item.anchor ? (
                         <a
                           className={item.description.class}
