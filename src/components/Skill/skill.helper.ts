@@ -1,6 +1,6 @@
-import { SkillType } from '../SkillType';
+import { SkillType } from '../../types/skill.type';
 
-export function mountSkill(): SkillType[] {
+export function mountSkillAboutHelper(): SkillType[] {
   return [
     {
       name: 'Angular',

@@ -6,7 +6,7 @@ export const Container = styled.header`
   z-index: 9;
 
   .navbar {
-    padding: 1em 2em;
+    padding: 0.73em 2em;
     border-bottom: 1px solid rgba(243, 242, 242, 0.41);
   }
 `;

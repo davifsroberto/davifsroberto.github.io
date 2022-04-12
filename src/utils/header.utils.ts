@@ -13,8 +13,7 @@ export function mountMenuSecondaryHeaderUtils(): ItemMenuType[] {
     },
     {
       name: 'CV',
-      link: '/Davi-Roberto_CV.pdf',
-      download: true,
+      link: '/cv',
     },
   ];
 }
