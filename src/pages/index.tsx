@@ -2,11 +2,11 @@ import type { NextPage } from 'next';
 
 import { CallToAction } from '../components/CallToAction';
 import { Header } from '../components/Header';
-import { About } from '../components/Home/About';
-import { Articles } from '../components/Home/Articles';
-import { Banner } from '../components/Home/Banner';
-import { ExperienceHome } from '../components/Home/ExperienceHome';
-import { PortfolioHome } from '../components/Home/PortfolioHome';
+import { About } from '../components/PageHome/About';
+import { Articles } from '../components/PageHome/Articles';
+import { Banner } from '../components/PageHome/Banner';
+import { ExperienceHome } from '../components/PageHome/ExperienceHome';
+import { PortfolioHome } from '../components/PageHome/PortfolioHome';
 import { Recommendations } from '../components/Recommendations';
 
 const Home: NextPage = () => {

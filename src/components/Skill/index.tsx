@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import { SkillType } from '../SkillType';
+import { SkillType } from '../../types/skill.type';
 
 type SkillProps = {
   skills: SkillType[];

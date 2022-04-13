@@ -92,6 +92,18 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .btn-default-reverse {
+    color: #6669b8;
+    background: #fff;
+    border-radius: 3px;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+
   .btn-default-big {
     font-size: 1.2rem;
     padding: 0.5em 1.2em;

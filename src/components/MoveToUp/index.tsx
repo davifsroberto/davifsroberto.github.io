@@ -4,7 +4,7 @@ export function MoveToUp() {
   return (
     <Container className="">
       <a href="#home">
-        <span className="fa fa-angle-up mb-3" aria-hidden="true"></span>
+        <span className="fa fa-angle-up mb-3"></span>
       </a>
     </Container>
   );

@@ -29,9 +29,7 @@ export function mountMenu(): ItemMenuType[] {
     },
     {
       name: 'CV',
-      // TODO: create page for CV online
-      link: '/Davi-Roberto_CV.pdf',
-      download: true,
+      link: '/cv',
     },
   ];
 }

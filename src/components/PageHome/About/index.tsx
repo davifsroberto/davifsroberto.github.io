@@ -1,6 +1,6 @@
-import { Skill } from './Skill';
-import { mountSkill } from './Skill/skill.helper';
 import { Container } from './styles';
+import { Skill } from '../../Skill';
+import { mountSkillAboutHelper } from '../../Skill/skill.helper';
 
 export function About() {
   return (
@@ -34,7 +34,7 @@ export function About() {
           <section className="col-sm-12 col-md-6 col-lg-6">
             <h4>Algumas Skills</h4>
 
-            <Skill skills={mountSkill()} />
+            <Skill skills={mountSkillAboutHelper()} />
           </section>
         </div>
       </div>
