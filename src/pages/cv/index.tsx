@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 
 import { Container } from './styles';
 import {
@@ -33,13 +32,7 @@ const CvPage: NextPage = () => {
           <article className="cover-bg p-3">
             <div className="row header">
               <section className="col-lg-4 col-md-5">
-                <figure className="avatar hover-effect bg-white shadow-sm p-1">
-                  <Image
-                    width={200}
-                    height={200}
-                    src="/assets/images/general/perfil_davifsroberto.jpg"
-                  ></Image>
-                </figure>
+                <figure className="avatar"></figure>
               </section>
 
               <div className="col-lg-8 col-md-7 text-center text-md-start">
@@ -54,15 +47,15 @@ const CvPage: NextPage = () => {
                   target="_blank"
                 >
                   BAIXAR MEU CV &nbsp;
-                  <i className="fa fa-download" aria-hidden="true"></i>
+                  <i className="fa fa-download"></i>
                 </a>
               </div>
             </div>
           </article>
 
-          <article className="about pb-4 px-5">
+          <article className="about pb-4 px-3 px-md-5">
             <div className="row">
-              <div className="col-md-5">
+              <section className="col-md-5">
                 <h2 className="h3 mb-3">Sobre mim</h2>
                 <p>
                   Olá! Me chamo Davi Roberto, gosto muito de música, leitura e
@@ -72,17 +65,16 @@ const CvPage: NextPage = () => {
                   Sou frontend engineer sênior, busco sempre me aperfeiçoar e
                   ficar atualizado em minha área de atuação.
                 </p>
-              </div>
+              </section>
 
-              {/* TODO: Responsive */}
-              <div className="col-md-7 mt-4">
+              <article className="about-item col-md-7 mt-4 text-start">
                 {mountAboutItemsCvHelper().map((item) => (
-                  <div key={item.id} className="row pb-sm-3 pb-1">
-                    <section className="col-md-4 text-md-end">
+                  <section key={item.id} className="row pb-sm-3 pb-1">
+                    <section className="col-3 text-md-end">
                       {item.title}
                     </section>
 
-                    <section className="col-md-8">
+                    <section className="col-9">
                       {item.anchor ? (
                         <a
                           className={item.description.class}
@@ -95,14 +87,14 @@ const CvPage: NextPage = () => {
                         item.description.text
                       )}
                     </section>
-                  </div>
+                  </section>
                 ))}
-              </div>
+              </article>
             </div>
           </article>
           <hr />
 
-          <article className="py-5 px-5">
+          <article className="py-5 px-3 px-md-5">
             <h2 className="h3 mb-3">Algumas Skills</h2>
             <div className="row">
               <div className="col-md-6">
@@ -116,14 +108,14 @@ const CvPage: NextPage = () => {
           </article>
           <hr />
 
-          <article className="py-5 px-5">
+          <article className="py-5 px-3 px-md-5">
             <h2 className="h3 mb-4">Experiência</h2>
 
             <Timeline border={2} times={mountTimelineExperienceCvHelper()} />
           </article>
           <hr />
 
-          <article className="py-5 px-5">
+          <article className="py-5 px-3 px-md-5">
             <h2 className="h3 mb-4">Educação</h2>
 
             <Timeline times={mountTimelineEducationCvHelper()} />

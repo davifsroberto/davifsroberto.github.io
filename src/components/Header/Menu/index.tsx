@@ -14,7 +14,7 @@ export function Menu({ menu }: menuProps) {
         <input id="show-submenu" type="checkbox" />
 
         <label htmlFor="show-submenu">
-          <span className="fa fa-bars" aria-hidden="true"></span>
+          <span className="fa fa-bars"></span>
         </label>
 
         <SubMenu className="submenu">

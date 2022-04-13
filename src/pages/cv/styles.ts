@@ -21,6 +21,17 @@ export const Container = styled.main`
         transition: all 0.7s;
       }
     }
+
+    figure {
+      background: url('/assets/images/general/perfil_davifsroberto.jpg')
+        no-repeat;
+      background-size: contain;
+      height: 13.5em;
+      border: 0.5em solid #fff;
+      -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    }
   }
 
   .cover-bg {
@@ -46,10 +57,36 @@ export const Container = styled.main`
   }
 
   .about {
-    padding-top: 3.8em;
+    padding-top: 4em;
 
     .link {
       text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .header {
+      a {
+        color: #6669b8;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .about-item {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .about-item {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .about-item {
+      font-size: 0.8rem;
     }
   }
 `;

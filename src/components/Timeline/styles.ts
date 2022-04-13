@@ -54,4 +54,47 @@ export const Container = styled.article.attrs(
       background-color: #5b4b92;
     }
   }
+
+  @media (max-width: 500px) {
+    .title-card {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .title-card {
+      font-size: 1.1rem;
+
+      span {
+        &:nth-child(1) {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: block;
+          font-weight: 500 !important;
+          margin-bottom: 0.6em;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    border-left: 0;
+
+    .timeline-card {
+      margin-left: -0.1em;
+      border-left: 2.5px solid #5b4b92;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      .card-body {
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+      }
+    }
+  }
 `;

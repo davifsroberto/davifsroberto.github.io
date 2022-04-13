@@ -31,11 +31,5 @@ export function mountMenu(): ItemMenuType[] {
       name: 'CV',
       link: '/cv',
     },
-    // TODO: Remove this comment
-    // {
-    //   name: 'CV',
-    //   link: '/Davi-Roberto_CV.pdf',
-    //   download: true,
-    // },
   ];
 }

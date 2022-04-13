@@ -17,7 +17,7 @@ export default function Timeline({ times, border }: TimelineProps) {
           className="timeline-card timeline-card card shadow-sm"
         >
           <section className="card-body">
-            <section className=" fw-light h5 mb-1">
+            <section className="title-card fw-light h5 mb-1">
               {time.title}
               <span className="fw-light h6"> - </span>
               <span className="fw-normal">{time.subTitle}</span>

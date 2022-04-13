@@ -19,4 +19,24 @@ export const Container = styled.article`
     height: 0.5em;
     animation-fill-mode: both;
   }
+
+  @media (max-width: 845px) {
+    h4 {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 780px) {
+    h4 {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h4 {
+      padding-top: 0.5em;
+      margin-bottom: 0.1em;
+      font-size: 1rem;
+    }
+  }
 `;
