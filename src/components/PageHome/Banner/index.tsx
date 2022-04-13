@@ -8,24 +8,30 @@ export function Banner() {
       <div className="container">
         <div className="row">
           <section className="col-lg-7">
-            <h6>
-              Olá, é um <strong>prazer</strong> ter você aqui <span>🙂</span>
-            </h6>
+            <span className="desc">
+              Olá, é um prazer ter você aqui
+              <span className="h5">🙂</span>
+            </span>
             <br />
 
             <h2>
-              Bem-vindo(a)!
+              Me chamo
               <br />
               <span>Davi Roberto</span>
             </h2>
 
-            <h4>Frontend Engineer</h4>
-            <p className="my-4">Uma breve apresentação sobre mim</p>
+            <h4>
+              e sou <strong>Frontend Engineer</strong>
+            </h4>
 
-            <SocialMedia socialMedia={mountSocialMediasUtils()} />
+            <div className="mt-5">
+              <SocialMedia socialMedia={mountSocialMediasUtils()} />
+            </div>
 
+            {/* TODO: add animation in button next */}
             <a href="#about" className="btn-go">
-              Go!
+              NEXT &nbsp;
+              <i className="fa fa-angle-double-right"></i>
             </a>
           </section>
         </div>

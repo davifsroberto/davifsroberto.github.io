@@ -27,6 +27,7 @@ export const Container = styled.main`
         no-repeat;
       background-size: contain;
       height: 13.5em;
+      /* TODO: trantar imagem desfocada por causa da borda */
       border: 0.5em solid #fff;
       -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
       -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
