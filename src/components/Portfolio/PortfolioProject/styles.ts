@@ -1,49 +1,59 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.section<{ bgBoxShadow: string }>`
   .box {
+    position: relative;
+    cursor: pointer;
     background: #fff;
     text-align: center;
-    position: relative;
-    padding: 2px;
-    cursor: pointer;
+    text-align: center;
+    height: 12.5em;
 
-    img {
-      transition: all 0.35s ease 0s;
-    }
-
-    &:hover {
-      img {
-        opacity: 0.5;
-        transition: all 0.35s ease 0s;
-      }
-
-      .box-content {
-        top: 10px;
-        left: 10px;
-        bottom: 27px;
-        right: 10px;
-        opacity: 1;
-      }
+    figure {
+      background: url(${(props) => props.bgBoxShadow}) no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 12.5em;
     }
 
     .box-content {
-      padding: 30px 10px 30px 0;
-      background: rgba(0, 0, 0, 0.65);
+      background: rgba(0, 0, 0, 0.85);
       position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
+      inset: 0;
       opacity: 0;
-    }
+      transition: 0.5s;
 
-    .title {
-      color: #fff;
-      margin: -1em 0;
-      position: absolute;
-      bottom: 55%;
-      font-size: 1.6rem;
+      &:hover {
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+      .title {
+        color: #fff;
+        position: absolute;
+        margin: -2em 0;
+        bottom: 55%;
+        font-size: 1.6rem;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .box .box-content .title {
+      top: 3em;
+    }
+  }
+
+  @media (max-width: 545px) {
+    .box .box-content .title {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 325px) {
+    .box .box-content .title {
+      font-size: 0.9rem;
     }
   }
 `;
