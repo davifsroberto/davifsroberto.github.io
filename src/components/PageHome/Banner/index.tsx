@@ -7,7 +7,7 @@ export function Banner() {
     <Container>
       <div className="container">
         <div className="row">
-          <section className="col-lg-7">
+          <section className="col-md-6">
             <span className="desc">
               Olá, é um prazer ter você aqui
               <span className="h5">🙂</span>
@@ -24,12 +24,11 @@ export function Banner() {
               e sou <strong>Frontend Engineer</strong>
             </h4>
 
-            <div className="mt-5">
+            <div className="mt-5 social-media-box">
               <SocialMedia socialMedia={mountSocialMediasUtils()} />
             </div>
 
-            {/* TODO: add animation in button next */}
-            <a href="#about" className="btn-go">
+            <a href="#about" className="btn-next">
               NEXT &nbsp;
               <i className="fa fa-angle-double-right"></i>
             </a>

@@ -22,7 +22,6 @@ export const Container = styled.section`
 
   section {
     margin-top: 12em;
-    margin-left: 4em;
     color: #fff;
     position: relative;
 
@@ -52,7 +51,7 @@ export const Container = styled.section`
       font-weight: 300;
     }
 
-    .btn-go {
+    .btn-next {
       background: transparent;
       border: 2px solid #fff;
       color: #fff;
@@ -68,6 +67,55 @@ export const Container = styled.section`
         font-size: 1.7rem;
         top: 3px;
         position: relative;
+        animation: nextButton 2.5s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+
+  @keyframes nextButton {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (max-device-height: 640px) {
+    section {
+      margin-top: 7em;
+    }
+  }
+
+  @media (max-device-height: 425px) {
+    height: 120vh;
+    &:before {
+      height: 120vh;
+    }
+
+    section {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .social-media-box {
+      margin-top: 1em !important;
+    }
+  }
+
+  @media (max-device-height: 360px) {
+    height: 130vh;
+    &:before {
+      height: 130vh;
+    }
+  }
+
+  @media (max-device-width: 375px) {
+    section {
+      h2 {
+        font-size: 2.5rem;
       }
     }
   }

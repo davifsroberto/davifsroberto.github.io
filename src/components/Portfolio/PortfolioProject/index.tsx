@@ -63,6 +63,7 @@ export default function PortfolioProject({ gallery }: GalleryProps) {
       )}
 
       <section className="box">
+        {/* TODO: add imagem em bg para testar */}
         <figure>
           <Image
             width={180}
