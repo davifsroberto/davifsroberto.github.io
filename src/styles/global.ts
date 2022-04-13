@@ -113,6 +113,13 @@ const GlobalStyles = createGlobalStyle`
       transition: all 0.7s;
     }
   }
+
+  @media (max-width: 340px) {
+    .btn-default-big{
+     font-size: 1rem;
+    }
+
+  }
 `;
 
 export default GlobalStyles;
