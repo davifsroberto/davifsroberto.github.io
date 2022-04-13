@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.ul`
-  position: absolute;
   margin: 0;
   color: #fff;
   z-index: 99;
-  right: 14%;
   font-size: 29px;
 
   > li {

@@ -46,6 +46,7 @@ const CvPage: NextPage = () => {
                   download={true}
                   target="_blank"
                 >
+                  {/* TODO: update CV PDF */}
                   BAIXAR MEU CV &nbsp;
                   <i className="fa fa-download"></i>
                 </a>

@@ -11,7 +11,9 @@ export function PortfolioHome() {
         <p className="paragraph">Portfólio</p>
         <h3 className="mb-sm-5 mb-4">Projetos Recentes</h3>
 
-        <Portfolio gallery={mountPortfolioHomeHelper()} />
+        <div className="container">
+          <Portfolio gallery={mountPortfolioHomeHelper()} />
+        </div>
 
         <section className="text-center mt-5">
           <Link href="/portfolio" passHref>

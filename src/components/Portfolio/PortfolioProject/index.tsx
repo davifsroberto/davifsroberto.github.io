@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Image from 'next/image';
 
 import Lightbox from 'react-image-lightbox';
 
@@ -35,7 +34,8 @@ export default function PortfolioProject({ gallery }: GalleryProps) {
   return (
     <Container
       onClick={() => handlerOpenLightbox(true)}
-      className="col-lg-4 col-md-4 col-6 p-0"
+      bgBoxShadow={gallery.bgBox}
+      className="col-lg-4 col-md-4 col-6 g-1"
     >
       {isOpen && (
         <Lightbox
@@ -63,17 +63,7 @@ export default function PortfolioProject({ gallery }: GalleryProps) {
       )}
 
       <section className="box">
-        <figure>
-          <Image
-            width={180}
-            height={130}
-            priority={true}
-            layout="responsive"
-            src={gallery.bgBox}
-            alt="portfolio"
-            className="img-fluid"
-          ></Image>
-        </figure>
+        <figure></figure>
 
         <section className="box-content">
           <h3 className="title">{gallery.titleBox}</h3>

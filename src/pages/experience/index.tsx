@@ -30,7 +30,7 @@ const ExperiencePage: NextPage = () => {
           </section>
         </div>
 
-        <section className="row">
+        <section>
           {mountAllExperienceHelper()
             .sort((asc, des) => des.id - asc.id)
             .map((experience) => (
