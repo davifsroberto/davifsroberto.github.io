@@ -26,8 +26,7 @@ export const Container = styled.main`
       background: url('/assets/images/general/perfil_davifsroberto.jpg')
         no-repeat;
       background-size: contain;
-      height: 13.5em;
-      /* TODO: trantar imagem desfocada por causa da borda */
+      height: 16em;
       border: 0.5em solid #fff;
       -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
       -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
@@ -43,8 +42,8 @@ export const Container = styled.main`
     background: linear-gradient(135deg, #50217f 1%, #366895);
 
     .avatar {
-      max-width: 216px;
-      max-height: 216px;
+      max-width: 16em;
+      max-height: 16em;
       margin-top: 20px;
       text-align: center;
       margin-left: auto;
