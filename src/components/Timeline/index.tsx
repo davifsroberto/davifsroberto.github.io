@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Container } from './styles';
 import { TimelineType } from '../../types/timeline.type';
 
