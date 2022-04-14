@@ -46,12 +46,12 @@ export default class MyDocument extends Document {
             name="keywords"
             content="Davi Roberto, davifsroberto, davifsroberto.github.io, linkedin.com/in/davifsroberto, github.com/davifsroberto"
           />
-          <meta property="og:title" content="Davi Roberto" />
-          <meta property="og:description" content="Frontend Engineer" />
           <meta
             property="og:image"
             content="https://davifsroberto.github.io/assets/images/general/site-thumbnail.jpg"
           />
+          <meta property="og:title" content="Davi Roberto" />
+          <meta property="og:description" content="Frontend Engineer" />
         </Head>
 
         <body>
