@@ -1,5 +1,3 @@
-import LoadingOverlay from 'react-loading-overlay-ts';
-
 import { Container } from './styles';
 
 type spinnerProps = {
@@ -7,11 +5,16 @@ type spinnerProps = {
   text: string;
 };
 
-// TODO: Add pacman spinner
 export default function Spinner({ loading, text }: spinnerProps) {
   return (
     <Container>
-      <LoadingOverlay active={loading} spinner text={text}></LoadingOverlay>
+      {loading && (
+        <div className="overlay">
+          <h1 className="pac-man" />
+
+          <span>{text}</span>
+        </div>
+      )}
     </Container>
   );
 }

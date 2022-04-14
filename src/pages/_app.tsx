@@ -1,4 +1,4 @@
-// TODO: Costom page 404
+// TODO: Custom page 404
 
 import type { AppProps } from 'next/app';
 

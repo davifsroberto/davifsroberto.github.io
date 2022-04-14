@@ -162,7 +162,7 @@ export function mountAllExperienceHelper(): ExperienceType[] {
         },
       },
       title: 'Principal Frontend Engineer',
-      period: '10/21 - 04/22',
+      period: '09/21 - 04/22',
       tag: ['#Angular'],
       description:
         'Desenvolvo aplicações para a frente de delivery, aplicativos de backoffice e totens de autoatendimento. Sempre me atento ao desenvolvimento com testes, performance e boas práticas. Ajudo desenvolvedores menos experientes, e trabalho na reestruturação de projetos antigos para uma arquitetura de frontend escalável. Quando necessário, crio as interfaces sem depender de um UI designer. Tenho noções de UI/UX e gosto do assunto. Algumas tecnologias que utilizo neste processo: Angular 12+, Monorepo, Nx Workspace (nx.dev), Module Federation.',

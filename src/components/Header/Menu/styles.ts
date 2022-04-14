@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.ul`
   margin: 0;
   color: #fff;
-  z-index: 99;
+  z-index: 2;
   font-size: 29px;
 
   > li {
