@@ -44,9 +44,7 @@ const CvPage: NextPage = () => {
                   className="btn btn-default-reverse"
                   href="/Davi-Roberto_CV.pdf"
                   download={true}
-                  target="_blank"
                 >
-                  {/* TODO: update CV PDF */}
                   BAIXAR MEU CV &nbsp;
                   <i className="fa fa-download"></i>
                 </a>
@@ -61,7 +59,7 @@ const CvPage: NextPage = () => {
                 <p>
                   Olá! Me chamo Davi Roberto, gosto muito de música, leitura e
                   tecnologia. Atuo com desenvolvimento de sistemas a mais de 10
-                  anos, e há 8 anos com frontend.
+                  anos, e há 8 com frontend.
                   <br />
                   Sou frontend engineer sênior, busco sempre me aperfeiçoar e
                   ficar atualizado em minha área de atuação.

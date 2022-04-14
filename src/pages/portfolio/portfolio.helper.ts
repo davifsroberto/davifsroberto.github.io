@@ -54,6 +54,10 @@ export function mountPortfolioHelper(): PortfolioGallery[] {
         '/assets/images/portfolio/rommanel/mmr/04.png',
         '/assets/images/portfolio/rommanel/mmr/05.png',
         '/assets/images/portfolio/rommanel/mmr/06.png',
+        '/assets/images/portfolio/rommanel/mmr/07.png',
+        '/assets/images/portfolio/rommanel/mmr/08.png',
+        '/assets/images/portfolio/rommanel/mmr/09.png',
+        '/assets/images/portfolio/rommanel/mmr/10.png',
       ],
     },
     {
@@ -79,9 +83,10 @@ export function mountPortfolioHelper(): PortfolioGallery[] {
         '/assets/images/portfolio/rommanel/cadastro_mmr/02.png',
         '/assets/images/portfolio/rommanel/cadastro_mmr/03.png',
         '/assets/images/portfolio/rommanel/cadastro_mmr/04.png',
+        '/assets/images/portfolio/rommanel/cadastro_mmr/05.png',
+        '/assets/images/portfolio/rommanel/cadastro_mmr/06.png',
       ],
     },
-    // TODO: pegar imagens tabela responsiva
     {
       id: 7,
       bgBox: '/assets/images/portfolio/rommanel/mensageria_mmr/00_bg.png',
@@ -91,9 +96,15 @@ export function mountPortfolioHelper(): PortfolioGallery[] {
         '/assets/images/portfolio/rommanel/mensageria_mmr/02.png',
         '/assets/images/portfolio/rommanel/mensageria_mmr/03.png',
         '/assets/images/portfolio/rommanel/mensageria_mmr/04.png',
+        '/assets/images/portfolio/rommanel/mensageria_mmr/05.png',
+        '/assets/images/portfolio/rommanel/mensageria_mmr/06.png',
+        '/assets/images/portfolio/rommanel/mensageria_mmr/07.png',
+        '/assets/images/portfolio/rommanel/mensageria_mmr/08.png',
+        '/assets/images/portfolio/rommanel/mensageria_mmr/09.png',
+        '/assets/images/portfolio/rommanel/mensageria_mmr/10.png',
+        '/assets/images/portfolio/rommanel/mensageria_mmr/11.png',
       ],
     },
-    // TODO: Rodar projeto e pegar mais imagens
     {
       id: 8,
       bgBox: '/assets/images/portfolio/cielo/dashboard/00_bg.jpg',
@@ -103,6 +114,9 @@ export function mountPortfolioHelper(): PortfolioGallery[] {
         '/assets/images/portfolio/cielo/dashboard/02.png',
         '/assets/images/portfolio/cielo/dashboard/03.png',
         '/assets/images/portfolio/cielo/dashboard/04.png',
+        '/assets/images/portfolio/cielo/dashboard/05.png',
+        '/assets/images/portfolio/cielo/dashboard/06.png',
+        '/assets/images/portfolio/cielo/dashboard/07.png',
       ],
     },
     {

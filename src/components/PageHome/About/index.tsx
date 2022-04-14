@@ -26,7 +26,7 @@ export function About() {
               seguida entrei na área de desenvolvimento, onde estou há anos.
               <br />
               Gosto muito de música, leitura e tecnologia, atuo com
-              desenvolvimento de sistemas a mais de 10 anos, e há 8 anos com
+              desenvolvimento de sistemas a mais de 10 anos, e há 8 com
               frontend.
             </p>
           </section>
