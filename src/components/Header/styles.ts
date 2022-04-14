@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.header`
   position: absolute;
   width: 100%;
-  z-index: 9;
+  z-index: 2;
 
   .navbar {
     padding: 0.73em 2em;

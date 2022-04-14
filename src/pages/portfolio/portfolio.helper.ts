@@ -141,7 +141,6 @@ export function mountPortfolioHelper(): PortfolioGallery[] {
         '/assets/images/portfolio/deevo/wborn/04.png',
       ],
     },
-    // TODO: Add Fast Besni
     {
       id: 12,
       bgBox: '/assets/images/portfolio/fast/besni/00_bg.png',
