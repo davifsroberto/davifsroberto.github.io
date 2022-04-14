@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import 'animate.css/animate.min.css';
 
 const GlobalStyles = createGlobalStyle`
   /* custom scrollbar */

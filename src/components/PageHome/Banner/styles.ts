@@ -12,9 +12,9 @@ export const Container = styled.section`
     height: 100vh;
     top: 0;
     left: 0;
+    opacity: 0.9;
     background: #50217f;
     background-size: cover;
-    opacity: 0.9;
     background: #1e3c72;
     background: -webkit-linear-gradient(135deg, #50217f 1%, #366895);
     background: linear-gradient(135deg, #50217f 1%, #366895);
@@ -44,6 +44,8 @@ export const Container = styled.section`
     h2 {
       font-size: 3.6rem;
       font-weight: 100;
+      animation: opacity 3.5s;
+      animation-iteration-count: 1;
     }
 
     h4,
@@ -67,13 +69,13 @@ export const Container = styled.section`
         font-size: 1.7rem;
         top: 3px;
         position: relative;
-        animation: nextButton 2.5s;
+        animation: opacity 2.5s;
         animation-iteration-count: infinite;
       }
     }
   }
 
-  @keyframes nextButton {
+  @keyframes opacity {
     from {
       opacity: 0;
     }

@@ -89,6 +89,10 @@ export function mountPortfolioHomeHelper(): PortfolioGallery[] {
         '/assets/images/portfolio/rommanel/mmr/04.png',
         '/assets/images/portfolio/rommanel/mmr/05.png',
         '/assets/images/portfolio/rommanel/mmr/06.png',
+        '/assets/images/portfolio/rommanel/mmr/07.png',
+        '/assets/images/portfolio/rommanel/mmr/08.png',
+        '/assets/images/portfolio/rommanel/mmr/09.png',
+        '/assets/images/portfolio/rommanel/mmr/10.png',
       ],
     },
     {
@@ -100,6 +104,9 @@ export function mountPortfolioHomeHelper(): PortfolioGallery[] {
         '/assets/images/portfolio/cielo/dashboard/02.png',
         '/assets/images/portfolio/cielo/dashboard/03.png',
         '/assets/images/portfolio/cielo/dashboard/04.png',
+        '/assets/images/portfolio/cielo/dashboard/05.png',
+        '/assets/images/portfolio/cielo/dashboard/06.png',
+        '/assets/images/portfolio/cielo/dashboard/07.png',
       ],
     },
   ];

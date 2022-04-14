@@ -61,7 +61,6 @@ export default function PortfolioProject({ gallery }: GalleryProps) {
           keyRepeatLimit={1}
         />
       )}
-
       <section className="box">
         <figure></figure>
 

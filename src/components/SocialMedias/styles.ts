@@ -20,6 +20,13 @@ export const Container = styled.ul`
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition-duration: 0.4s;
+    transition-property: transform;
+
+    &:hover {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
 
     span.fa {
       color: #fff;
