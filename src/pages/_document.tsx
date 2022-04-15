@@ -50,7 +50,7 @@ export default class MyDocument extends Document {
           <meta property="og:description" content="Frontend Engineer" />
           <meta
             property="og:image"
-            content="https://davifsroberto.github.io/assets/images/general/site-thumbnail.jpg"
+            content="https://davifsroberto.github.io/assets/images/general/site-thumbnail.png"
           />
         </Head>
 
