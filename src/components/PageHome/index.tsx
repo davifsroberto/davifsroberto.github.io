@@ -17,25 +17,45 @@ export default function Home() {
 
       <Banner />
 
-      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
+      <AnimationOnScroll
+        duration={1}
+        animateOnce={true}
+        animateIn="animate__fadeIn"
+      >
         <About />
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRightBig">
+      <AnimationOnScroll
+        duration={1}
+        animateOnce={true}
+        animateIn="animate__fadeIn"
+      >
         <ExperienceHome />
       </AnimationOnScroll>
 
       <CallToAction />
 
-      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
+      <AnimationOnScroll
+        duration={1}
+        animateOnce={true}
+        animateIn="animate__fadeIn"
+      >
         <PortfolioHome />
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRightBig">
+      <AnimationOnScroll
+        duration={1}
+        animateOnce={true}
+        animateIn="animate__fadeIn"
+      >
         <Articles />
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
+      <AnimationOnScroll
+        duration={1}
+        animateOnce={true}
+        animateIn="animate__fadeIn"
+      >
         <Recommendations />
       </AnimationOnScroll>
     </Container>
