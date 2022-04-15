@@ -1,5 +1,3 @@
-// TODO: Custom page 404
-
 import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
