@@ -11,6 +11,7 @@ export default function Profile() {
           width={150}
           height={150}
           src="/assets/images/general/perfil_davifsroberto.jpg"
+          alt="Davi Roberto - Frontend Engineer"
         ></Image>
         <h4>Davi Roberto</h4>
         <h5>Frontend Engineer</h5>
