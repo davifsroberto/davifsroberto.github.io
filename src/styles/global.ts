@@ -57,6 +57,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
   }
 
+  html {
+	scroll-behavior: smooth;
+  }
+
   .paragraph {
     color: #888;
     font-size: 16px;
@@ -115,11 +119,25 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  @keyframes opacityDelay {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   @media (max-width: 340px) {
     .btn-default-big{
      font-size: 1rem;
     }
-
   }
 `;
 
