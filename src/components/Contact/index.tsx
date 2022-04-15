@@ -2,6 +2,7 @@ import React, { FormEvent, useState } from 'react';
 
 import { toast } from 'react-toastify';
 import { send } from 'emailjs-com';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { Container } from './styles';
 import Spinner from '../Spinner';
@@ -52,95 +53,101 @@ export function Contact() {
     <Container id="contact">
       <Spinner loading={loading} text={'Enviando...'} />
 
-      <div className="container">
-        <p className="paragraph">Contato</p>
+      <AnimationOnScroll
+        duration={1}
+        animateOnce={true}
+        animateIn="animate__fadeIn"
+      >
+        <div className="container">
+          <p className="paragraph">Contato</p>
 
-        <h3 className="mb-sm-5 mb-4">Aguardo o seu contato😉</h3>
+          <h3 className="mb-sm-5 mb-4">Aguardo o seu contato😉</h3>
 
-        <article className="row">
-          <section className="col-md-6 text-center">
-            <Profile />
-          </section>
+          <article className="row">
+            <section className="col-md-6 text-center">
+              <Profile />
+            </section>
 
-          <div className="col-md-6">
-            <form onSubmit={handleSubmit} id="contact-form">
-              <section className="col-12">
-                <div className="inputBox ">
-                  <input
-                    onChange={(e) => setName(e.target.value)}
-                    name="name"
-                    placeholder="Nome"
-                    className="input"
-                    type="text"
-                    minLength={2}
-                    maxLength={50}
-                    required
-                  />
-                </div>
-              </section>
+            <div className="col-md-6">
+              <form onSubmit={handleSubmit} id="contact-form">
+                <section className="col-12">
+                  <div className="inputBox ">
+                    <input
+                      onChange={(e) => setName(e.target.value)}
+                      name="name"
+                      placeholder="Nome"
+                      className="input"
+                      type="text"
+                      minLength={2}
+                      maxLength={50}
+                      required
+                    />
+                  </div>
+                </section>
 
-              <section className="col-12">
-                <div className="inputBox">
-                  <input
-                    onChange={(e) => setSubject(e.target.value)}
-                    name="subject"
-                    placeholder="Assunto"
-                    className="input"
-                    type="text"
-                    minLength={2}
-                    maxLength={50}
-                    required
-                  />
-                </div>
-              </section>
+                <section className="col-12">
+                  <div className="inputBox">
+                    <input
+                      onChange={(e) => setSubject(e.target.value)}
+                      name="subject"
+                      placeholder="Assunto"
+                      className="input"
+                      type="text"
+                      minLength={2}
+                      maxLength={50}
+                      required
+                    />
+                  </div>
+                </section>
 
-              <section className="col-12">
-                <div className="inputBox">
-                  <input
-                    onChange={(e) => setEmail(e.target.value)}
-                    name="email"
-                    placeholder="E-mail - Opcional"
-                    className="input"
-                    type="email"
-                    minLength={5}
-                    maxLength={50}
-                  />
-                </div>
-              </section>
+                <section className="col-12">
+                  <div className="inputBox">
+                    <input
+                      onChange={(e) => setEmail(e.target.value)}
+                      name="email"
+                      placeholder="E-mail - Opcional"
+                      className="input"
+                      type="email"
+                      minLength={5}
+                      maxLength={50}
+                    />
+                  </div>
+                </section>
 
-              <section className="col-12">
-                <div className="inputBox">
-                  <input
-                    onChange={(e) => setPhone(e.target.value)}
-                    name="phone"
-                    placeholder="Telefone - Opcional"
-                    className="input"
-                    type="number"
-                    min={0}
-                    step="1"
-                  />
-                </div>
-              </section>
+                <section className="col-12">
+                  <div className="inputBox">
+                    <input
+                      onChange={(e) => setPhone(e.target.value)}
+                      name="phone"
+                      placeholder="Telefone - Opcional"
+                      className="input"
+                      type="number"
+                      min={0}
+                      step="1"
+                    />
+                  </div>
+                </section>
 
-              <section className="col-12">
-                <div className="inputBox">
-                  <textarea
-                    onChange={(e) => setMessage(e.target.value)}
-                    name="message"
-                    placeholder="Mensagem"
-                    className="form-control"
-                    minLength={5}
-                    maxLength={500}
-                    required
-                  ></textarea>
-                </div>
-              </section>
+                <section className="col-12">
+                  <div className="inputBox">
+                    <textarea
+                      onChange={(e) => setMessage(e.target.value)}
+                      name="message"
+                      placeholder="Mensagem"
+                      className="form-control"
+                      minLength={5}
+                      maxLength={500}
+                      required
+                    ></textarea>
+                  </div>
+                </section>
 
-              <input type="submit" className="button" value="ENVIAR" />
-            </form>
-          </div>
-        </article>
-      </div>
+                <input type="submit" className="button" value="ENVIAR" />
+              </form>
+            </div>
+          </article>
+        </div>
+      </AnimationOnScroll>
     </Container>
   );
 }

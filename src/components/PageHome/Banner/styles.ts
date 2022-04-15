@@ -44,7 +44,7 @@ export const Container = styled.section`
     h2 {
       font-size: 3.6rem;
       font-weight: 100;
-      animation: opacity 3.5s;
+      animation: opacityDelay 3.5s;
       animation-iteration-count: 1;
     }
 
@@ -72,15 +72,6 @@ export const Container = styled.section`
         animation: opacity 2.5s;
         animation-iteration-count: infinite;
       }
-    }
-  }
-
-  @keyframes opacity {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
 
