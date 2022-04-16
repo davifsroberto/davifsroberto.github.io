@@ -1,13 +1,15 @@
+<section align="center">
+
 # Davi Roberto - Frontend Engineer
 
-## Hi there 👋
+## Hello, world 💻
 
 This is my personal website, where I report about my career in frontend web development.
 
-<!-- TODO: add gif. Exe: https://github.com/guilhermeborgesbastos/live-resume/raw/master/markdown/LiveResumeGuilhermeBorgesBastos-v7.1.gif  -->
 <a href="https://davifsroberto.github.io" target="_blank">
-  <img src="./public/assets/images/general/readme.jpg" />
+  <img src="./public/assets/images/general/davifsroberto.gif" />
 </a>
+</section>
 
 ## 📖 Guide
 
@@ -32,7 +34,7 @@ This is my personal website, where I report about my career in frontend web deve
 - Prettier
 - ESLint
 - Pre-commit with Husky
-- Among other technologies...
+- And other technologies...
   <br />
   <br />
 
