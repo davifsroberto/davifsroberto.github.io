@@ -69,7 +69,7 @@ export const Container = styled.section`
         font-size: 1.7rem;
         top: 3px;
         position: relative;
-        animation: opacity 2.5s;
+        animation: opacityDelay 2.5s;
         animation-iteration-count: infinite;
       }
     }
