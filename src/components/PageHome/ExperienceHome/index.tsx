@@ -22,7 +22,7 @@ export function ExperienceHome() {
           <Link href="/experience" passHref>
             <button className="btn btn-default btn-default-big">
               VER TODAS EXPERIÊNCIAS &nbsp;
-              <i className="fa fa-arrow-right"></i>
+              <i className="fa fa-arrow-right" />
             </button>
           </Link>
         </section>

@@ -19,7 +19,7 @@ export function PortfolioHome() {
           <Link href="/portfolio" passHref>
             <button className="btn btn-default btn-default-big">
               VER PORTFÓLIO COMPLETO &nbsp;
-              <i className="fa fa-arrow-right"></i>
+              <i className="fa fa-arrow-right" />
             </button>
           </Link>
         </section>

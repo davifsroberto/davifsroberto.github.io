@@ -1,0 +1,29 @@
+{
+  "pt": {
+    "title": "Sobre",
+    "subTitle": "Um pouco sobre mim",
+    "desc": {
+      "title": "Tenho paixão pelo que faço!",
+      "one": "Sou frontend engineer sênior, busco sempre me aperfeiçoar e ficar atualizado em minha área de atuação.",
+      "two": "Aos 17 anos, eu trabalhava como",
+      "three": " assistente de suporte técnico a computadores",
+      "four": " em uma empresa na minha cidade, um dia vi meu supervisor fazendo algo que nunca tinha visto antes, quando perguntei o que era aquilo, ele me disse “estou fazendo um programa, isso é programação”. Em seguida fui atrás de estudar por conta, pois foi amor à primeira vista, entrei na área de desenvolvimento, onde estou há anos.",
+      "five": "Gosto muito de música, leitura e tecnologia, atuo com desenvolvimento de sistemas a mais de 10 anos, e há 8 com frontend."
+    },
+    "skillTitle": "Algumas Skills"
+  },
+
+  "en": {
+    "title": "About",
+    "subTitle": "A little about me",
+    "desc": {
+      "title": "I'm passionate about what I do!",
+      "one": "I'm a senior frontend engineer, I'm always looking to improve and stay up to date in my area of expertise.",
+      "two": "At 17, I worked as",
+      "three": " computer tech support assistant",
+      "four": " In a company in my city, one day I saw my supervisor doing something I had never seen before, when I asked what that was, he told me “I'm doing a program, this is programming”. to study on my own, because it was love at first sight, I entered the development area, where I have been for years.",
+      "five": "I really like music, reading and technology, I've been developing systems for over 10 years, and for 8 years with frontend."
+    },
+    "skillTitle": "Some Skills"
+  }
+}

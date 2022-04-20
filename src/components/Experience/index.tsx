@@ -23,7 +23,8 @@ export function Experience({ experience }: ExperienceProps) {
         <i className="h6 d-block">
           {experience.company.name} -
           <a href={experience.company.link} target="_blank" rel="noreferrer">
-            &nbsp;<i className="fa fa-linkedin"></i>
+            &nbsp;
+            <i className="fa fa-linkedin" />
           </a>
         </i>
 
