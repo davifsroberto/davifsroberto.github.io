@@ -57,7 +57,7 @@ export function mountAboutItemsCvHelper(): AboutItem[] {
       anchor: true,
       description: {
         text: 'Clique aqui',
-        link: 'https://api.whatsapp.com/send?phone=5511953566668&amp;text=Ol%C3%A1%2C%20Davi%20Roberto%2C%20tudo%20bem%3F',
+        link: 'https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C+Davi+Roberto.',
         target: '_blank',
         class: 'link',
       },

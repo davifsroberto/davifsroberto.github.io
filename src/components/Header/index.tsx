@@ -4,15 +4,12 @@ import { Container, Logo } from './styles';
 import { Menu } from './Menu';
 import { mountMenuHelper } from './header.helper';
 import { ItemMenuType } from './ItemMenuType';
-import { useRouter } from 'next/router';
 
 type headerProps = {
   menuCustom?: ItemMenuType[];
 };
 
 export function Header({ menuCustom }: headerProps) {
-  const router = useRouter();
-
   return (
     <Container id="home">
       <nav className="navbar">
@@ -21,11 +18,7 @@ export function Header({ menuCustom }: headerProps) {
             <Logo />
           </Link>
 
-          <Menu
-            menu={
-              menuCustom ? menuCustom : mountMenuHelper(String(router.locale))
-            }
-          />
+          <Menu menu={menuCustom ? menuCustom : mountMenuHelper()} />
         </div>
       </nav>
     </Container>

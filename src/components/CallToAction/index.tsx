@@ -1,6 +1,6 @@
 import { Container } from './styles';
 import { SocialMedia } from '../SocialMedias';
-import { mountSocialMediasUtils } from '../utils/social-medias.utils';
+import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
 
 export function CallToAction() {
   return (

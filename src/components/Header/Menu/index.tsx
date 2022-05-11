@@ -1,6 +1,5 @@
-import { ItemMenu } from '../ItemMenu';
-
 import { Container, SubMenu } from './styles';
+import { ItemMenu } from '../ItemMenu';
 import { ItemMenuType } from '../ItemMenuType';
 
 type menuProps = {

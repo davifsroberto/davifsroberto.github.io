@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { Container } from './styles';
+import { SetLanguageUtils } from '../../../utils/language.utils';
 
 export default function Profile() {
   return (
@@ -20,12 +21,18 @@ export default function Profile() {
       <section className="body">
         <p>
           <a
-            href="https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C%20Davi%20Roberto%2C%20tudo%20bem%3F"
+            href={
+              SetLanguageUtils() === 'pt'
+                ? 'https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C+Davi+Roberto.'
+                : 'https://api.whatsapp.com/send?phone=5511953566668&text=Hello%2C%20Davi%20Roberto.'
+            }
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa fa-whatsapp fw-bolder" />
-            &nbsp;Clique para enviar mensagens
+            {SetLanguageUtils() === 'pt'
+              ? ' Clique para enviar mensagens'
+              : ' Click to send messages'}
           </a>
 
           <a href="mailto:davifsroberto@outlook.com">
