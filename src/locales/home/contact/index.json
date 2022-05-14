@@ -1,0 +1,27 @@
+{
+  "pt": {
+    "title": "Contato",
+    "subTitle": "Aguardo o Seu Contato",
+    "form": {
+      "labelOne": "Nome",
+      "labelTwo": "Assunto",
+      "labelTree": "E-mail - Opcional",
+      "labelFour": "Telefone - Optional",
+      "labelFive": "Mensagem",
+      "btnForm": "ENVIAR"
+    }
+  },
+
+  "en": {
+    "title": "Contact",
+    "subTitle": "I Await Your Contact",
+    "form": {
+      "labelOne": "Name",
+      "labelTwo": "Subject",
+      "labelTree": "Mail - Optional",
+      "labelFour": "Phone - Optional",
+      "labelFive": "Message",
+      "btnForm": "SEND"
+    }
+  }
+}
