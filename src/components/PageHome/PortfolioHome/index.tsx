@@ -4,7 +4,7 @@ import { Container } from './styles';
 import { Portfolio } from '../../Portfolio';
 import { mountPortfolioHomeHelper } from '../home.helper';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import portfolio from '../../../locales/home/portfolio/portfolio.json';
+import portfolio from '../../../locales/home/portfolio/index.json';
 
 export function PortfolioHome() {
   return (

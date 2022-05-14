@@ -2,7 +2,7 @@ import { Container } from './styles';
 import { SocialMedia } from '../../SocialMedias';
 import { mountSocialMediasUtils } from '../../../utils/social-medias.utils';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import banner from '../../../locales/home/banner/banner.json';
+import banner from '../../../locales/home/banner/index.json';
 
 export function Banner() {
   return (

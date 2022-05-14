@@ -2,7 +2,7 @@ import { Container } from './styles';
 import { Skill } from '../../Skill';
 import { mountSkillAboutHelper } from '../../Skill/skill.helper';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import about from '../../../locales/home/about/about-me.json';
+import about from '../../../locales/home/about/index.json';
 
 export function About() {
   return (

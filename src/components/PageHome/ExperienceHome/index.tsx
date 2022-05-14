@@ -4,7 +4,7 @@ import { Container } from './styles';
 import { Experience } from '../../Experience';
 import { mountExperienceHomeHelper } from '../home.helper';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import experience from '../../../locales/home/experience/experience.json';
+import experience from '../../../locales/home/experience/index.json';
 
 export function ExperienceHome() {
   return (

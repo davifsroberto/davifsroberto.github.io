@@ -2,7 +2,7 @@ import { Container } from './styles';
 import { SocialMedia } from '../SocialMedias';
 import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
-import callToAction from '../../locales/home/callToAction/callToAction.json';
+import callToAction from '../../locales/home/callToAction/index.json';
 
 export function CallToAction() {
   return (

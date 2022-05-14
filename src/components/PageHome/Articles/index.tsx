@@ -6,7 +6,7 @@ import Carousel from 'react-multi-carousel';
 
 import { Container } from './styles';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import articlesLang from '../../../locales/home/articles/articles.json';
+import articlesLang from '../../../locales/home/articles/index.json';
 
 const responsive = {
   superLargeDesktop: {
