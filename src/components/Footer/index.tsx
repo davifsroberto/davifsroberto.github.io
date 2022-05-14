@@ -1,6 +1,8 @@
 import { Container } from './styles';
 import { SocialMedia } from '../SocialMedias';
 import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
+import { SetLanguageUtils as language } from '../../utils/language.utils';
+import footer from '../../locales/home/footer/index.json';
 
 export function Footer() {
   return (
@@ -9,7 +11,7 @@ export function Footer() {
         <SocialMedia socialMedia={mountSocialMediasUtils()} />
 
         <p className="my-2">
-          Desenvolvido por
+          {footer[language()].info}
           <a
             href="https://www.linkedin.com/in/davifsroberto"
             target="_blank"
