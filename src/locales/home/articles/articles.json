@@ -1,0 +1,14 @@
+{
+  "pt": {
+    "title": "Artigos",
+    "subTitle": "Últimos Artigos Publicados",
+    "redirect": "Click para acesssar meu perfil no Medium",
+    "read": "LER ARTIGO"
+  },
+  "en": {
+    "title": "Articles",
+    "subTitle": "Latest Articles",
+    "redirect": "Click to access my profile on Medium",
+    "read": "READ"
+  }
+}
