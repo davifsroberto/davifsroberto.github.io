@@ -1,7 +1,7 @@
 {
   "pt": {
     "title": "Recomendações",
-    "subTitle": "Algumas recomendações recebidas no meu",
+    "subtitle": "Algumas recomendações recebidas no meu",
     "descOne": "Relação:",
     "descTwo": "Empresa que trabalhamos:",
     "recommendations": [
@@ -72,7 +72,7 @@
   },
   "en": {
     "title": "Recommendations",
-    "subTitle": "Some recommendations received in my",
+    "subtitle": "Some recommendations received in my",
     "descOne": "Relationship:",
     "descTwo": "Company we work with:",
     "recommendations": [

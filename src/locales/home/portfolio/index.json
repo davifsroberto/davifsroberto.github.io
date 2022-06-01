@@ -1,7 +1,7 @@
 {
   "pt": {
     "title": "Portfólio",
-    "subTitle": "Projetos Recentes",
+    "subtitle": "Projetos Recentes",
     "viewAll": "VER PORTFÓLIO COMPLETO",
     "portfolioHome": [
       {
@@ -53,7 +53,7 @@
   },
   "en": {
     "title": "Portfolio",
-    "subTitle": "Recent Projects",
+    "subtitle": "Recent Projects",
     "viewAll": "SEE FULL PORTFOLIO",
     "portfolioHome": [
       {

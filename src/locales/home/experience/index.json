@@ -1,7 +1,7 @@
 {
   "pt": {
     "title": "Experiência",
-    "subTitle": "Algumas Experiências",
+    "subtitle": "Algumas Experiências",
     "viewAll": "VER TODAS EXPERIÊNCIAS",
     "experiencesHome": [
       {
@@ -62,7 +62,7 @@
 
   "en": {
     "title": "Experience",
-    "subTitle": "Some Experiences",
+    "subtitle": "Some Experiences",
     "viewAll": "SEE ALL EXPERIENCES",
     "experiencesHome": [
       {

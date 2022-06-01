@@ -31,7 +31,7 @@ export function Recommendations() {
       <div className="container">
         <p className="paragraph">{recommendations[language()].title}</p>
         <h3 className="mb-sm-5 mb-4">
-          {recommendations[language()].subTitle}
+          {recommendations[language()].subtitle}
           <a
             href="https://www.linkedin.com/in/davifsroberto"
             target="_blank"

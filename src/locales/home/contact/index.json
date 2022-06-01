@@ -1,7 +1,7 @@
 {
   "pt": {
     "title": "Contato",
-    "subTitle": "Aguardo o Seu Contato",
+    "subtitle": "Aguardo o Seu Contato",
     "form": {
       "labelOne": "Nome",
       "labelTwo": "Assunto",
@@ -14,7 +14,7 @@
 
   "en": {
     "title": "Contact",
-    "subTitle": "I Await Your Contact",
+    "subtitle": "I Await Your Contact",
     "form": {
       "labelOne": "Name",
       "labelTwo": "Subject",

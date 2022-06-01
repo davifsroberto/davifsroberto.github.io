@@ -1,7 +1,7 @@
 {
   "pt": {
     "title": "Sobre",
-    "subTitle": "Um pouco sobre mim",
+    "subtitle": "Um pouco sobre mim",
     "desc": {
       "title": "Tenho paixão pelo que faço!",
       "one": "Sou frontend engineer sênior, busco sempre me aperfeiçoar e ficar atualizado em minha área de atuação.",
@@ -47,7 +47,7 @@
 
   "en": {
     "title": "About",
-    "subTitle": "A little about me",
+    "subtitle": "A little about me",
     "desc": {
       "title": "I'm passionate about what I do!",
       "one": "I'm a senior frontend engineer, I'm always looking to improve and stay up to date in my area of expertise.",

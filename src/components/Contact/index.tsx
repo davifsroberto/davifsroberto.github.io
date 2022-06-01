@@ -63,7 +63,7 @@ export function Contact() {
         <div className="container">
           <p className="paragraph">{contact[language()].title}</p>
 
-          <h3 className="mb-sm-5 mb-4">{contact[language()].subTitle}😉</h3>
+          <h3 className="mb-sm-5 mb-4">{contact[language()].subtitle}😉</h3>
 
           <article className="row">
             <section className="col-md-6 text-center">

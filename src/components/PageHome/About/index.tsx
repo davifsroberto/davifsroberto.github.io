@@ -9,7 +9,7 @@ export function About() {
     <Container id="about" className="py-3">
       <div className="container">
         <p className="paragraph">{about[language()].title}</p>
-        <h3 className="mb-sm-5 mb-4">{about[language()].subTitle}</h3>
+        <h3 className="mb-sm-5 mb-4">{about[language()].subtitle}</h3>
 
         <div className="row">
           <section className="col-sm-12 col-md-6 col-lg-6 mb-4">

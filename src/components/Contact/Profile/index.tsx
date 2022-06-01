@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { Container } from './styles';
+import { originRouterUtils } from '../../../utils/route.utils';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
 import profile from '../../../locales/home/contact/profile.json';
 
@@ -12,7 +13,7 @@ export default function Profile() {
           className="img"
           width={150}
           height={150}
-          src="/assets/images/general/perfil_davifsroberto.jpg"
+          src={`${originRouterUtils()}/assets/images/general/perfil_davifsroberto.jpg`}
           alt="Davi Roberto - Frontend Engineer"
         ></Image>
         <h4>Davi Roberto</h4>

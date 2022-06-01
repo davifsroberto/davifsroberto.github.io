@@ -75,7 +75,7 @@ export function Articles() {
     <Container id="articles">
       <div className="container">
         <p className="paragraph">{articlesLang[language()].title}</p>
-        <h3 className="mb-sm-5 mb-4">{articlesLang[language()].subTitle}</h3>
+        <h3 className="mb-sm-5 mb-4">{articlesLang[language()].subtitle}</h3>
 
         {!articles.items && (
           <h5>

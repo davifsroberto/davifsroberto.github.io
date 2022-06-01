@@ -11,7 +11,7 @@ export function ExperienceHome() {
     <Container id="experience" className="py-3">
       <div className="container">
         <p className="paragraph">{experience[language()].title}</p>
-        <h3 className="mb-sm-5 mb-4">{experience[language()].subTitle}</h3>
+        <h3 className="mb-sm-5 mb-4">{experience[language()].subtitle}</h3>
 
         <section>
           {mountExperienceHomeHelper().map((experience) => (
