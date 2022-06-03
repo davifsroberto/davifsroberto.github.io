@@ -8,6 +8,11 @@ type menuProps = {
   menu?: ItemMenuType[];
 };
 
+enum Lang {
+  pt = 'pt',
+  en = 'en',
+}
+
 export function Menu({ menu }: menuProps) {
   const router = useRouter();
 
@@ -38,9 +43,19 @@ export function Menu({ menu }: menuProps) {
       </li>
 
       <ul className="language">
-        <li onClick={() => setLanguage('en')}>EN</li>
+        <li
+          className={router.locale === Lang.en ? Lang.en : ''}
+          onClick={() => setLanguage(Lang.en)}
+        >
+          EN
+        </li>
 
-        <li onClick={() => setLanguage('pt')}>PT</li>
+        <li
+          className={router.locale === Lang.pt ? Lang.pt : ''}
+          onClick={() => setLanguage(Lang.pt)}
+        >
+          PT
+        </li>
       </ul>
     </Container>
   );

@@ -42,6 +42,11 @@ export const Container = styled.ul`
     font-size: 0.8em;
     padding-left: 0.2em;
 
+    .en,
+    .pt {
+      border-bottom: 1px solid;
+    }
+
     li {
       cursor: pointer;
       padding: 0 0.3em;
