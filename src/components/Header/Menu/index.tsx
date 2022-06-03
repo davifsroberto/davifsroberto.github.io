@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+
 import { Container, SubMenu } from './styles';
 import { ItemMenu } from '../ItemMenu';
 import { ItemMenuType } from '../ItemMenuType';
@@ -7,6 +9,18 @@ type menuProps = {
 };
 
 export function Menu({ menu }: menuProps) {
+  const router = useRouter();
+
+  function setLanguage(language: string) {
+    router.push(
+      {
+        query: router.query,
+      },
+      router.asPath,
+      { locale: language }
+    );
+  }
+
   return (
     <Container>
       <li>
@@ -22,6 +36,12 @@ export function Menu({ menu }: menuProps) {
           ))}
         </SubMenu>
       </li>
+
+      <ul className="language">
+        <li onClick={() => setLanguage('en')}>EN</li>
+
+        <li onClick={() => setLanguage('pt')}>PT</li>
+      </ul>
     </Container>
   );
 }

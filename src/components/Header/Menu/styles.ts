@@ -5,6 +5,7 @@ export const Container = styled.ul`
   color: #fff;
   z-index: 2;
   font-size: 29px;
+  display: inline-flex;
 
   > li {
     float: left;
@@ -31,6 +32,32 @@ export const Container = styled.ul`
       max-height: 360px;
       padding: 0.4em 0;
       transition: max-height 0.5s ease-in;
+    }
+  }
+
+  .language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8em;
+    padding-left: 0.2em;
+
+    li {
+      cursor: pointer;
+      padding: 0 0.3em;
+      font-weight: 200;
+
+      &:hover {
+        border-bottom: 1px solid;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    span {
+      font-weight: 200;
     }
   }
 `;
