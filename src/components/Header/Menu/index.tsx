@@ -35,6 +35,8 @@ export function Menu({ menu }: menuProps) {
           <span className="fa fa-bars"></span>
         </label>
 
+        {/* TODO: change link and not change language */}
+
         <SubMenu className="submenu">
           {menu?.map((item) => (
             <ItemMenu key={item.name} itemMenu={item} />

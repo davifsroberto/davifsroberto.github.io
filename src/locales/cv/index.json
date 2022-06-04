@@ -1,0 +1,223 @@
+{
+  "pt": {
+    "title": "Meu CV online",
+    "subtitle": "Clique no botão abaixo para baixar a versão em PDF.",
+    "name": "Davi Roberto",
+    "carrer": "Frontend Engineer",
+    "btnDownload": "BAIXAR MEU CV",
+    "about": {
+      "title": "Sobre mim",
+      "me": {
+        "one": "Olá! Me chamo Davi Roberto, gosto muito de música, leitura e tecnologia. Atuo com desenvolvimento de sistemas a mais de 10 anos, e há 8 com frontend.",
+        "two": "Sou frontend engineer sênior, busco sempre me aperfeiçoar e ficar atualizado em minha área de atuação."
+      },
+      "itens": [
+        {
+          "id": 1,
+          "title": "Idade",
+          "anchor": false,
+          "description": {
+            "text": "28 anos"
+          }
+        },
+        {
+          "id": 2,
+          "title": "E-mail",
+          "anchor": true,
+          "description": {
+            "text": "davifsroberto@outlook.com",
+            "link": "mailto:davifsroberto@outlook.com",
+            "class": "link"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Telefone",
+          "anchor": false,
+          "description": {
+            "text": "11 95356 6668"
+          }
+        },
+        {
+          "id": 4,
+          "title": "WhatsApp",
+          "anchor": true,
+          "description": {
+            "text": "Clique aqui",
+            "link": "https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C+Davi+Roberto.",
+            "target": "_blank",
+            "class": "link"
+          }
+        },
+        {
+          "id": 5,
+          "title": "LinkedIn",
+          "anchor": true,
+          "description": {
+            "text": "linkedin.com/in/davifsroberto",
+            "link": "https://www.linkedin.com/in/davifsroberto",
+            "target": "_blank",
+            "class": "link"
+          }
+        },
+        {
+          "id": 6,
+          "title": "GitHub",
+          "anchor": true,
+          "description": {
+            "text": "github.com/davifsroberto",
+            "link": "https://github.com/davifsroberto",
+            "target": "_blank",
+            "class": "link"
+          }
+        }
+      ]
+    },
+    "skills": {
+      "title": "Algumas Skills",
+      "skillRight": [
+        {
+          "name": "UX e UI",
+          "class": "bg-success",
+          "progress": 90
+        },
+        {
+          "name": "Testes (unitário, comportamento, e2e)",
+          "class": "bg-warning",
+          "progress": 92
+        },
+        {
+          "name": "Metodologias Ágeis",
+          "class": "bg-info",
+          "progress": 92
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiência"
+    },
+    "education": {
+      "title": "Educação",
+      "items": [
+        {
+          "id": 1,
+          "title": "Graduação em Sistemas para Internet",
+          "subtitle": "Centro Universitário Senac",
+          "period": "2013 - 2016",
+          "description": "Desenvolver aplicações totalmente originais e também utilizar-se de outras prontas para implementação em novas estruturas. Criar e executar projetos para os diversos veículos web, com discernimento e equilíbrio entre as necessidades, tanto em projetos interativos para a web como em dispositivos móveis."
+        }
+      ]
+    }
+  },
+
+  "en": {
+    "title": "My Online Resume",
+    "subtitle": "Click the button below to download the PDF version.",
+    "name": "Davi Roberto",
+    "carrer": "Frontend Engineer",
+    "btnDownload": "DOWNLOAD RESUME",
+    "about": {
+      "title": "About me",
+      "me": {
+        "one": "Hi! My name is Davi Roberto, I really like music, reading and technology. I work with systems development for more than 10 years, and for 8 years with frontend.",
+        "two": "I'm a senior frontend engineer, always looking to improve and stay up to date in my area of expertise."
+      },
+      "itens": [
+        {
+          "id": 1,
+          "title": "Age",
+          "anchor": false,
+          "description": {
+            "text": "28 years"
+          }
+        },
+        {
+          "id": 2,
+          "title": "E-mail",
+          "anchor": true,
+          "description": {
+            "text": "davifsroberto@outlook.com",
+            "link": "mailto:davifsroberto@outlook.com",
+            "class": "link"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Phone",
+          "anchor": false,
+          "description": {
+            "text": "+55 11 95356 6668"
+          }
+        },
+        {
+          "id": 4,
+          "title": "WhatsApp",
+          "anchor": true,
+          "description": {
+            "text": "Click here",
+            "link": "https://api.whatsapp.com/send?phone=5511953566668&text=Hello%2C%20Davi%20Roberto.",
+            "target": "_blank",
+            "class": "link"
+          }
+        },
+        {
+          "id": 5,
+          "title": "LinkedIn",
+          "anchor": true,
+          "description": {
+            "text": "linkedin.com/in/davifsroberto",
+            "link": "https://www.linkedin.com/in/davifsroberto",
+            "target": "_blank",
+            "class": "link"
+          }
+        },
+        {
+          "id": 6,
+          "title": "GitHub",
+          "anchor": true,
+          "description": {
+            "text": "github.com/davifsroberto",
+            "link": "https://github.com/davifsroberto",
+            "target": "_blank",
+            "class": "link"
+          }
+        }
+      ]
+    },
+    "skills": {
+      "title": "Some Skills",
+      "skillRight": [
+        {
+          "name": "UX e UI",
+          "class": "bg-success",
+          "progress": 90
+        },
+        {
+          "name": "Tests (unitary, behavior, e2e)",
+          "class": "bg-warning",
+          "progress": 92
+        },
+        {
+          "name": "Agile Methodologies",
+          "class": "bg-info",
+          "progress": 92
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience"
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "id": 1,
+          "title": "Bachelor's Degree in Internet Systems",
+          "subtitle": "Centro Universitário Senac (Brazil)",
+          "period": "2013 - 2016",
+          "description": "Develop totally original applications and also use others ready for implementation in new structures. Create and execute projects for the various web vehicles, with discernment and balance between needs, both in interactive projects for the web and mobile devices."
+        }
+      ]
+    }
+  }
+}

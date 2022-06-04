@@ -1,7 +1,7 @@
 export type TimelineType = {
   id: number;
   title: string;
-  subTitle: string;
+  subtitle: string;
   period: string;
   description: string;
 };

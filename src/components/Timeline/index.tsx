@@ -6,7 +6,7 @@ type TimelineProps = {
   border?: number;
 };
 
-export default function Timeline({ times, border }: TimelineProps) {
+export function Timeline({ times, border }: TimelineProps) {
   return (
     <Container border={border}>
       {times.map((time) => (

@@ -11,7 +11,9 @@ import {
 } from './cv.helper';
 import { Header } from '../../components/Header';
 import { Skill } from '../../components/Skill';
-import Timeline from '../../components/Timeline';
+import { Timeline } from '../../components/Timeline';
+import { SetLanguageUtils as language } from '../../utils/language.utils';
+import cv from '../../locales/cv/index.json';
 
 const CvPage: NextPage = () => {
   return (
@@ -22,10 +24,8 @@ const CvPage: NextPage = () => {
 
       <div className="container-xl py-5">
         <section className="pb-4">
-          <p className="paragraph">Meu CV online</p>
-          <h3 className="mb-sm-5 mb-4">
-            Clique no botão abaixo para baixar a versão em PDF.
-          </h3>
+          <p className="paragraph">{cv[language()].title}</p>
+          <h3 className="mb-sm-5 mb-4">{cv[language()].subtitle}</h3>
         </section>
 
         <section className="bg-page">
@@ -36,16 +36,17 @@ const CvPage: NextPage = () => {
               </section>
 
               <div className="col-lg-8 col-md-7 text-center text-md-start">
-                <h2 className="h1 mt-2 text-white">Davi Roberto</h2>
-                <p className="text-white">Frontend Engineer</p>
+                <h2 className="h1 mt-2 text-white">{cv[language()].name}</h2>
+                <p className="text-white">{cv[language()].carrer}</p>
                 <br />
 
+                {/* TODO: create and add english resume */}
                 <a
                   className="btn btn-default-reverse"
                   href="/Davi-Roberto_CV.pdf"
                   download={true}
                 >
-                  BAIXAR MEU CV &nbsp;
+                  {cv[language()].btnDownload} &nbsp;
                   <i className="fa fa-download" />
                 </a>
               </div>
@@ -55,14 +56,11 @@ const CvPage: NextPage = () => {
           <article className="about pb-4 px-3 px-md-5">
             <div className="row">
               <section className="col-md-5">
-                <h2 className="h3 mb-3">Sobre mim</h2>
+                <h2 className="h3 mb-3">{cv[language()].about.title}</h2>
                 <p>
-                  Olá! Me chamo Davi Roberto, gosto muito de música, leitura e
-                  tecnologia. Atuo com desenvolvimento de sistemas a mais de 10
-                  anos, e há 8 com frontend.
+                  {cv[language()].about.me.one}
                   <br />
-                  Sou frontend engineer sênior, busco sempre me aperfeiçoar e
-                  ficar atualizado em minha área de atuação.
+                  {cv[language()].about.me.two}
                 </p>
               </section>
 
@@ -94,7 +92,7 @@ const CvPage: NextPage = () => {
           <hr />
 
           <article className="py-5 px-3 px-md-5">
-            <h2 className="h3 mb-3">Algumas Skills</h2>
+            <h2 className="h3 mb-3">{cv[language()].skills.title}</h2>
             <div className="row">
               <div className="col-md-6">
                 <Skill skills={mountSkillLeftCvHelper()} />
@@ -108,14 +106,14 @@ const CvPage: NextPage = () => {
           <hr />
 
           <article className="py-5 px-3 px-md-5">
-            <h2 className="h3 mb-4">Experiência</h2>
+            <h2 className="h3 mb-4">{cv[language()].experience.title}</h2>
 
             <Timeline border={2} times={mountTimelineExperienceCvHelper()} />
           </article>
           <hr />
 
           <article className="py-5 px-3 px-md-5">
-            <h2 className="h3 mb-4">Educação</h2>
+            <h2 className="h3 mb-4">{cv[language()].education.title}</h2>
 
             <Timeline times={mountTimelineEducationCvHelper()} />
           </article>
