@@ -1,13 +1,31 @@
-import { ItemMenu } from '../ItemMenu';
+import { useRouter } from 'next/router';
 
 import { Container, SubMenu } from './styles';
+import { ItemMenu } from '../ItemMenu';
 import { ItemMenuType } from '../ItemMenuType';
 
 type menuProps = {
   menu?: ItemMenuType[];
 };
 
+enum Lang {
+  pt = 'pt',
+  en = 'en',
+}
+
 export function Menu({ menu }: menuProps) {
+  const router = useRouter();
+
+  function setLanguage(language: string): void {
+    router.push(
+      {
+        query: router.query,
+      },
+      router.asPath,
+      { locale: language }
+    );
+  }
+
   return (
     <Container>
       <li>
@@ -23,6 +41,22 @@ export function Menu({ menu }: menuProps) {
           ))}
         </SubMenu>
       </li>
+
+      <ul className="language">
+        <li
+          className={router.locale === Lang.en ? Lang.en : ''}
+          onClick={() => setLanguage(Lang.en)}
+        >
+          EN
+        </li>
+
+        <li
+          className={router.locale === Lang.pt ? Lang.pt : ''}
+          onClick={() => setLanguage(Lang.pt)}
+        >
+          PT
+        </li>
+      </ul>
     </Container>
   );
 }

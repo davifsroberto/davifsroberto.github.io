@@ -3,6 +3,8 @@ import Carousel from 'react-multi-carousel';
 import { Container } from './styles';
 import { mountTestimonialsHelper } from './recommendations.helper';
 import { Testimonial } from './TestimonialType';
+import { SetLanguageUtils as language } from '../../utils/language.utils';
+import recommendations from '../../locales/home/recommendations/index.json';
 
 const responsive = {
   superLargeDesktop: {
@@ -27,9 +29,9 @@ export function Recommendations() {
   return (
     <Container id="recommendations">
       <div className="container">
-        <p className="paragraph">Recomendações</p>
+        <p className="paragraph">{recommendations[language()].title}</p>
         <h3 className="mb-sm-5 mb-4">
-          Algumas recomendações recebidas no meu
+          {recommendations[language()].subtitle}
           <a
             href="https://www.linkedin.com/in/davifsroberto"
             target="_blank"
@@ -72,12 +74,16 @@ export function Recommendations() {
                         </span>
 
                         <span className="place d-block">
-                          <strong>Relação: </strong>
+                          <strong>
+                            {recommendations[language()].descOne}&nbsp;
+                          </strong>
                           {testimonial.relation}
                         </span>
 
                         <span className="place">
-                          <strong>Empresa que trabalhamos: </strong>
+                          <strong>
+                            {recommendations[language()].descTwo}&nbsp;
+                          </strong>
                           {testimonial.company}
                         </span>
                       </div>
