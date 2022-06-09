@@ -16,7 +16,7 @@ enum Lang {
 export function Menu({ menu }: menuProps) {
   const router = useRouter();
 
-  function setLanguage(language: string) {
+  function setLanguage(language: string): void {
     router.push(
       {
         query: router.query,
@@ -34,8 +34,6 @@ export function Menu({ menu }: menuProps) {
         <label htmlFor="show-submenu">
           <span className="fa fa-bars"></span>
         </label>
-
-        {/* TODO: change link and not change language */}
 
         <SubMenu className="submenu">
           {menu?.map((item) => (

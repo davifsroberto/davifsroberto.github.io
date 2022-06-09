@@ -40,10 +40,13 @@ const CvPage: NextPage = () => {
                 <p className="text-white">{cv[language()].carrer}</p>
                 <br />
 
-                {/* TODO: create and add english resume */}
                 <a
                   className="btn btn-default-reverse"
-                  href="/Davi-Roberto_CV.pdf"
+                  href={
+                    language() === 'pt'
+                      ? '/Davi-Roberto_CV.pdf'
+                      : 'Davi-Roberto_Resume.pdf'
+                  }
                   download={true}
                 >
                   {cv[language()].btnDownload} &nbsp;
