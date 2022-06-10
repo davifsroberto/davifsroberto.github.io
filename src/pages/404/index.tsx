@@ -24,7 +24,7 @@ const Custom404Page: NextPage = () => {
         <Link href="/" passHref>
           <button className="btn btn-default-reverse btn-default-big">
             IR PARA A HOME &nbsp;
-            <i className="fa fa-arrow-right" />
+            <i className="fa fa-arrow-right"></i>
           </button>
         </Link>
       </section>

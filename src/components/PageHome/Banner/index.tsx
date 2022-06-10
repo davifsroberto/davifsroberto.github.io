@@ -1,8 +1,6 @@
 import { Container } from './styles';
 import { SocialMedia } from '../../SocialMedias';
-import { mountSocialMediasUtils } from '../../../utils/social-medias.utils';
-import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import banner from '../../../locales/home/banner/index.json';
+import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
 
 export function Banner() {
   return (
@@ -11,21 +9,19 @@ export function Banner() {
         <div className="row">
           <section className="col-md-6">
             <span className="desc">
-              {banner[language()].welcomeOne}
+              Olá, é um prazer ter você aqui
               <span className="h5">🙂</span>
             </span>
             <br />
 
             <h2>
-              {banner[language()].welcomeTwo}
-
+              Me chamo
               <br />
-              <span>{banner[language()].welcomeThree}</span>
+              <span>Davi Roberto</span>
             </h2>
 
             <h4>
-              {banner[language()].welcomeFour}
-              <strong>Frontend Engineer</strong>
+              e sou <strong>Frontend Engineer</strong>
             </h4>
 
             <div className="mt-5 social-media-box">
@@ -34,7 +30,7 @@ export function Banner() {
 
             <a href="#about" className="btn-next">
               NEXT &nbsp;
-              <i className="fa fa-angle-double-right" />
+              <i className="fa fa-angle-double-right"></i>
             </a>
           </section>
         </div>
