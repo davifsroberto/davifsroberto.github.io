@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { Container, Logo } from './styles';
 import { Menu } from './Menu';
-import { mountMenuHelper } from './header.helper';
+import { mountMenu } from './header.helper';
 import { ItemMenuType } from './ItemMenuType';
 
 type headerProps = {
@@ -18,7 +18,7 @@ export function Header({ menuCustom }: headerProps) {
             <Logo />
           </Link>
 
-          <Menu menu={menuCustom ? menuCustom : mountMenuHelper()} />
+          <Menu menu={menuCustom ? menuCustom : mountMenu()} />
         </div>
       </nav>
     </Container>

@@ -1,9 +1,6 @@
 import Image from 'next/image';
 
 import { Container } from './styles';
-import { originRouterUtils } from '../../../utils/route.utils';
-import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import profile from '../../../locales/home/contact/profile.json';
 
 export default function Profile() {
   return (
@@ -13,7 +10,7 @@ export default function Profile() {
           className="img"
           width={150}
           height={150}
-          src={`${originRouterUtils()}/assets/images/general/perfil_davifsroberto.jpg`}
+          src="/assets/images/general/perfil_davifsroberto.jpg"
           alt="Davi Roberto - Frontend Engineer"
         ></Image>
         <h4>Davi Roberto</h4>
@@ -23,21 +20,21 @@ export default function Profile() {
       <section className="body">
         <p>
           <a
-            href={profile[language()].whats.link}
+            href="https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C%20Davi%20Roberto%2C%20tudo%20bem%3F"
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa fa-whatsapp fw-bolder" />
-            &nbsp;{profile[language()].whats.label}
+            <i className="fa fa-whatsapp fw-bolder"></i>
+            &nbsp;Clique para enviar mensagens
           </a>
 
           <a href="mailto:davifsroberto@outlook.com">
-            <i className="fa fa-envelope" />
+            <i className="fa fa-envelope"></i>
             &nbsp;davifsroberto@outlook.com
           </a>
 
           <a href="tel:+55 11 95356 6668">
-            <i className="fa fa-phone" />
+            <i className="fa fa-phone"></i>
             &nbsp;+55 11 95356 6668
           </a>
 
@@ -46,7 +43,7 @@ export default function Profile() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa fa-map-marker" />
+            <i className="fa fa-map-marker"></i>
             &nbsp;Hortolândia, SP - Brasil
           </a>
         </p>

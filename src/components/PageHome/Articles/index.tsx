@@ -1,12 +1,9 @@
-import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
 import axios from 'axios';
 import Carousel from 'react-multi-carousel';
 
 import { Container } from './styles';
-import { SetLanguageUtils as language } from '../../../utils/language.utils';
-import articlesLang from '../../../locales/home/articles/index.json';
 
 const responsive = {
   superLargeDesktop: {
@@ -50,9 +47,7 @@ type ArticleType = {
 };
 
 export function Articles() {
-  const router = useRouter();
   const [articles, setArticles] = useState<ArticleType>({} as ArticleType);
-  const dateLanguage: string = language() === 'en' ? 'en-IR' : 'pt-BR';
 
   useEffect(() => {
     getArticles();
@@ -72,8 +67,8 @@ export function Articles() {
   return (
     <Container id="articles">
       <div className="container">
-        <p className="paragraph">{articlesLang[language()].title}</p>
-        <h3 className="mb-sm-5 mb-4">{articlesLang[language()].subtitle}</h3>
+        <p className="paragraph">Artigos</p>
+        <h3 className="mb-sm-5 mb-4">Últimos Artigos Publicados</h3>
 
         {!articles.items && (
           <h5>
@@ -82,7 +77,7 @@ export function Articles() {
               target="_blank"
               rel="noreferrer"
             >
-              {articlesLang[language()].redirect} 😉
+              Click para acesssar meu perfil no Medium 😉
             </a>
           </h5>
         )}
@@ -104,7 +99,7 @@ export function Articles() {
                       <span>Davi Roberto</span>
 
                       <span className="text-end">
-                        {new Intl.DateTimeFormat(dateLanguage, {
+                        {new Intl.DateTimeFormat('pt-br', {
                           dateStyle: 'short',
                         }).format(new Date(item.pubDate))}
                       </span>
@@ -116,9 +111,7 @@ export function Articles() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {router.locale !== 'en'
-                        ? articlesLang['pt'].read
-                        : articlesLang['en'].read}
+                      LER ARTIGO
                     </a>
                   </section>
                 </section>
