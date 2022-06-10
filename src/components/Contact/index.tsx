@@ -5,6 +5,8 @@ import { send } from 'emailjs-com';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { Container } from './styles';
+import { SetLanguageUtils as language } from '../../utils/language.utils';
+import contact from '../../locales/home/contact/index.json';
 import Spinner from '../Spinner';
 import Profile from './Profile';
 
@@ -59,9 +61,9 @@ export function Contact() {
         animateIn="animate__fadeIn"
       >
         <div className="container">
-          <p className="paragraph">Contato</p>
+          <p className="paragraph">{contact[language()].title}</p>
 
-          <h3 className="mb-sm-5 mb-4">Aguardo o seu contato😉</h3>
+          <h3 className="mb-sm-5 mb-4">{contact[language()].subtitle}😉</h3>
 
           <article className="row">
             <section className="col-md-6 text-center">
@@ -75,7 +77,7 @@ export function Contact() {
                     <input
                       onChange={(e) => setName(e.target.value)}
                       name="name"
-                      placeholder="Nome"
+                      placeholder={contact[language()].form.labelOne}
                       className="input"
                       type="text"
                       minLength={2}
@@ -90,7 +92,7 @@ export function Contact() {
                     <input
                       onChange={(e) => setSubject(e.target.value)}
                       name="subject"
-                      placeholder="Assunto"
+                      placeholder={contact[language()].form.labelTwo}
                       className="input"
                       type="text"
                       minLength={2}
@@ -105,7 +107,7 @@ export function Contact() {
                     <input
                       onChange={(e) => setEmail(e.target.value)}
                       name="email"
-                      placeholder="E-mail - Opcional"
+                      placeholder={contact[language()].form.labelTree}
                       className="input"
                       type="email"
                       minLength={5}
@@ -119,7 +121,7 @@ export function Contact() {
                     <input
                       onChange={(e) => setPhone(e.target.value)}
                       name="phone"
-                      placeholder="Telefone - Opcional"
+                      placeholder={contact[language()].form.labelFour}
                       className="input"
                       type="number"
                       min={0}
@@ -133,7 +135,7 @@ export function Contact() {
                     <textarea
                       onChange={(e) => setMessage(e.target.value)}
                       name="message"
-                      placeholder="Mensagem"
+                      placeholder={contact[language()].form.labelFive}
                       className="form-control"
                       minLength={5}
                       maxLength={500}
@@ -142,7 +144,11 @@ export function Contact() {
                   </div>
                 </section>
 
-                <input type="submit" className="button" value="ENVIAR" />
+                <input
+                  type="submit"
+                  className="button"
+                  value={contact[language()].form.btnForm}
+                />
               </form>
             </div>
           </article>

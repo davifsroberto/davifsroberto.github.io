@@ -13,7 +13,7 @@ const nextConfig = {
     YOUR_SERVICE_ID: process.env.YOUR_SERVICE_ID,
     YOUR_TEMPLATE_ID: process.env.YOUR_TEMPLATE_ID,
     YOUR_USER_ID: process.env.YOUR_USER_ID,
-  },
+  }  
 };
 
 module.exports = nextConfig;
