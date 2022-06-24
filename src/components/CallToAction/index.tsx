@@ -1,6 +1,8 @@
 import { Container } from './styles';
 import { SocialMedia } from '../SocialMedias';
-import { mountSocialMediasUtils } from '../utils/social-medias.utils';
+import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
+import { SetLanguageUtils as language } from '../../utils/language.utils';
+import callToAction from '../../locales/home/callToAction/index.json';
 
 export function CallToAction() {
   return (
@@ -11,9 +13,9 @@ export function CallToAction() {
             <br />
 
             <p className="mb-5">
-              Gosto de solucionar problemas, e tenho prazer em aprender novas
-              tecnologias. <br />
-              Acredito em uma boa sinergia com grande troca de ideias.
+              {callToAction[language()].paragraphOne}
+              <br />
+              {callToAction[language()].paragraphTwo}
             </p>
 
             <span className="mb-1 d-block">

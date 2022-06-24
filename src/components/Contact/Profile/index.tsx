@@ -1,6 +1,9 @@
 import Image from 'next/image';
 
 import { Container } from './styles';
+import { originRouterUtils } from '../../../utils/route.utils';
+import { SetLanguageUtils as language } from '../../../utils/language.utils';
+import profile from '../../../locales/home/contact/profile.json';
 
 export default function Profile() {
   return (
@@ -10,7 +13,8 @@ export default function Profile() {
           className="img"
           width={150}
           height={150}
-          src="/assets/images/general/perfil_davifsroberto.jpg"
+          src={`${originRouterUtils()}/assets/images/general/perfil_davifsroberto.jpg`}
+          alt="Davi Roberto - Frontend Engineer"
         ></Image>
         <h4>Davi Roberto</h4>
         <h5>Frontend Engineer</h5>
@@ -19,21 +23,21 @@ export default function Profile() {
       <section className="body">
         <p>
           <a
-            href="https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C%20Davi%20Roberto%2C%20tudo%20bem%3F"
+            href={profile[language()].whats.link}
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa fa-whatsapp fw-bolder"></i>
-            &nbsp;Clique para enviar mensagens
+            <i className="fa fa-whatsapp fw-bolder" />
+            &nbsp;{profile[language()].whats.label}
           </a>
 
           <a href="mailto:davifsroberto@outlook.com">
-            <i className="fa fa-envelope"></i>
+            <i className="fa fa-envelope" />
             &nbsp;davifsroberto@outlook.com
           </a>
 
           <a href="tel:+55 11 95356 6668">
-            <i className="fa fa-phone"></i>
+            <i className="fa fa-phone" />
             &nbsp;+55 11 95356 6668
           </a>
 
@@ -42,7 +46,7 @@ export default function Profile() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa fa-map-marker"></i>
+            <i className="fa fa-map-marker" />
             &nbsp;Hortolândia, SP - Brasil
           </a>
         </p>

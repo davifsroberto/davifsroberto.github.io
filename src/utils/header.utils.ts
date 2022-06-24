@@ -1,10 +1,11 @@
 import { ItemMenuType } from '../components/Header/ItemMenuType';
+import { SetLanguageUtils } from './language.utils';
 
 export function mountMenuSecondaryHeaderUtils(): ItemMenuType[] {
   return [
     {
       name: 'Home',
-      link: '/',
+      link: `${SetLanguageUtils() === 'en' ? '/' : '/pt'}`,
     },
     {
       name: 'Contato',
@@ -13,7 +14,7 @@ export function mountMenuSecondaryHeaderUtils(): ItemMenuType[] {
     },
     {
       name: 'CV',
-      link: '/cv',
+      link: `${SetLanguageUtils() === 'en' ? '/cv' : '/pt/cv'}`,
     },
   ];
 }
