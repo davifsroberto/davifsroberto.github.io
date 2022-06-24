@@ -1,7 +1,35 @@
 import { ItemMenuType } from './ItemMenuType';
-import { SetLanguageUtils } from '../../utils/language.utils';
-import menu from '../../locales/home/header/index.json';
 
-export function mountMenuHelper(): ItemMenuType[] {
-  return menu[SetLanguageUtils()];
+export function mountMenu(): ItemMenuType[] {
+  return [
+    {
+      name: 'Sobre Mim',
+      link: '#about',
+    },
+    {
+      name: 'Experiência',
+      link: '#experience',
+    },
+    {
+      name: 'Portfólio',
+      link: '#portfolio',
+    },
+    {
+      name: 'Artigos',
+      link: '#articles',
+    },
+    {
+      name: 'Recomendações',
+      link: '#recommendations',
+    },
+    {
+      name: 'Contato',
+      link: '#contact',
+      className: ' fw-bold text-decoration-underline ',
+    },
+    {
+      name: 'CV',
+      link: '/cv',
+    },
+  ];
 }
