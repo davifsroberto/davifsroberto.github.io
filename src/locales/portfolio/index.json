@@ -109,10 +109,10 @@
       },
       {
         "id": 8,
-        "bgBox": "/assets/images/portfolio/cielo/dashboard/00_bg.jpg",
+        "bgBox": "/assets/images/portfolio/cielo/dashboard/00_bg.png",
         "titleBox": "Cielo - Dashboard Monitor de Serviços",
         "images": [
-          "/assets/images/portfolio/cielo/dashboard/01.jpg",
+          "/assets/images/portfolio/cielo/dashboard/01.png",
           "/assets/images/portfolio/cielo/dashboard/02.png",
           "/assets/images/portfolio/cielo/dashboard/03.png",
           "/assets/images/portfolio/cielo/dashboard/04.png",
@@ -135,13 +135,13 @@
       },
       {
         "id": 10,
-        "bgBox": "/assets/images/portfolio/deevo/fam/00_bg.jpg",
+        "bgBox": "/assets/images/portfolio/deevo/fam/00_bg.png",
         "titleBox": "FAM - Faculdade das Américas",
         "images": [
           "/assets/images/portfolio/deevo/fam/01.png",
-          "/assets/images/portfolio/deevo/fam/02.jpg",
-          "/assets/images/portfolio/deevo/fam/03.jpg",
-          "/assets/images/portfolio/deevo/fam/04.jpg",
+          "/assets/images/portfolio/deevo/fam/02.png",
+          "/assets/images/portfolio/deevo/fam/03.png",
+          "/assets/images/portfolio/deevo/fam/04.png",
           "/assets/images/portfolio/deevo/fam/05.png",
           "/assets/images/portfolio/deevo/fam/06.png"
         ]
@@ -301,10 +301,10 @@
       },
       {
         "id": 8,
-        "bgBox": "/assets/images/portfolio/cielo/dashboard/00_bg.jpg",
+        "bgBox": "/assets/images/portfolio/cielo/dashboard/00_bg.png",
         "titleBox": "Cielo - Services Monitor Dashboard",
         "images": [
-          "/assets/images/portfolio/cielo/dashboard/01.jpg",
+          "/assets/images/portfolio/cielo/dashboard/01.png",
           "/assets/images/portfolio/cielo/dashboard/02.png",
           "/assets/images/portfolio/cielo/dashboard/03.png",
           "/assets/images/portfolio/cielo/dashboard/04.png",
@@ -327,13 +327,13 @@
       },
       {
         "id": 10,
-        "bgBox": "/assets/images/portfolio/deevo/fam/00_bg.jpg",
+        "bgBox": "/assets/images/portfolio/deevo/fam/00_bg.png",
         "titleBox": "FAM - Faculdade das Américas",
         "images": [
           "/assets/images/portfolio/deevo/fam/01.png",
-          "/assets/images/portfolio/deevo/fam/02.jpg",
-          "/assets/images/portfolio/deevo/fam/03.jpg",
-          "/assets/images/portfolio/deevo/fam/04.jpg",
+          "/assets/images/portfolio/deevo/fam/02.png",
+          "/assets/images/portfolio/deevo/fam/03.png",
+          "/assets/images/portfolio/deevo/fam/04.png",
           "/assets/images/portfolio/deevo/fam/05.png",
           "/assets/images/portfolio/deevo/fam/06.png"
         ]
