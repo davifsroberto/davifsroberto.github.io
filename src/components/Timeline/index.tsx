@@ -6,7 +6,7 @@ type TimelineProps = {
   border?: number;
 };
 
-export function Timeline({ times, border }: TimelineProps) {
+export default function Timeline({ times, border }: TimelineProps) {
   return (
     <Container border={border}>
       {times.map((time) => (
@@ -18,7 +18,7 @@ export function Timeline({ times, border }: TimelineProps) {
             <section className="title-card fw-light h5 mb-1">
               {time.title}
               <span className="fw-light h6"> - </span>
-              <span className="fw-normal">{time.subtitle}</span>
+              <span className="fw-normal">{time.subTitle}</span>
             </section>
 
             <section className="text-muted text-small mb-2">

@@ -1,7 +1,6 @@
 import Image from 'next/image';
-
 import { ExperienceType } from '../../types/experience.type';
-import { originRouterUtils } from '../../utils/route.utils';
+
 import { Container } from './styles';
 
 type ExperienceProps = {
@@ -16,7 +15,7 @@ export function Experience({ experience }: ExperienceProps) {
           <Image
             width={experience.company.image.width}
             height={experience.company.image.height}
-            src={originRouterUtils() + experience.company.image.src}
+            src={experience.company.image.src}
             alt={experience.company.image.alt}
           ></Image>
         </figure>
@@ -24,8 +23,7 @@ export function Experience({ experience }: ExperienceProps) {
         <i className="h6 d-block">
           {experience.company.name} -
           <a href={experience.company.link} target="_blank" rel="noreferrer">
-            &nbsp;
-            <i className="fa fa-linkedin" />
+            &nbsp;<i className="fa fa-linkedin"></i>
           </a>
         </i>
 
