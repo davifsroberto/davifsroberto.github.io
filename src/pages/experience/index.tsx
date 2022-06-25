@@ -5,6 +5,8 @@ import { Experience } from '../../components/Experience';
 import { Header } from '../../components/Header';
 import { mountAllExperienceHelper } from './helper.experience';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
+import { SetLanguageUtils as language } from '../../utils/language.utils';
+import experience from '../../locales/experience/index.json';
 
 const ExperiencePage: NextPage = () => {
   return (
@@ -14,19 +16,14 @@ const ExperiencePage: NextPage = () => {
       </section>
 
       <div className="container py-5">
-        <p className="paragraph">Experiência</p>
-        <h3 className="mb-sm-5 mb-4">Minhas Experiências</h3>
+        <p className="paragraph">{experience[language()].title}</p>
+        <h3 className="mb-sm-5 mb-4">{experience[language()].subtitle}</h3>
 
         <div className="row mb-5">
           <section className="col-sm-12">
-            <h4>Uma breve observação</h4>
+            <h4>{experience[language()].posTitle}</h4>
 
-            <p>
-              Listo abaixo algumas as experiencias onde estive atuando
-              diretamente como funcionário de uma empresa. Já desenvolvi
-              sistemas atuando como freelancer, mas não está listado porque foi
-              um período pontual.
-            </p>
+            <p>{experience[language()].info}</p>
           </section>
         </div>
 

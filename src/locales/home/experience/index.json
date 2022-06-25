@@ -1,0 +1,123 @@
+{
+  "pt": {
+    "title": "Experiência",
+    "subtitle": "Algumas Experiências",
+    "viewAll": "VER TODAS EXPERIÊNCIAS",
+    "experiencesHome": [
+      {
+        "id": 1,
+        "company": {
+          "name": "Banco BV",
+          "link": "https://www.linkedin.com/company/banco-bv",
+          "image": {
+            "src": "/assets/images/experience/bv-logo.png",
+            "alt": "Experiência Banco BV",
+            "width": 135,
+            "height": 80
+          }
+        },
+        "title": "Principal Frontend Engineer",
+        "period": "04/22 - atual",
+        "tag": ["#Angular"],
+        "description": "Desenvolvimento de aplicações web com o framework Angular. Durante desenvolvimento, fico sempre atento as boas práticas para seguir um alto nível de padrão de código, e no desenvolvimento com testes. Também auxílio desenvolvedores menos experientes no dia a dia para juntos evoluirmos tecnicamente e entregarmos um projeto altamente escalável."
+      },
+      {
+        "id": 2,
+        "company": {
+          "name": "Mottu",
+          "link": "https://www.linkedin.com/company/mottuapp",
+          "image": {
+            "src": "/assets/images/experience/mottu-logo.png",
+            "alt": "Experiência Mottu",
+            "width": 150,
+            "height": 50
+          }
+        },
+        "title": "Principal Frontend Engineer",
+        "period": "09/21 - 04/22",
+        "tag": ["#Angular"],
+        "description": "Desenvolvo aplicações para a frente de delivery, aplicativos de backoffice e totens de autoatendimento. Sempre me atento ao desenvolvimento com testes, performance e boas práticas. Ajudo desenvolvedores menos experientes, e trabalho na reestruturação de projetos antigos para uma arquitetura de frontend escalável. Quando necessário, crio as interfaces sem depender de um UI designer. Tenho noções de UI/UX e gosto do assunto. Algumas tecnologias que utilizo neste processo: Angular 12+, Monorepo, Nx Workspace (nx.dev), Module Federation.",
+        "classPosition": " text-end "
+      },
+      {
+        "id": 3,
+        "company": {
+          "name": "Cielo",
+          "link": "https://www.linkedin.com/company/cielo",
+          "image": {
+            "src": "/assets/images/experience/cielo-logo.png",
+            "alt": "Experiência Cielo",
+            "width": 150,
+            "height": 50
+          }
+        },
+        "title": "Frontend Engineer",
+        "period": "09/21 - 04/22",
+        "tag": ["#React", "#Angular"],
+        "description": "Desenvolvimento de sistemas para a área financeira, criação de dashboards, aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Utilizava em minha rotina de desenvolvimento: Angular 2+, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "last": true
+      }
+    ]
+  },
+
+  "en": {
+    "title": "Experience",
+    "subtitle": "Some Experiences",
+    "viewAll": "SEE ALL EXPERIENCES",
+    "experiencesHome": [
+      {
+        "id": 1,
+        "company": {
+          "name": "Banco BV",
+          "link": "https://www.linkedin.com/company/banco-bv",
+          "image": {
+            "src": "/assets/images/experience/bv-logo.png",
+            "alt": "Experience Banco BV",
+            "width": 135,
+            "height": 80
+          }
+        },
+        "title": "Principal Frontend Engineer",
+        "period": "04/22 - atual",
+        "tag": ["#Angular"],
+        "description": "Development of web applications with the Angular framework. During development, I am always aware of good practices to follow a high level of code standard, and in development with tests. It also helps less experienced developers on a day-to-day basis to technically evolve together and deliver a highly scalable project."
+      },
+      {
+        "id": 2,
+        "company": {
+          "name": "Mottu",
+          "link": "https://www.linkedin.com/company/mottuapp",
+          "image": {
+            "src": "/assets/images/experience/mottu-logo.png",
+            "alt": "Experience Mottu",
+            "width": 150,
+            "height": 50
+          }
+        },
+        "title": "Principal Frontend Engineer",
+        "period": "09/21 - 04/22",
+        "tag": ["#Angular"],
+        "description": "I develop forward delivery applications, backoffice applications and self-service totems. I always pay attention to development with tests, performance and best practices. I help less experienced developers, and work on restructuring old projects to a scalable frontend architecture. When necessary, I create the interfaces without relying on a UI designer. I have UI/UX notions and I like the subject. Some technologies I use in this process: Angular 12+, Monorepo, Nx Workspace (nx.dev), Module Federation.",
+        "classPosition": " text-end "
+      },
+      {
+        "id": 3,
+        "company": {
+          "name": "Cielo",
+          "link": "https://www.linkedin.com/company/cielo",
+          "image": {
+            "src": "/assets/images/experience/cielo-logo.png",
+            "alt": "Experience Cielo",
+            "width": 150,
+            "height": 50
+          }
+        },
+        "title": "Frontend Engineer",
+        "period": "09/21 - 04/22",
+        "tag": ["#React", "#Angular"],
+        "description": "Development of systems for the financial area, creation of dashboards, applications that monitor services and generate reports on instabilities of financial transaction services. I used in my development routine: Angular 2+, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "last": true
+      }
+    ]
+  }
+}
