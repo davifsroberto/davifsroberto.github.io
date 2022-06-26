@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
 import axios from 'axios';
@@ -50,7 +49,6 @@ type ArticleType = {
 };
 
 export function Articles() {
-  const router = useRouter();
   const [articles, setArticles] = useState<ArticleType>({} as ArticleType);
   const dateLanguage: string = language() === 'en' ? 'en-IR' : 'pt-BR';
 
@@ -116,9 +114,7 @@ export function Articles() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {router.locale !== 'en'
-                        ? articlesLang['pt'].read
-                        : articlesLang['en'].read}
+                      {articlesLang[language()].read}
                     </a>
                   </section>
                 </section>
