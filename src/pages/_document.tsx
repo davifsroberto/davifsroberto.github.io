@@ -44,13 +44,13 @@ export default class MyDocument extends Document {
           <meta name="author" content="davifsroberto" />
           <meta
             name="keywords"
-            content="Davi Roberto, davifsroberto, davifsroberto.github.io, linkedin.com/in/davifsroberto, github.com/davifsroberto"
+            content="Davi Roberto, davifsroberto, davifsroberto.com, linkedin.com/in/davifsroberto, github.com/davifsroberto"
           />
           <meta property="og:title" content="Davi Roberto" />
           <meta property="og:description" content="Frontend Engineer" />
           <meta
             property="og:image"
-            content="https://davifsroberto.github.io/assets/images/general/site-thumbnail.png"
+            content="https://davifsroberto.com/assets/images/general/site-thumbnail.png"
           />
         </Head>
 
