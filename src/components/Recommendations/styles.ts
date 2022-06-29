@@ -5,20 +5,25 @@ import 'react-multi-carousel/lib/styles.css';
 export const Container = styled.article`
   padding-top: 3.5em !important;
   padding-bottom: 5em !important;
-  color: var(--bs-gray);
+  background-color: #383645;
+  color: var(--bs-gray-400);
+
+  h4,
+  h3 {
+    color: var(--bs-gray-400);
+  }
 
   h3 {
-    color: var(--bs-gray-dark);
     a {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      color: #fff;
     }
   }
 
   .testimonial-1 {
-    background: #fff;
+    background: #000;
     padding: 14px;
-    color: #000;
-    border: 2px solid #46348a;
+    color: #fff;
 
     p {
       span {
@@ -44,7 +49,6 @@ export const Container = styled.article`
     background: #46348a;
     padding: 14px;
     color: #fff;
-    border: 2px solid #46348a;
 
     p {
       span {
