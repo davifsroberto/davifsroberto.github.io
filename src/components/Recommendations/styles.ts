@@ -5,7 +5,7 @@ import 'react-multi-carousel/lib/styles.css';
 export const Container = styled.article`
   padding-top: 3.5em !important;
   padding-bottom: 5em !important;
-  background-color: #383645;
+  background-color: #000;
   color: var(--bs-gray-400);
 
   h4,
@@ -22,8 +22,9 @@ export const Container = styled.article`
 
   .testimonial-1 {
     background: #000;
-    padding: 14px;
+    padding: 1.5em 0.5em;
     color: #fff;
+    border: 1px solid;
 
     p {
       span {

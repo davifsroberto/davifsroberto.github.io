@@ -109,7 +109,7 @@ export function Articles() {
                     </p>
 
                     <a
-                      className="btn btn-default"
+                      className="btn btn-default-reverse"
                       href={item.link}
                       target="_blank"
                       rel="noreferrer"

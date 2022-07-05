@@ -1,19 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  background-color: var(--bs-gray-300);
-  color: var(--bs-gray);
+  color: var(--bs-gray-400);
+
+  h4,
+  h3 {
+    color: var(--bs-gray-400);
+  }
 
   h4,
   h3,
   p {
     animation: opacityDelay 3.5s;
     animation-iteration-count: 1;
-  }
-
-  h3,
-  h2 {
-    color: var(--bs-gray-dark);
   }
 
   .header {
@@ -59,7 +58,7 @@ export const Container = styled.main`
   }
 
   .bg-page {
-    background-color: #fff;
+    background-color: #222;
     border-radius: 0.6em;
   }
 

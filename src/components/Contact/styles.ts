@@ -40,22 +40,11 @@ export const Container = styled.article`
     }
   }
 
-  .button {
+  button {
     width: 10em;
     height: 2.6em;
-    border: none;
-    outline: none;
-    color: #fff;
     margin: 0 auto;
     display: block;
-    background: #385a95;
-    transition: 0.5s;
-    border-radius: 3px;
     font-size: 1.2rem;
-
-    &:hover {
-      background: #46348a;
-      transition: 0.5s;
-    }
   }
 `;

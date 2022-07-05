@@ -82,13 +82,13 @@ const GlobalStyles = createGlobalStyle`
   .bg-header-default {
     height: 6em;
     background: #1e3c72;
-    background: -webkit-linear-gradient(135deg, #50217f 1%, #366895);
-    background: linear-gradient(135deg, #50217f 1%, #366895);
+    background: -webkit-linear-gradient(135deg, #000 1%, #1d1a35b5);
+    background: linear-gradient(135deg, #000 1%, #1d1a35b5);
   }
 
   .btn-default {
     color: #fff;
-    background: #6669b8;
+    background: #041822;
     border-radius: 3px;
 
     &:hover {
@@ -99,14 +99,18 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .btn-default-reverse {
-    color: #6669b8;
-    background: #fff;
+    color: #fff;
+    background: transparent;
     border-radius: 3px;
+    border: 2px solid #041822;
+    transition: all 0.9s;
+
 
     &:hover {
-      background: transparent;
-      border: 1px solid #fff;
+      background: #041822;
+      border: 2px solid #fff;
       color: #fff;
+      transition: all 0.9s;
     }
   }
 
