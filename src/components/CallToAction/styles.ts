@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
+  /* TODO: create new banner */
   background: url('/assets/images/general/banner-cta.jpg') 0px 0px;
   background-size: cover;
   position: relative;

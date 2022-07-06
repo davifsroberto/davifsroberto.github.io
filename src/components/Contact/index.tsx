@@ -144,11 +144,13 @@ export function Contact() {
                   </div>
                 </section>
 
-                <input
+                <button
                   type="submit"
-                  className="button"
-                  value={contact[language()].form.btnForm}
-                />
+                  className="btn btn-default btn-default-big"
+                >
+                  {contact[language()].form.btnForm} &nbsp;
+                  <i className="fa fa-paper-plane" />
+                </button>
               </form>
             </div>
           </article>

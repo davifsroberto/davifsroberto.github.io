@@ -12,7 +12,7 @@ export const Container = styled.ul`
     width: 40px;
     height: 40px;
     display: block;
-    background: #3b5fa1;
+    background: #001117;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;

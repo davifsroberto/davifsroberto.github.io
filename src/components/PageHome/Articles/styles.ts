@@ -5,11 +5,12 @@ import 'react-multi-carousel/lib/styles.css';
 export const Container = styled.article`
   padding-top: 3.5em !important;
   padding-bottom: 5em !important;
-  background-color: var(--bs-gray-200);
-  color: var(--bs-gray);
+  background-color: #222;
+  color: var(--bs-gray-500);
 
+  h4,
   h3 {
-    color: var(--bs-gray-dark);
+    color: var(--bs-gray-400);
   }
 
   .card {
@@ -20,6 +21,9 @@ export const Container = styled.article`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      background-color: #222;
+      border-bottom-right-radius: 0.3em;
+      border-bottom-left-radius: 0.3em;
 
       h6 {
         font-size: 1.1em;

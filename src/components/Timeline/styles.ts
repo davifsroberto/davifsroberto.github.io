@@ -53,6 +53,10 @@ export const Container = styled.article.attrs(
     &:after {
       background-color: #5b4b92;
     }
+
+    .card-body {
+      background-color: #222;
+    }
   }
 
   @media (max-width: 500px) {

@@ -13,11 +13,9 @@ export const Container = styled.section`
     top: 0;
     left: 0;
     opacity: 0.9;
-    background: #50217f;
     background-size: cover;
-    background: #1e3c72;
-    background: -webkit-linear-gradient(135deg, #50217f 1%, #366895);
-    background: linear-gradient(135deg, #50217f 1%, #366895);
+    background: -webkit-linear-gradient(135deg, #000 1%, #1d1a35b5);
+    background: linear-gradient(135deg, #000 1%, #1d1a35b5);
   }
 
   section {
