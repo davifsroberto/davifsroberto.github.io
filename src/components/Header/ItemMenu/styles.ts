@@ -7,7 +7,7 @@ export const Container = styled.li`
     color: #000;
     text-align: center;
     text-transform: uppercase;
-    color: #3b5fa1;
+    color: #fff;
     letter-spacing: 1px;
     font-size: 16px;
     font-weight: 500;

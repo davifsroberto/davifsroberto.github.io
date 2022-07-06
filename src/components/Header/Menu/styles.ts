@@ -71,7 +71,7 @@ export const SubMenu = styled.ul`
   max-height: 0;
   padding: 0;
   overflow: hidden;
-  background: #f7f7f7;
+  background: #021620;
   transition: max-height 0.5s ease-out;
   position: absolute;
   min-width: 8em;

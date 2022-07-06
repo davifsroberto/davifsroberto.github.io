@@ -6,8 +6,12 @@ export const Container = styled.article`
   color: #fff;
 
   .head {
-    background-color: var(--bs-gray-900);
+    background-color: #000;
     padding: 4em 0 3em 0;
+    border: 1px solid var(--bs-gray-500);
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     h4 {
       font-size: 1.8rem;
@@ -21,14 +25,15 @@ export const Container = styled.article`
   .body {
     padding: 1.6em 0 1.3em 0;
     color: var(--bs-gray);
-    border: 1px solid var(--bs-gray-900);
+    border: 1px solid var(--bs-gray-500);
+    border-top: none;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 
     a {
       display: block;
       margin: 0.5em 0;
-      color: var(--bs-gray);
+      color: var(--bs-gray-400);
 
       &:hover {
         color: var(--bs-gray-dark);
