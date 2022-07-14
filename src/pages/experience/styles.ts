@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  color: var(--bs-gray);
-  background-color: #000;
+  color: #fff;
 
   h3 {
-    color: var(--bs-gray-dark);
+    color: var(--bs-gray);
   }
 
   h4,
