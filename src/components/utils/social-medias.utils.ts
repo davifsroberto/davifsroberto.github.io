@@ -13,7 +13,7 @@ export function mountSocialMediasUtils(): SocialMediaType[] {
       target: '_blank',
     },
     {
-      href: 'https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C%20Davi%20Roberto%2C%20tudo%20bem%3F',
+      href: 'https://api.whatsapp.com/send?phone=353894784620&text=Ol%C3%A1%2C%20Davi%20Roberto%2C%20tudo%20bem%3F',
       icon: 'fa fa-whatsapp',
       target: '_blank',
     },

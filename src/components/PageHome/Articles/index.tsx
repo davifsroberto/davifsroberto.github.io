@@ -50,7 +50,6 @@ type ArticleType = {
 
 export function Articles() {
   const [articles, setArticles] = useState<ArticleType>({} as ArticleType);
-  // const dateLanguage: string = language() === 'en' ? 'en-IR' : 'pt-BR';
 
   useEffect(() => {
     getArticles();
@@ -65,6 +64,26 @@ export function Articles() {
         setArticles(response.data);
       })
       .catch((error) => console.error(error));
+  }
+
+  function formatDateArticle(date: string): string {
+    let dataFormated: string;
+
+    if (language() === 'en') {
+      dataFormated = `
+      ${new Date(date).getFullYear()}/
+      ${new Date(date).getMonth() + 1}/
+      ${new Date(date).getDate()}
+      `;
+    } else {
+      dataFormated = `
+        ${new Date(date).getDate()}/
+        ${new Date(date).getMonth() + 1}/
+        ${new Date(date).getFullYear()}
+      `;
+    }
+
+    return dataFormated;
   }
 
   return (
@@ -101,11 +120,9 @@ export function Articles() {
                     <p className="card-text pt-1">
                       <span>Davi Roberto</span>
 
-                      {/* <span className="text-end">
-                        {new Intl.DateTimeFormat(dateLanguage, {
-                          dateStyle: 'short',
-                        }).format(new Date(item.pubDate))}
-                      </span> */}
+                      <span className="text-end">
+                        {formatDateArticle(item.pubDate)}
+                      </span>
                     </p>
 
                     <a
