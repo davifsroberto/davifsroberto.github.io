@@ -24,6 +24,7 @@ export const Container = styled.article`
         border: none;
         outline: none;
         border-bottom: 1px solid var(--bs-gray-500);
+        color: #fff;
 
         & {
           ::-webkit-input-placeholder,
