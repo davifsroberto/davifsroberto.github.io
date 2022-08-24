@@ -50,7 +50,7 @@ type ArticleType = {
 
 export function Articles() {
   const [articles, setArticles] = useState<ArticleType>({} as ArticleType);
-  const dateLanguage: string = language() === 'en' ? 'en-IR' : 'pt-BR';
+  // const dateLanguage: string = language() === 'en' ? 'en-IR' : 'pt-BR';
 
   useEffect(() => {
     getArticles();
@@ -101,11 +101,11 @@ export function Articles() {
                     <p className="card-text pt-1">
                       <span>Davi Roberto</span>
 
-                      <span className="text-end">
+                      {/* <span className="text-end">
                         {new Intl.DateTimeFormat(dateLanguage, {
                           dateStyle: 'short',
                         }).format(new Date(item.pubDate))}
-                      </span>
+                      </span> */}
                     </p>
 
                     <a
