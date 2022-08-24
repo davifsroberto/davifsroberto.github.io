@@ -17,7 +17,6 @@ export const Container = styled.section`
     background: -webkit-linear-gradient(135deg, #000 1%, #1d1a35b5);
     background: linear-gradient(135deg, #000 1%, #1d1a35b5);
   }
-
   section {
     margin-top: 12em;
     color: #fff;
@@ -71,6 +70,11 @@ export const Container = styled.section`
         animation-iteration-count: infinite;
       }
     }
+  }
+
+  @media (max-device-width: 700px) {
+    background: -webkit-linear-gradient(135deg, #000 1%, #1d1a35b5);
+    background: linear-gradient(135deg, #000 1%, #1d1a35b5);
   }
 
   @media (max-device-height: 640px) {

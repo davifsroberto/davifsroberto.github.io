@@ -36,9 +36,9 @@ export default function Profile() {
             &nbsp;davifsroberto@outlook.com
           </a>
 
-          <a href="tel:+55 11 95356 6668">
+          <a href="tel:+353 89 478 4620">
             <i className="fa fa-phone" />
-            &nbsp;+55 11 95356 6668
+            &nbsp;+353 89 478 4620
           </a>
 
           <a

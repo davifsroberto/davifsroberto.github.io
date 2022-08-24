@@ -35,7 +35,7 @@
           "title": "Telefone",
           "anchor": false,
           "description": {
-            "text": "11 95356 6668"
+            "text": "+353 89 478 4620"
           }
         },
         {
@@ -44,7 +44,7 @@
           "anchor": true,
           "description": {
             "text": "Clique aqui",
-            "link": "https://api.whatsapp.com/send?phone=5511953566668&text=Ol%C3%A1%2C+Davi+Roberto.",
+            "link": "https://api.whatsapp.com/send?phone=353894784620&text=Ol%C3%A1%2C+Davi+Roberto.",
             "target": "_blank",
             "class": "link"
           }
@@ -146,7 +146,7 @@
           "title": "Phone",
           "anchor": false,
           "description": {
-            "text": "+55 11 95356 6668"
+            "text": "+353 89 478 4620"
           }
         },
         {
@@ -155,7 +155,7 @@
           "anchor": true,
           "description": {
             "text": "Click here",
-            "link": "https://api.whatsapp.com/send?phone=5511953566668&text=Hello%2C%20Davi%20Roberto.",
+            "link": "https://api.whatsapp.com/send?phone=353894784620&text=Hello%2C%20Davi%20Roberto.",
             "target": "_blank",
             "class": "link"
           }
