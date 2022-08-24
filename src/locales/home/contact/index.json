@@ -9,7 +9,8 @@
       "labelFour": "Telefone - Optional",
       "labelFive": "Mensagem",
       "btnForm": "ENVIAR"
-    }
+    },
+    "messageSend": "Enviando..."
   },
 
   "en": {
@@ -22,6 +23,7 @@
       "labelFour": "Phone - Optional",
       "labelFive": "Message",
       "btnForm": "SEND"
-    }
+    },
+    "messageSend": "Send..."
   }
 }

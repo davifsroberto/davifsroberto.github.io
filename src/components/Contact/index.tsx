@@ -40,20 +40,20 @@ export function Contact() {
       .then(() => {
         setLoading(false);
 
-        toast.success('Mensagem enviada com sucesso!');
+        toast.success('Message sent successfully');
 
         (document.getElementById('contact-form') as HTMLFormElement).reset();
       })
       .catch(() => {
         setLoading(false);
 
-        toast.error('Erro ao enviar mensagem! Tente novamente mais tarde.');
+        toast.error('Error sending message! Try again later');
       });
   }
 
   return (
     <Container id="contact">
-      <Spinner loading={loading} text={'Enviando...'} />
+      <Spinner loading={loading} text={contact[language()].messageSend} />
 
       <AnimationOnScroll
         duration={1}
