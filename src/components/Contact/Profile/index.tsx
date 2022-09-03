@@ -42,12 +42,12 @@ export default function Profile() {
           </a>
 
           <a
-            href="https://www.google.com/maps/place/Hortol%C3%A2ndia,+State+of+S%C3%A3o+Paulo/@-22.8769465,-47.2440486,13z/data=!3m1!4b1!4m5!3m4!1s0x94c8b95bfb508f39:0x1ce857c1058169b4!8m2!3d-22.8573469!4d-47.2210564"
+            href="https://www.google.com/maps/place/Waterford/@52.2475049,-7.11303,13z/data=!3m1!4b1!4m5!3m4!1s0x4842c69c63d9e44d:0xc5bb81888b67b9fb!8m2!3d52.2593197!4d-7.1100702"
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa fa-map-marker" />
-            &nbsp;Hortolândia, SP - Brasil
+            &nbsp;Waterford - Ireland
           </a>
         </p>
       </section>
