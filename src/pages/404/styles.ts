@@ -21,8 +21,4 @@ export const Container = styled.main`
       font-size: 2.26rem;
     }
   }
-
-  button {
-    color: #42a5f6;
-  }
 `;
