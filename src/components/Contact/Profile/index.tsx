@@ -47,7 +47,7 @@ export default function Profile() {
             rel="noreferrer"
           >
             <i className="fa fa-map-marker" />
-            &nbsp;Waterford - Ireland
+            &nbsp;{profile[language()].local}
           </a>
         </p>
       </section>
