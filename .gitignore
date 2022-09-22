@@ -1,0 +1,7 @@
+yarn.lock
+package.lock
+node_modules
+.next
+.husky
+certificados/.DS_Store
+.DS_Store
