@@ -44,17 +44,17 @@ export function Menu({ menu }: menuProps) {
 
       <ul className="language">
         <li
-          className={router.locale === Lang.en ? Lang.en : ''}
-          onClick={() => setLanguage(Lang.en)}
-        >
-          EN
-        </li>
-
-        <li
           className={router.locale === Lang.pt ? Lang.pt : ''}
           onClick={() => setLanguage(Lang.pt)}
         >
           PT
+        </li>
+
+        <li
+          className={router.locale === Lang.en ? Lang.en : ''}
+          onClick={() => setLanguage(Lang.en)}
+        >
+          EN
         </li>
       </ul>
     </Container>
