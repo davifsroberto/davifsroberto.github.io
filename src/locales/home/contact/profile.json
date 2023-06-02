@@ -2,14 +2,14 @@
   "pt": {
     "whats": {
       "label": "Clique para enviar mensagens",
-      "link": "https://api.whatsapp.com/send?phone=353894784620&text=Ol%C3%A1%2C+Davi+Roberto."
+      "link": "https://api.whatsapp.com/send?phone=5511941619672&text=Ol%C3%A1%2C+Davi+Roberto."
     },
     "local": "Waterford - Irlanda"
   },
   "en": {
     "whats": {
       "label": "Click to send messages",
-      "link": "https://api.whatsapp.com/send?phone=353894784620&text=Hello%2C%20Davi%20Roberto."
+      "link": "https://api.whatsapp.com/send?phone=5511941619672&text=Hello%2C%20Davi%20Roberto."
     },
     "local": "Waterford - Ireland"
   }
