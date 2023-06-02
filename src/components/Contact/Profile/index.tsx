@@ -36,13 +36,13 @@ export default function Profile() {
             &nbsp;davifsroberto@outlook.com
           </a>
 
-          <a href="tel:+353 89 478 4620">
+          <a href="tel:+55 11 94161-9672">
             <i className="fa fa-phone" />
-            &nbsp;+353 89 478 4620
+            &nbsp;+55 11 94161-9672
           </a>
 
           <a
-            href="https://www.google.com/maps/place/Waterford/@52.2475049,-7.11303,13z/data=!3m1!4b1!4m5!3m4!1s0x4842c69c63d9e44d:0xc5bb81888b67b9fb!8m2!3d52.2593197!4d-7.1100702"
+            href="https://www.google.com/maps/place/Alphaville+Industrial,+Barueri+-+SP/@-23.4985819,-46.8903414,14z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94cf03dd6cef1295:0x746b94a987d123a3!2sBarueri+-+SP!3b1!8m2!3d-23.5035038!4d-46.8785555!16zL20vMDN4emxk!3m5!1s0x94cf023b2dee9c5b:0x314130df0ce37972!8m2!3d-23.5013567!4d-46.8482951!16s%2Fg%2F1ywqftq_m?entry=ttu"
             target="_blank"
             rel="noreferrer"
           >
