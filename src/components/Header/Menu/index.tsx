@@ -21,6 +21,7 @@ export function Menu({ menu }: menuProps) {
       {
         query: router.query,
       },
+
       router.asPath,
       { locale: language }
     );
