@@ -27,7 +27,7 @@
     },
     {
       "name": "CV",
-      "link": "/pt/cv"
+      "link": "/cv"
     }
   ],
 
@@ -59,7 +59,7 @@
     },
     {
       "name": "CV",
-      "link": "/cv"
+      "link": "en/cv"
     }
   ]
 }
