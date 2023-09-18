@@ -5,7 +5,7 @@
     "posTitle": "Referente a esse Portifólio",
     "infoOne": "Segue abaixo alguns projetos que já realizei durante a minha jornada como desenvolvedor web, apesar de também ter atuado com backend, busquei trazer em meu portifólio apenas projetos que desenvolvi o frontend, pois é o meu foco.",
     "infoTwo": "Alguns projetos eu realizei com uma equipe de desenvolvedores de frontend e destaquei apenas as features que fiz, além disso, trouxe projetos onde atuei sozinho e desenvolvi por completo todo o frontend do sistema.",
-    "infoTree": "Aqui não tem <i>todos os sistemas</i> que desenvolvi, alguns são projeto privados, onde não posso compartilhá-los por questão de segurança e exigência da empresa contratante, outros eu simplesmente me esqueci de pegar evidências, e o sistema existe mais. Porém, apresento a maioria dos projetos onde atuei com minhas habilidades de frontend engineer.",
+    "infoTree": "Aqui não tem <i>todos os sistemas</i> que desenvolvi, alguns são projeto privados, onde não posso compartilhá-los por questão de segurança e exigência da empresa contratante, outros eu simplesmente me esqueci de pegar evidências, e o sistema não existe mais. Porém, apresento a maioria dos projetos onde atuei com minhas habilidades de frontend engineer.",
     "portfolio": [
       {
         "id": 1,
@@ -187,6 +187,28 @@
           "/assets/images/portfolio/fast/volkswagen/00_bg.png",
           "/assets/images/portfolio/fast/sky/00_bg.png"
         ]
+      },
+      {
+        "id": 15,
+        "bgBox": "/assets/images/portfolio/safecomply/grc/00_bg.png",
+        "titleBox": "Safecomply - Sistema GRC",
+        "images": [
+          "/assets/images/portfolio/safecomply/grc/01.png",
+          "/assets/images/portfolio/safecomply/grc/02.png",
+          "/assets/images/portfolio/safecomply/grc/03.png",
+          "/assets/images/portfolio/safecomply/grc/04.png",
+          "/assets/images/portfolio/safecomply/grc/05.png"
+        ]
+      },
+      {
+        "id": 16,
+        "bgBox": "/assets/images/portfolio/safecomply/portal_titular/00_bg.png",
+        "titleBox": "Safecomply - Portal Titular",
+        "images": [
+          "/assets/images/portfolio/safecomply/portal_titular/01.png",
+          "/assets/images/portfolio/safecomply/portal_titular/02.png",
+          "/assets/images/portfolio/safecomply/portal_titular/03.png"
+        ]
       }
     ]
   },
@@ -197,7 +219,7 @@
     "posTitle": "About this Portfolio",
     "infoOne": "Below are some projects that I've done during my journey as a web developer, despite having also worked with backend, I tried to bring in my portfolio only projects that I developed the frontend, because it's my focus.",
     "infoTwo": "Some projects I carried out with a team of frontend developers and I highlighted only the features I made, in addition, I brought projects where I worked alone and completely developed the entire frontend of the system.",
-    "infoTree": "Here there are not <i>all the systems</i> that I have developed, some are private projects, where I cannot share them due to security reasons and requirements of the contracting company, others I simply forgot to get evidence, and the system exists. most. However, I present most of the projects where I worked with my frontend engineer skills.",
+    "infoTree": "Here there are not <i>all the systems</i> that I have developed, some are private projects, where I cannot share them due to security reasons and requirements of the contracting company, others I simply forgot to get evidence, and the system no longer exists. However, I present most of the projects where I worked with my frontend engineer skills.",
     "portfolio": [
       {
         "id": 1,
@@ -378,6 +400,28 @@
           "/assets/images/portfolio/fast/sky/01.png",
           "/assets/images/portfolio/fast/volkswagen/00_bg.png",
           "/assets/images/portfolio/fast/sky/00_bg.png"
+        ]
+      },
+      {
+        "id": 15,
+        "bgBox": "/assets/images/portfolio/safecomply/grc/00_bg.png",
+        "titleBox": "Safecomply - GRC System",
+        "images": [
+          "/assets/images/portfolio/safecomply/grc/01.png",
+          "/assets/images/portfolio/safecomply/grc/02.png",
+          "/assets/images/portfolio/safecomply/grc/03.png",
+          "/assets/images/portfolio/safecomply/grc/04.png",
+          "/assets/images/portfolio/safecomply/grc/05.png"
+        ]
+      },
+      {
+        "id": 16,
+        "bgBox": "/assets/images/portfolio/safecomply/portal_titular/00_bg.png",
+        "titleBox": "Safecomply - Owner Portal",
+        "images": [
+          "/assets/images/portfolio/safecomply/portal_titular/01.png",
+          "/assets/images/portfolio/safecomply/portal_titular/02.png",
+          "/assets/images/portfolio/safecomply/portal_titular/03.png"
         ]
       }
     ]
