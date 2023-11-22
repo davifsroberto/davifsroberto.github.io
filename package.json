@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:production": "ng build --configuration=production",
+    "build:homolog": "ng build --configuration=homolog",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:davifsroberto": "node dist/davifsroberto/server/server.mjs",
