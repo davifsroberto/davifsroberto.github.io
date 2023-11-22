@@ -1,9 +1,12 @@
 {
   "name": "davifsroberto",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:development": "ng serve --configuration=development",
+    "start:homolog": "ng serve --configuration=homolog",
+    "start:production": "ng serve --configuration=production",
     "build": "ng build",
     "build:production": "ng build --configuration=production",
     "build:homolog": "ng build --configuration=homolog",

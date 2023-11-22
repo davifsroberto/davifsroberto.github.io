@@ -20,11 +20,18 @@
             "outputPath": "dist/davifsroberto",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -62,6 +69,11 @@
                 }
               ],
               "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -74,6 +86,12 @@
           "configurations": {
             "production": {
               "buildTarget": "davifsroberto:build:production"
+            },
+            "homolog": {
+              "buildTarget": "davifsroberto:build:homolog"
+            },
+            "development": {
+              "buildTarget": "davifsroberto:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,25 +105,38 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "d0ecd7f0-0c4c-4e7e-8547-3814a2979576",
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "analytics": "2304ffe9-4672-459b-b39b-1f0c0ba0e6be",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
