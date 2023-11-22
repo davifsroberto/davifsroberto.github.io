@@ -3,6 +3,6 @@
 
 # npm test
 npm run lint:fix
-npm run 
+npm run build:production
 # TODO: add: Verificação de Cobertura de Testes, Testes de integração,
 
