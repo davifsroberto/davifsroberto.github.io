@@ -2,7 +2,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
-    "types": ["jest"]
+    "types": [
+      "jest",
+      "node",
+      "cypress",
+      "@testing-library/cypress",
+      "@testing-library/jest-dom"
+    ]
   },
-  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts", "./jest.setup.ts"]
 }
