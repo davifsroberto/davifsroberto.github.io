@@ -6,5 +6,3 @@ npm run lint:fix
 npm run test
 npm run cy:e2e
 npm run build:production
-npm run stop-server
-
