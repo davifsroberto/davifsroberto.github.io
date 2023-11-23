@@ -1,8 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+npm run stop-server
 npm run lint:fix
 npm run test
-# npx cypress run
+npm run cy:e2e
 npm run build:production
+npm run stop-server
 

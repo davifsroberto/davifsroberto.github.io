@@ -15,6 +15,8 @@
     "test:coverage": "jest --coverage",
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
+    "cy:e2e": "ng serve & wait-on http://localhost:4210 && npx cypress run",
+    "stop-server": "pkill -f 'ng serve'",
     "serve:ssr:davifsroberto": "node dist/davifsroberto/server/server.mjs",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
@@ -61,6 +63,7 @@
     "@types/node": "^18.18.0",
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@typescript-eslint/parser": "6.11.0",
+    "cross-env": "^7.0.3",
     "cypress": "^13.6.0",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
@@ -70,6 +73,7 @@
     "jest-preset-angular": "^13.1.4",
     "prettier": "^3.1.0",
     "prettier-eslint": "^16.1.2",
-    "typescript": "~5.2.2"
+    "typescript": "~5.2.2",
+    "wait-on": "^7.2.0"
   }
 }
