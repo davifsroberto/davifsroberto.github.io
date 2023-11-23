@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# npm test
+npm run test
 npm run lint:fix
 npm run build:production
 # TODO: add: Verificação de Cobertura de Testes, Testes de integração,
