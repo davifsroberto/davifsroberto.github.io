@@ -4,6 +4,7 @@
 /out-tsc
 /bazel-out
 cypress/screenshots
+documentation
 
 # Node
 /node_modules

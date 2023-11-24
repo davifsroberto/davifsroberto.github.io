@@ -3,5 +3,6 @@ node_modules
 .vscode
 .dist
 .husky
-coverage
 *.yml
+coverage
+documentation
