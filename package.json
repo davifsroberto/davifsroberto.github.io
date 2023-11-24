@@ -1,15 +1,26 @@
 {
   "name": "davifsroberto",
   "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Davi Roberto",
+    "nickname": "davifsroberto",
+    "email": "davifsroberto@outlook.com",
+    "url": "https://davifsroberto.github.io",
+    "linkedin": "https://linkedin.com/in/davifsroberto",
+    "github": "https://github.com/davifsroberto",
+    "medium": "https://medium.com/@davifsroberto"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:development": "ng serve --configuration=development",
-    "start:homolog": "ng serve --configuration=homolog",
     "start:production": "ng serve --configuration=production",
+    "start:homolog": "ng serve --configuration=homolog",
+    "start:development": "ng serve --configuration=development",
     "build": "ng build",
     "build:production": "ng build --configuration=production",
     "build:homolog": "ng build --configuration=homolog",
+    "build:development": "ng build --configuration=development",
     "watch:production": "ng build --watch --configuration=production",
     "watch:homolog": "ng build --watch --configuration=homolog",
     "watch:development": "ng build --watch --configuration=development",
@@ -35,7 +46,6 @@
       "<rootDir>/setup-jest.ts"
     ]
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/cdk": "^17.0.1",
