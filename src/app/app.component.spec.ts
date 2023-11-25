@@ -1,7 +1,8 @@
+/* For use Jest comands with Cypress and Angular Testing Library  */
+import { expect } from '@jest/globals';
+
 import { NgModule } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-
-import { expect } from '@jest/globals';
 import { render } from '@testing-library/angular';
 
 import { CoreModule } from './core/core.module';
