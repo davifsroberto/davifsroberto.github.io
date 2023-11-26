@@ -1,4 +1,4 @@
-/* For use Jest comands with Cypress and Angular Testing Library  */
+/* For use Jest commands with Cypress and Angular Testing Library */
 import { expect } from '@jest/globals';
 
 import { NgModule } from '@angular/core';

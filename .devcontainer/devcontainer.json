@@ -1,0 +1,41 @@
+{
+	"name": "davifsroberto",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile.dev"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Angular.ng-template",
+				"johnpapa.Angular2",
+				"formulahendry.auto-rename-tag",
+				"ms-vscode-remote.remote-containers",
+				"PKief.material-icon-theme",
+				"hugo-olv.tokyo-candy-night",
+				"ms-vscode-remote.remote-wsl",
+				"JerryHong.autofilename",
+				"ms-vscode.azure-account",
+				"genieai.chatgpt-vscode",
+				"ms-azuretools.vscode-docker",
+				"EditorConfig.EditorConfig",
+				"dbaeumer.vscode-eslint",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+				"eamodio.gitlens",
+				"firsttris.vscode-jest-runner",
+				"kavod-io.vscode-jest-test-adapter",
+				"MariusAlchimavicius.json-to-ts",
+				"shd101wyy.markdown-preview-enhanced",
+				"DavidAnson.vscode-markdownlint",
+				"fabiospampinato.vscode-open-multiple-files",
+				"esbenp.prettier-vscode",
+				"plibither8.remove-comments",
+				"TabNine.tabnine-vscode",
+				"ms-vscode.test-adapter-converter",
+				"hbenl.vscode-test-explorer",
+				"Gruntfuggly.todo-tree"
+			]
+		}
+	}
+}

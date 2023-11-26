@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  davifsroberto:
+    network_mode: host
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '4210:4210'
+    volumes:
+      - .:/davifsroberto_frontend
+      - ./.docker/zsh/powerlevel10k/.p10k.zsh:/davifsroberto_frontend/.p10k.zsh:delegated
+      - ./.docker/zsh/history:/davifsroberto_frontend/zsh:delegated

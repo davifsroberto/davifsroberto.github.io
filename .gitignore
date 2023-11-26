@@ -1,3 +1,8 @@
+# devcontainer
+/zsh
+/.p10k.zsh
+/.docker/zsh/
+
 # Compiled output
 /dist
 /tmp
@@ -12,7 +17,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
-.idea/
+.idea/4
 .project
 .classpath
 .c9/
