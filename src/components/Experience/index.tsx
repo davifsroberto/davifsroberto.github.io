@@ -31,10 +31,13 @@ export function Experience({ experience }: ExperienceProps) {
 
         <h5>{experience.title}</h5>
         <h6>
-          <span>{experience.period}&nbsp;</span>
           <strong>
             {experience.tag && experience.tag.map((tag) => tag + ' ')}
           </strong>
+          <br />
+          <br />
+
+          <span>{experience.period}&nbsp;</span>
         </h6>
         <br />
 

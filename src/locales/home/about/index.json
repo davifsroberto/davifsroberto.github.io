@@ -20,20 +20,20 @@
       {
         "name": "React",
         "class": "bg-primary",
-        "progress": 85
+        "progress": 90
       },
       {
-        "name": "TypeScript",
+        "name": "Node.Js",
         "class": "bg-secondary",
-        "progress": 97
+        "progress": 80
       },
       {
-        "name": "UX e UI",
+        "name": "UX/UI",
         "class": "bg-success",
         "progress": 90
       },
       {
-        "name": "Testes (unitário, comportamento, e2e)",
+        "name": "Testes (unitário, comportamento, integração, e2e)",
         "class": "bg-warning",
         "progress": 92
       },
@@ -66,25 +66,25 @@
       {
         "name": "React",
         "class": "bg-primary",
-        "progress": 85
+        "progress": 90
       },
       {
-        "name": "TypeScript",
+        "name": "Node.Js",
         "class": "bg-secondary",
-        "progress": 97
+        "progress": 80
       },
       {
-        "name": "UX e UI",
+        "name": "UX/UI",
         "class": "bg-success",
         "progress": 90
       },
       {
-        "name": "Tests (unitary, behavior, e2e)",
+        "name": "Tests (unitary, behavior, integration, e2e)",
         "class": "bg-warning",
         "progress": 92
       },
       {
-        "name": "Agile Methodologies",
+        "name": "Metodologias Ágeis",
         "class": "bg-info",
         "progress": 92
       }

@@ -16,9 +16,9 @@
             "height": 80
           }
         },
-        "title": "Principal Frontend Engineer",
-        "period": "04/22 - 03/23",
-        "tag": ["#Angular"],
+        "title": "Frontend Engineer",
+        "period": "04/22 - Atual",
+        "tag": ["#Angular, #React, Node.Js"],
         "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React.js, TypeScript, teste unitário, teste e2e, UI/UX."
       },
       {
@@ -34,8 +34,8 @@
           }
         },
         "title": "Principal Frontend Engineer",
-        "period": "09/21 - 04/22",
-        "tag": ["#Angular"],
+        "period": "10/21 - 04/22 (7 meses)",
+        "tag": ["#Angular", "#Node.js"],
         "description": "Desenvolvo aplicações para a frente de delivery, aplicativos de backoffice e totens de autoatendimento. Sempre me atento ao desenvolvimento com testes, performance e boas práticas. Ajudo desenvolvedores menos experientes, e trabalho na reestruturação de projetos antigos para uma arquitetura de frontend escalável. Quando necessário, crio as interfaces sem depender de um UI designer. Tenho noções de UI/UX e gosto do assunto. Algumas tecnologias que utilizo neste processo: Angular 12+, Monorepo, Nx Workspace (nx.dev), Module Federation.",
         "classPosition": " text-end "
       },
@@ -52,8 +52,8 @@
           }
         },
         "title": "Frontend Engineer",
-        "period": "09/21 - 04/22",
-        "tag": ["#React", "#Angular"],
+        "period": "10/19 - 10/22 (2 anos e 1 mês)",
+        "tag": ["#Angular, #React, Node.Js"],
         "description": "Desenvolvimento de sistemas para a área financeira, criação de dashboards, aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Utilizava em minha rotina de desenvolvimento: Angular 2+, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "last": true
       }
@@ -77,9 +77,9 @@
             "height": 80
           }
         },
-        "title": "Principal Frontend Engineer",
-        "period": "04/22 - 03/23",
-        "tag": ["#Angular"],
+        "title": "Frontend Engineer",
+        "period": "04/22 - Current",
+        "tag": ["#Angular, #React, Node.Js"],
         "description": "Development of web applications with the Angular framework. During development, I am always aware of best practices to follow a high level of code standards, and in development with tests. I helps less experienced developers on a day-to-day basis to technically evolve together and deliver a highly scalable project. Some technologies I use: Angular, React.js, TypeScript, unit test, e2e test, UI/UX."
       },
       {
@@ -95,8 +95,8 @@
           }
         },
         "title": "Principal Frontend Engineer",
-        "period": "09/21 - 04/22",
-        "tag": ["#Angular"],
+        "period": "10/21 - 04/22 (7 mos)",
+        "tag": ["#Angular, #Node.js"],
         "description": "I develop forward delivery applications, backoffice applications and self-service totems. I always pay attention to development with tests, performance and best practices. I help less experienced developers, and work on restructuring old projects to a scalable frontend architecture. When necessary, I create the interfaces without relying on a UI designer. I have UI/UX notions and I like the subject. Some technologies I use in this process: Angular 12+, Monorepo, Nx Workspace (nx.dev), Module Federation.",
         "classPosition": " text-end "
       },
@@ -113,8 +113,8 @@
           }
         },
         "title": "Frontend Engineer",
-        "period": "09/21 - 04/22",
-        "tag": ["#React", "#Angular"],
+        "period": "10/19 - 10/22 (2 yrs 1 mo)",
+        "tag": ["#Angular, #React, Node.Js"],
         "description": "Development of systems for the financial area, creation of dashboards, applications that monitor services and generate reports on instabilities of financial transaction services. I used in my development routine: Angular 2+, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "last": true
       }

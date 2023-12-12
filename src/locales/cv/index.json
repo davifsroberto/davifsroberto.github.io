@@ -77,12 +77,12 @@
       "title": "Algumas Skills",
       "skillRight": [
         {
-          "name": "UX e UI",
+          "name": "UX/UI",
           "class": "bg-success",
           "progress": 90
         },
         {
-          "name": "Testes (unitário, comportamento, e2e)",
+          "name": "Testes (unitário, comportamento, integração, e2e)",
           "class": "bg-warning",
           "progress": 92
         },
@@ -188,12 +188,12 @@
       "title": "Some Skills",
       "skillRight": [
         {
-          "name": "UX and UI",
+          "name": "UX/UI",
           "class": "bg-success",
           "progress": 90
         },
         {
-          "name": "Tests (unitary, behavior, e2e)",
+          "name": "Tests (unitary, behavior, integration, e2e)",
           "class": "bg-warning",
           "progress": 92
         },
