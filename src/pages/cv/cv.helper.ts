@@ -39,12 +39,12 @@ export function mountSkillLeftCvHelper(): SkillType[] {
     {
       name: 'React',
       class: 'bg-primary',
-      progress: 85,
+      progress: 90,
     },
     {
-      name: 'TypeScript',
+      name: 'Node.Js',
       class: 'bg-primary',
-      progress: 97,
+      progress: 80,
     },
   ];
 }
