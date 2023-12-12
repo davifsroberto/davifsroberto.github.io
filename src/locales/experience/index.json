@@ -18,7 +18,7 @@
           }
         },
         "title": "Assistente de suporte técnico",
-        "period": "11/09 - 11/11",
+        "period": "11/09 - 11/11 (2 anos e 1 mês)",
         "description": "Comecei como office boy interno, depois tive a oportunidade de trabalhar no setor de TI da empresa e, sem dúvida, aproveitei a oportunidade que me foi dada devido ao meu esforço e reconhecimento dos meus supervisores em minhas atividades. Foi minha primeira experiência com a área de T.I, não sabia nada no começo, mas me dediquei e absorvi todo o conhecimento dos meus instrutores. Até hoje sou muito grato pela oportunidade que tive, pois foi lá que conheci a área de programação apenas observando o desenvolvimento de um sistema, e essa foi uma porta para a área de Desenvolvimento Web que amei, segui e estou até hoje.",
         "classPosition": " text-start ",
         "last": true
@@ -36,7 +36,7 @@
           }
         },
         "title": "Web Developer",
-        "period": "03/13 - 06/15",
+        "period": "03/13 - 06/15 (2 anos e 4 meses)",
         "tag": [
           "#PHP, #JavaScript"
         ],
@@ -56,7 +56,7 @@
           }
         },
         "title": "Web Developer",
-        "period": "07/15 - 01/16",
+        "period": "07/15 - 01/16 (7 meses)",
         "tag": [
           "#PHP, #JavaScript, #WordPress"
         ],
@@ -76,7 +76,7 @@
           }
         },
         "title": "Web Developer",
-        "period": "01/16 - 07/16",
+        "period": "01/16 - 07/16 (7 meses)",
         "tag": [
           "#PHP, #JavaScript, #WordPress"
         ],
@@ -96,7 +96,7 @@
           }
         },
         "title": "Frontend Developer",
-        "period": "01/15 - 12/16",
+        "period": "01/15 - 12/16 (2 anos)",
         "tag": [
           "#PHP, #JavaScript, #WordPress, #AngularJs"
         ],
@@ -116,7 +116,7 @@
           }
         },
         "title": "Web Developer Full Stack",
-        "period": "01/17 - 10/19",
+        "period": "01/17 - 10/19 (2 anos e 10 mêses)",
         "tag": [
           "#Angular",
           "#React",
@@ -139,7 +139,7 @@
           }
         },
         "title": "Frontend Engineer",
-        "period": "10/19 - 10/21",
+        "period": "10/19 - 10/21 (2 anos e 1 mês)",
         "tag": [
           "#Angular, #React, Node.Js"
         ],
@@ -159,7 +159,7 @@
           }
         },
         "title": "Principal Frontend Engineer",
-        "period": "10/21 - 04/22",
+        "period": "10/21 - 04/22 (7 meses)",
         "tag": [
           "#Angular, #Node.Js"
         ],
@@ -207,7 +207,7 @@
           }
         },
         "title": "Technical Support Assistant",
-        "period": "11/09 - 11/11",
+        "period": "11/09 - 11/11 (2 yrs 1 mo)",
         "description": "I started as an internal office boy, then had the opportunity to work in the IT department of the company, and without a doubt, I seized the opportunity given to me due to my effort and recognition from my supervisors in my activities. It was my first experience in the IT field; I knew nothing at the beginning, but I dedicated myself and absorbed all the knowledge from my instructors. I am still very grateful for the opportunity I had because it was there that I learned about programming just by observing the development of a system, and that was a gateway to the Web Development field that I loved, followed, and am still in today.",
         "classPosition": " text-start ",
         "last": true
@@ -225,7 +225,7 @@
           }
         },
         "title": "Web Developer",
-        "period": "03/13 - 06/15",
+        "period": "03/13 - 06/15 (2 yrs 4 mos)",
         "tag": [
           "#PHP, #JavaScript"
         ],
@@ -239,7 +239,7 @@
           "link": "https://www.linkedin.com/company/soyuz-studio/about",
           "image": {
             "src": "/assets/images/experience/soyuz-logo.svg",
-            "alt": "Soyuz Experience",
+            "alt": "Soyuz Experience (7 mos)",
             "width": 150,
             "height": 90
           }
@@ -265,7 +265,7 @@
           }
         },
         "title": "Web Developer",
-        "period": "01/16 - 07/16",
+        "period": "01/16 - 07/16 (7 mos)",
         "tag": [
           "#PHP, #JavaScript, #WordPress"
         ],
@@ -285,7 +285,7 @@
           }
         },
         "title": "Frontend Developer",
-        "period": "01/15 - 12/16",
+        "period": "01/15 - 12/16 (2 yrs)",
         "tag": [
           "#PHP, #JavaScript, #WordPress, #AngularJs"
         ],
@@ -305,7 +305,7 @@
           }
         },
         "title": "Web Developer Full Stack",
-        "period": "01/17 - 10/19",
+        "period": "01/17 - 10/19 (2 yrs 10 mos)",
         "tag": [
           "#Angular",
           "#React",
@@ -328,7 +328,7 @@
           }
         },
         "title": "Frontend Engineer",
-        "period": "10/19 - 10/21",
+        "period": "10/19 - 10/21 (2 yrs 1 mo)",
         "tag": [
           "#Angular, #React, Node.Js"
         ],
@@ -348,7 +348,7 @@
           }
         },
         "title": "Principal Frontend Engineer",
-        "period": "10/21 - 04/22",
+        "period": "10/21 - 04/22 (7 mos)",
         "tag": [
           "#Angular, #Node.Js"
         ],
@@ -368,7 +368,7 @@
           }
         },
         "title": "Frontend Engineer",
-        "period": "04/22 - Present",
+        "period": "04/22 - Current",
         "tag": [
           "#Angular, #React, Node.Js"
         ],
