@@ -42,7 +42,7 @@ export function mountSkillLeftCvHelper(): SkillType[] {
       progress: 90,
     },
     {
-      name: 'Node.Js',
+      name: 'Node.js',
       class: 'bg-primary',
       progress: 80,
     },
