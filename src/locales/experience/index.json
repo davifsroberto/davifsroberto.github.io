@@ -37,9 +37,7 @@
         },
         "title": "Web Developer",
         "period": "03/13 - 06/15 (2 anos e 4 meses)",
-        "tag": [
-          "#PHP, #JavaScript"
-        ],
+        "tag": ["#PHP, #JavaScript"],
         "description": "Contratado como jovem aprendiz (em período integral), fui responsável pelo desenvolvimento e suporte contínuo de sistemas web. Esses sistemas são essenciais para a equipe de call center, proporcionando análise e gerenciamento do consumo de internet dos clientes. Principais tecnologias: PHP, MySQL, HTML, CSS, JavaScript e Git.",
         "classPosition": " text-end "
       },
@@ -57,9 +55,7 @@
         },
         "title": "Web Developer",
         "period": "07/15 - 01/16 (7 meses)",
-        "tag": [
-          "#PHP, #JavaScript, #WordPress"
-        ],
+        "tag": ["#PHP, #JavaScript, #WordPress"],
         "description": "Contratado para trabalhar como estagiário por 6 meses, atuei como desenvolvedor web, focado no site dos clientes da empresa trabalhando com front-end.",
         "classPosition": " text-start "
       },
@@ -77,9 +73,7 @@
         },
         "title": "Web Developer",
         "period": "01/16 - 07/16 (7 meses)",
-        "tag": [
-          "#PHP, #JavaScript, #WordPress"
-        ],
+        "tag": ["#PHP, #JavaScript, #WordPress"],
         "description": "Contratado para trabalhar como estagiário por 6 meses, atuei como desenvolvedor web, focado no site dos clientes da empresa trabalhando com back-end e front-end.",
         "classPosition": " text-end "
       },
@@ -97,9 +91,7 @@
         },
         "title": "Frontend Developer",
         "period": "01/15 - 12/16 (2 anos)",
-        "tag": [
-          "#PHP, #JavaScript, #WordPress, #AngularJs"
-        ],
+        "tag": ["#PHP, #JavaScript, #WordPress, #AngularJs"],
         "description": "Tendo a possibilidade de trabalhar em outros projetos em paralelo, aceitei o convite para fazer parte da equipe de desenvolvimento do Deevo Studio e desenvolver projetos para a web. Meu foco era desenvolver sites institucionais e CMS usando Wordpress. Algumas tecnologias que usam o Deevo Studio: HTML5, CSS, JavaScript/jQuery, PHP, WordPress, MySQL, Git.",
         "classPosition": " text-start "
       },
@@ -117,12 +109,7 @@
         },
         "title": "Web Developer Full Stack",
         "period": "01/17 - 10/19 (2 anos e 10 meses)",
-        "tag": [
-          "#Angular",
-          "#React",
-          "#Vue",
-          "#ASP.NET Core"
-        ],
+        "tag": ["#Angular", "#React", "#Vue", "#ASP.NET Core"],
         "description": "Analisar e desenvolver sistemas web para grandes corporações, sempre com foco em soluções para o cliente e suas necessidades de negócios, envolvendo questões como alto padrão de qualidade de código, performance, segurança e experiência do usuário. Algumas tecnologias que utilizava neste processo: Front-End: HTML5, CSS3, Sass, JavaScript, ECMAScript 6+, jQuery, JSON, VueJS, Angular, UX, Photoshop, WebPack; Back-End: .NET, ASP.NET CORE, C#, SQL Server, Dapper, Entity Framework Core. Geral: MVC, MVVM, TFS, GitHub, SEO, WEB API, SPA, Componentização, NPM, REST, JWT, P.O.O, entre outros.",
         "classPosition": " text-end "
       },
@@ -140,10 +127,8 @@
         },
         "title": "Frontend Engineer",
         "period": "10/19 - 10/21 (2 anos e 1 mês)",
-        "tag": [
-          "#Angular, #React, Node.Js"
-        ],
-        "description": "Desenvolvimento de sistemas para a área financeira, criação de dashboards, aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Algumas tecnologias que utilizava nesse processo: Angular 2+, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "tag": ["#Angular, #React, Node.js"],
+        "description": "Desenvolvimento de sistemas para a área financeira, criação de dashboards, aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Algumas tecnologias que utilizava nesse processo: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "classPosition": " text-start "
       },
       {
@@ -160,10 +145,8 @@
         },
         "title": "Principal Frontend Engineer",
         "period": "10/21 - 04/22 (7 meses)",
-        "tag": [
-          "#Angular, #Node.Js"
-        ],
-        "description": "Desenvolvo aplicações para a frente de delivery, aplicativos de backoffice e totens de autoatendimento. Sempre me atento ao desenvolvimento com testes, performance e boas práticas. Ajudo desenvolvedores menos experientes, e trabalho na reestruturação de projetos antigos para uma arquitetura de frontend escalável. Quando necessário, crio as interfaces sem depender de um UI designer. Tenho noções de UI/UX e gosto do assunto. Algumas tecnologias que utilizo neste processo: Angular 12+, Monorepo, Nx Workspace (nx.dev), Module Federation.",
+        "tag": ["#Angular, #Node.js"],
+        "description": "Desenvolvo aplicações para a frente de delivery, aplicativos de backoffice e totens de autoatendimento. Sempre me atento ao desenvolvimento com testes, performance e boas práticas. Ajudo desenvolvedores menos experientes, e trabalho na reestruturação de projetos antigos para uma arquitetura de frontend escalável. Quando necessário, crio as interfaces sem depender de um UI designer. Tenho noções de UI/UX e gosto do assunto. Algumas tecnologias que utilizo neste processo: Angular, Node.js, Monorepo, Nx Workspace (nx.dev), Module Federation.",
         "classPosition": " text-end "
       },
       {
@@ -180,10 +163,8 @@
         },
         "title": "Frontend Engineer",
         "period": "04/22 - Atual",
-        "tag": [
-          "#Angular, #React, Node.Js"
-        ],
-        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React.js, TypeScript, teste unitário, teste e2e, UI/UX.",
+        "tag": ["#Angular, #React, Node.js"],
+        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React.js, Node.js, TypeScript, teste unitário, teste e2e, UI/UX.",
         "classPosition": " text-start "
       }
     ]
@@ -226,9 +207,7 @@
         },
         "title": "Web Developer",
         "period": "03/13 - 06/15 (2 yrs 4 mos)",
-        "tag": [
-          "#PHP, #JavaScript"
-        ],
+        "tag": ["#PHP, #JavaScript"],
         "description": "Hired as a full-time young apprentice, I was responsible for the development and continuous support of web systems. These systems are essential for the call center team, providing analysis and management of customer internet consumption. Main technologies: PHP, MySQL, HTML, CSS, JavaScript, and Git.",
         "classPosition": " text-end "
       },
@@ -246,9 +225,7 @@
         },
         "title": "Web Developer",
         "period": "07/15 - 01/16",
-        "tag": [
-          "#PHP, #JavaScript, #WordPress"
-        ],
+        "tag": ["#PHP, #JavaScript, #WordPress"],
         "description": "Hired to work as an intern for 6 months, I worked as a web developer, focused on the company's client site working on the front-end.",
         "classPosition": " text-start "
       },
@@ -266,9 +243,7 @@
         },
         "title": "Web Developer",
         "period": "01/16 - 07/16 (7 mos)",
-        "tag": [
-          "#PHP, #JavaScript, #WordPress"
-        ],
+        "tag": ["#PHP, #JavaScript, #WordPress"],
         "description": "Hired as an intern for 6 months, I worked as a web developer, focused on the company's client site working on both back-end and front-end.",
         "classPosition": " text-end "
       },
@@ -286,9 +261,7 @@
         },
         "title": "Frontend Developer",
         "period": "01/15 - 12/16 (2 yrs)",
-        "tag": [
-          "#PHP, #JavaScript, #WordPress, #AngularJs"
-        ],
+        "tag": ["#PHP, #JavaScript, #WordPress, #AngularJs"],
         "description": "Having the opportunity to work on other projects in parallel, I accepted the invitation to join the Deevo Studio development team and work on web projects. My focus was on developing institutional websites and CMS using WordPress. Some technologies used at Deevo Studio: HTML5, CSS, JavaScript/jQuery, PHP, WordPress, MySQL, Git.",
         "classPosition": " text-start "
       },
@@ -306,12 +279,7 @@
         },
         "title": "Web Developer Full Stack",
         "period": "01/17 - 10/19 (2 yrs 10 mos)",
-        "tag": [
-          "#Angular",
-          "#React",
-          "#Vue",
-          "#ASP.NET Core"
-        ],
+        "tag": ["#Angular", "#React", "#Vue", "#ASP.NET Core"],
         "description": "Analyze and develop web systems for large corporations, always focusing on solutions for the client and their business needs, involving issues such as high code quality standards, performance, security, and user experience. Some technologies used in this process: Front-End: HTML5, CSS3, Sass, JavaScript, ECMAScript 6+, jQuery, JSON, VueJS, Angular, UX, Photoshop, WebPack; Back-End: .NET, ASP.NET CORE, C#, SQL Server, Dapper, Entity Framework Core. General: MVC, MVVM, TFS, GitHub, SEO, WEB API, SPA, Componentization, NPM, REST, JWT, O.O.P, among others.",
         "classPosition": " text-end "
       },
@@ -329,10 +297,8 @@
         },
         "title": "Frontend Engineer",
         "period": "10/19 - 10/21 (2 yrs 1 mo)",
-        "tag": [
-          "#Angular, #React, Node.Js"
-        ],
-        "description": "Development of systems for the financial area, creation of dashboards, applications that monitor services and generate reports on the instabilities of financial transaction services. Some technologies used in this process: Angular 2+, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "tag": ["#Angular, #React, Node.js"],
+        "description": "Development of systems for the financial area, creation of dashboards, applications that monitor services and generate reports on the instabilities of financial transaction services. Some technologies used in this process: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "classPosition": " text-start "
       },
       {
@@ -349,10 +315,8 @@
         },
         "title": "Principal Frontend Engineer",
         "period": "10/21 - 04/22 (7 mos)",
-        "tag": [
-          "#Angular, #Node.Js"
-        ],
-        "description": "Develop applications for the delivery front, back office applications, and self-service kiosks. Always attentive to development with tests, performance, and best practices. Helps less experienced developers and works on restructuring old projects for a scalable frontend architecture. When necessary, creates interfaces without depending on a UI designer. Has notions of UI/UX and enjoys the subject. Some technologies used in this process: Angular 12+, Monorepo, Nx Workspace (nx.dev), Module Federation.",
+        "tag": ["#Angular, #Node.js"],
+        "description": "Develop applications for the delivery front, back office applications, and self-service kiosks. Always attentive to development with tests, performance, and best practices. Helps less experienced developers and works on restructuring old projects for a scalable frontend architecture. When necessary, creates interfaces without depending on a UI designer. Has notions of UI/UX and enjoys the subject. Some technologies used in this process: Angular, Node.js, Monorepo, Nx Workspace (nx.dev), Module Federation.",
         "classPosition": " text-end "
       },
       {
@@ -369,10 +333,8 @@
         },
         "title": "Frontend Engineer",
         "period": "04/22 - Current",
-        "tag": [
-          "#Angular, #React, Node.Js"
-        ],
-        "description": "Development of web applications with the Angular framework. During development, always attentive to best practices to follow a high level of code standards and in development with tests. Helps less experienced developers day by day to evolve technically together and deliver a highly scalable project. Some technologies used: Angular, React.js, TypeScript, unit testing, end-to-end testing, UI/UX.",
+        "tag": ["#Angular, #React, Node.js"],
+        "description": "Development of web applications with the Angular framework. During development, always attentive to best practices to follow a high level of code standards and in development with tests. Helps less experienced developers day by day to evolve technically together and deliver a highly scalable project. Some technologies used: Angular, React.js, Node.js, TypeScript, unit testing, end-to-end testing, UI/UX.",
         "classPosition": " text-start "
       }
     ]
