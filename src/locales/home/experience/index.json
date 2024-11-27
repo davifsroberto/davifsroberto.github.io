@@ -7,6 +7,24 @@
       {
         "id": 1,
         "company": {
+          "name": "Hsystem",
+          "link": "https://www.linkedin.com/company/hsystem",
+          "image": {
+            "src": "/assets/images/experience/hsystem-logo.png",
+            "alt": "Hsystem Experience",
+            "width": 280,
+            "height": 75
+          }
+        },
+        "title": "Frontend Engineer",
+        "period": "01/24 - Atual",
+        "tag": ["#Angular"],
+        "description": "Atuo como desenvolvedor sênior na definição e desenvolvimento de aplicações Angular, abrangendo soluções com e sem abordagem de Microfrontend. Responsável por garantir a qualidade do código por meio de testes (unitários, E2E e integração) e por atuar como referência técnica, orientando colegas menos experientes. Focado em boas práticas, alta performance, segurança e uma experiência de usuário otimizada. Principais tecnologias utilizadas: Angular, Microfrontend, TypeScript, Testing e Storybook.",
+        "classPosition": " text-start "
+      },
+      {
+        "id": 2,
+        "company": {
           "name": "Banco BV",
           "link": "https://www.linkedin.com/company/banco-bv",
           "image": {
@@ -19,24 +37,7 @@
         "title": "Frontend Engineer",
         "period": "04/22 - Atual",
         "tag": ["#Angular, #React, Node.js"],
-        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React.js, Node.js, TypeScript, teste unitário, teste e2e, UI/UX."
-      },
-      {
-        "id": 2,
-        "company": {
-          "name": "Mottu",
-          "link": "https://www.linkedin.com/company/mottuapp",
-          "image": {
-            "src": "/assets/images/experience/mottu-logo.png",
-            "alt": "Experiência Mottu",
-            "width": 150,
-            "height": 50
-          }
-        },
-        "title": "Principal Frontend Engineer",
-        "period": "10/21 - 04/22 (7 meses)",
-        "tag": ["#Angular", "#Node.js"],
-        "description": "Desenvolvo aplicações para a frente de delivery, aplicativos de backoffice e totens de autoatendimento. Sempre me atento ao desenvolvimento com testes, performance e boas práticas. Ajudo desenvolvedores menos experientes, e trabalho na reestruturação de projetos antigos para uma arquitetura de frontend escalável. Quando necessário, crio as interfaces sem depender de um UI designer. Tenho noções de UI/UX e gosto do assunto. Algumas tecnologias que utilizo neste processo: Angular, Node.js, Monorepo, Nx Workspace (nx.dev), Module Federation.",
+        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React.js, Node.js, TypeScript, teste unitário, teste e2e, UI/UX.",
         "classPosition": " text-end "
       },
       {
@@ -68,6 +69,24 @@
       {
         "id": 1,
         "company": {
+          "name": "Hsystem",
+          "link": "https://www.linkedin.com/company/hsystem",
+          "image": {
+            "src": "/assets/images/experience/hsystem-logo.png",
+            "alt": "Hsystem Experience",
+            "width": 280,
+            "height": 75
+          }
+        },
+        "title": "Frontend Engineer",
+        "period": "01/24 - Current",
+        "tag": ["#Angular"],
+        "description": "I work as a senior developer defining and developing Angular applications, covering solutions with and without a Microfrontend approach. Responsible for ensuring code quality through testing (unit, E2E and integration) and for acting as a technical reference, guiding less experienced colleagues. Focused on best practices, high performance, security and an optimized user experience. Main technologies used: Angular, Microfrontend, TypeScript, Testing and Storybook.",
+        "classPosition": " text-start "
+      },
+      {
+        "id": 2,
+        "company": {
           "name": "Banco BV",
           "link": "https://www.linkedin.com/company/banco-bv",
           "image": {
@@ -80,24 +99,7 @@
         "title": "Frontend Engineer",
         "period": "04/22 - Current",
         "tag": ["#Angular, #React, Node.js"],
-        "description": "Development of web applications with the Angular framework. During development, I am always aware of best practices to follow a high level of code standards, and in development with tests. I helps less experienced developers on a day-to-day basis to technically evolve together and deliver a highly scalable project. Some technologies I use: Angular, React.js, Node.js, TypeScript, unit test, e2e test, UI/UX."
-      },
-      {
-        "id": 2,
-        "company": {
-          "name": "Mottu",
-          "link": "https://www.linkedin.com/company/mottuapp",
-          "image": {
-            "src": "/assets/images/experience/mottu-logo.png",
-            "alt": "Experience Mottu",
-            "width": 150,
-            "height": 50
-          }
-        },
-        "title": "Principal Frontend Engineer",
-        "period": "10/21 - 04/22 (7 mos)",
-        "tag": ["#Angular, #Node.js"],
-        "description": "I develop forward delivery applications, backoffice applications and self-service totems. I always pay attention to development with tests, performance and best practices. I help less experienced developers, and work on restructuring old projects to a scalable frontend architecture. When necessary, I create the interfaces without relying on a UI designer. I have UI/UX notions and I like the subject. Some technologies I use in this process: Angular, Node.js, Monorepo, Nx Workspace (nx.dev), Module Federation.",
+        "description": "Development of web applications with the Angular framework. During development, I am always aware of best practices to follow a high level of code standards, and in development with tests. I helps less experienced developers on a day-to-day basis to technically evolve together and deliver a highly scalable project. Some technologies I use: Angular, React.js, Node.js, TypeScript, unit test, e2e test, UI/UX.",
         "classPosition": " text-end "
       },
       {
