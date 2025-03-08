@@ -50,12 +50,13 @@
     "subtitle": "A little about me",
     "desc": {
       "title": "I'm passionate about what I do!",
-      "one": "I'm a senior frontend engineer, I'm always looking to improve and stay up to date in my area of expertise.",
+      "one": "I'm a senior frontend engineer, always striving to improve and stay up-to-date in my field.",
       "two": "At 17, I worked as",
-      "three": " computer tech support assistant",
-      "four": " In a company in my city, one day I saw my supervisor doing something I had never seen before, when I asked what that was, he told me “I'm doing a program, this is programming”. to study on my own, because it was love at first sight, I entered the development area, where I have been for years.",
-      "five": "I really like music, reading and technology, I've been developing systems for over 10 years, and for 8 years with frontend."
+      "three": "a technical support assistant for computers",
+      "four": "at a company in my town. One day, I saw my supervisor doing something I'd never seen before. When I asked what it was, he told me, 'I'm writing a program, this is programming.' Immediately, I started studying on my own, because it was love at first sight. I entered the development field, and I've been here ever since.",
+      "five": "I really enjoy music, reading, and technology, and I have been working in system development for over 12 years."
     },
+
     "skillTitle": "Some Skills",
     "skills": [
       {

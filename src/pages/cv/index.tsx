@@ -63,6 +63,8 @@ const CvPage: NextPage = () => {
                 <p>
                   {cv[language()].about.me.one}
                   <br />
+                  <br />
+
                   {cv[language()].about.me.two}
                 </p>
               </section>

@@ -3,13 +3,13 @@
     "title": "Meu CV online",
     "subtitle": "Clique no botão abaixo para baixar a versão em PDF.",
     "name": "Davi Roberto",
-    "carrer": "Frontend Engineer",
+    "carrer": "Sênior Frontend Engineer",
     "btnDownload": "BAIXAR MEU CV",
     "about": {
       "title": "Sobre mim",
       "me": {
-        "one": "Olá! Me chamo Davi Roberto, gosto muito de música, leitura e tecnologia. Atuo com desenvolvimento de sistemas a mais de 12 anos.",
-        "two": "Sou frontend engineer sênior, busco sempre me aperfeiçoar e ficar atualizado em minha área de atuação."
+        "one": "Olá! Me chamo Davi Roberto, gosto muito de música, leitura e tecnologia.",
+        "two": "Sou frontend engineer sênior e atuo com desenvolvimento de sistemas a mais de 12 anos."
       },
       "itens": [
         {
@@ -114,13 +114,13 @@
     "title": "My Online Resume",
     "subtitle": "Click the button below to download the PDF version.",
     "name": "Davi Roberto",
-    "carrer": "Frontend Engineer",
+    "carrer": "Senior Frontend Engineer",
     "btnDownload": "DOWNLOAD RESUME",
     "about": {
       "title": "About me",
       "me": {
-        "one": "Hi! My name is Davi Roberto, I really like music, reading and technology. I work with systems development for more than 10 years, and for 8 years with frontend.",
-        "two": "I'm a senior frontend engineer, always looking to improve and stay up to date in my area of expertise."
+        "one": "Hello! My name is Davi Roberto, I really like music, reading and technology.",
+        "two": "I'm a senior frontend engineer and have been working with systems development for over 12 years."
       },
       "itens": [
         {
