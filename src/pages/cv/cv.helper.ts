@@ -19,6 +19,11 @@ type AboutItem = {
   };
 };
 
+export type SkillGroup = {
+  title: string;
+  items: string[];
+};
+
 export function mountMenuCvHelper(): ItemMenuType[] {
   return mountMenuSecondaryHeaderUtils().filter(
     (itemMenu: ItemMenuType) => itemMenu.name !== 'CV'
@@ -27,6 +32,10 @@ export function mountMenuCvHelper(): ItemMenuType[] {
 
 export function mountAboutItemsCvHelper(): AboutItem[] {
   return cv[language()].about.itens;
+}
+
+export function mountSkillGroupsCvHelper(): SkillGroup[] {
+  return cv[language()].skills.groups;
 }
 
 export function mountSkillLeftCvHelper(): SkillType[] {

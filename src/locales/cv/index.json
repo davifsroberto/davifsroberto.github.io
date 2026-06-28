@@ -1,27 +1,26 @@
 {
   "pt": {
     "title": "Meu CV online",
-    "subtitle": "Clique no botão abaixo para baixar a versão em PDF.",
+    "subtitle": "Clique no botão abaixo para gerar a versão em PDF.",
     "name": "Davi Roberto",
-    "carrer": "Sênior Frontend Engineer",
-    "btnDownload": "BAIXAR MEU CV",
+    "carrer": "Principal Software Engineer",
+    "btnDownload": "GERAR PDF",
     "about": {
       "title": "Sobre mim",
       "me": {
-        "one": "Olá! Me chamo Davi Roberto, gosto muito de música, leitura e tecnologia.",
-        "two": "Sou frontend engineer sênior e atuo com desenvolvimento de sistemas a mais de 12 anos."
+        "one": "Sou Principal Software Engineer com mais de 15 anos de experiência em desenvolvimento de software, principalmente na construção e evolução de aplicações web.",
+        "two": "Gosto de atuar perto do código, entendendo o problema, propondo soluções e participando da entrega de ponta a ponta, desde a análise técnica até a aplicação em produção.",
+        "paragraphs": [
+          "Sou Principal Software Engineer com mais de 15 anos de experiência em desenvolvimento de software, principalmente na construção e evolução de aplicações web.",
+          "Gosto de atuar perto do código, entendendo o problema, propondo soluções e participando da entrega de ponta a ponta, desde a análise técnica até a aplicação em produção.",
+          "Minha experiência passa por frontend, backend, APIs, Backend for Frontend (BFF), testes automatizados, CI/CD, performance, segurança e boas práticas de desenvolvimento. No dia a dia, trabalho com tecnologias como Angular, React, TypeScript, Node.js, NestJS, Microfrontends e Design Systems.",
+          "Também participo de discussões de arquitetura de software quando necessário, principalmente para ajudar a construir soluções mais simples de manter, escalar e evoluir. É um tema que gosto bastante e procuro estudar continuamente.",
+          "Nos últimos projetos, tenho usado Inteligência Artificial de forma cada vez mais presente no meu fluxo de trabalho, com uma abordagem AI-first para apoiar desenvolvimento, refatorações, geração de testes, documentação, análise de código e automação de tarefas repetitivas."
+        ]
       },
       "itens": [
         {
           "id": 1,
-          "title": "Idade",
-          "anchor": false,
-          "description": {
-            "text": "30 anos"
-          }
-        },
-        {
-          "id": 2,
           "title": "E-mail",
           "anchor": true,
           "description": {
@@ -31,7 +30,7 @@
           }
         },
         {
-          "id": 3,
+          "id": 2,
           "title": "Telefone",
           "anchor": false,
           "description": {
@@ -39,7 +38,7 @@
           }
         },
         {
-          "id": 4,
+          "id": 3,
           "title": "WhatsApp",
           "anchor": true,
           "description": {
@@ -50,7 +49,7 @@
           }
         },
         {
-          "id": 5,
+          "id": 4,
           "title": "LinkedIn",
           "anchor": true,
           "description": {
@@ -61,7 +60,7 @@
           }
         },
         {
-          "id": 6,
+          "id": 5,
           "title": "GitHub",
           "anchor": true,
           "description": {
@@ -74,7 +73,50 @@
       ]
     },
     "skills": {
-      "title": "Algumas Skills",
+      "title": "Skills",
+      "groups": [
+        {
+          "title": "Frontend",
+          "items": [
+            "Angular",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Microfrontends",
+            "Design Systems"
+          ]
+        },
+        {
+          "title": "Backend",
+          "items": [
+            "Node.js",
+            "NestJS",
+            "APIs REST",
+            "Backend for Frontend (BFF)",
+            "Banco de dados"
+          ]
+        },
+        {
+          "title": "Qualidade e DevOps",
+          "items": [
+            "Testes unitários",
+            "Integração",
+            "E2E",
+            "CI/CD",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "title": "Engenharia",
+          "items": [
+            "AI-first Development",
+            "Performance",
+            "Segurança",
+            "Code Review",
+            "Boas práticas"
+          ]
+        }
+      ],
       "skillRight": [
         {
           "name": "UX/UI",
@@ -82,7 +124,7 @@
           "progress": 90
         },
         {
-          "name": "Testes (unitário, comportamento, integração, e2e)",
+          "name": "Testes (unitário, comportamento, integração, E2E)",
           "class": "bg-warning",
           "progress": 92
         },
@@ -101,10 +143,24 @@
       "items": [
         {
           "id": 1,
-          "title": "Graduação em Sistemas para Internet",
+          "title": "Tecnólogo em Sistemas para Internet",
           "subtitle": "Centro Universitário Senac",
           "period": "2013 - 2016",
           "description": "Desenvolver aplicações totalmente originais e também utilizar-se de outras prontas para implementação em novas estruturas. Criar e executar projetos para os diversos veículos web, com discernimento e equilíbrio entre as necessidades, tanto em projetos interativos para a web como em dispositivos móveis."
+        },
+        {
+          "id": 2,
+          "title": "Bacharelado em Ciência da Computação",
+          "subtitle": "Descomplica Faculdade Digital",
+          "period": "2024 - 2028",
+          "description": "Formação em andamento, com foco em fundamentos de computação, desenvolvimento de software, estruturas de dados, arquitetura, engenharia de software e disciplinas relacionadas à construção de sistemas."
+        },
+        {
+          "id": 3,
+          "title": "Metodologia da Pesquisa Científica",
+          "subtitle": "UFES",
+          "period": "12/2023 - 01/2024",
+          "description": "Curso voltado a fundamentos de pesquisa científica, métodos de investigação, estruturação de trabalhos acadêmicos e organização de estudos."
         }
       ]
     }
@@ -112,27 +168,26 @@
 
   "en": {
     "title": "My Online Resume",
-    "subtitle": "Click the button below to download the PDF version.",
+    "subtitle": "Click the button below to generate the PDF version.",
     "name": "Davi Roberto",
-    "carrer": "Senior Frontend Engineer",
-    "btnDownload": "DOWNLOAD RESUME",
+    "carrer": "Principal Software Engineer",
+    "btnDownload": "GENERATE PDF",
     "about": {
       "title": "About me",
       "me": {
-        "one": "Hello! My name is Davi Roberto, I really like music, reading and technology.",
-        "two": "I'm a senior frontend engineer and have been working with systems development for over 12 years."
+        "one": "I am a Principal Software Engineer with over 15 years of experience in software development, mainly building and evolving web applications.",
+        "two": "I like working close to the code, understanding the problem, proposing solutions, and participating in end-to-end delivery, from technical analysis to production rollout.",
+        "paragraphs": [
+          "I am a Principal Software Engineer with over 15 years of experience in software development, mainly building and evolving web applications.",
+          "I like working close to the code, understanding the problem, proposing solutions, and participating in end-to-end delivery, from technical analysis to production rollout.",
+          "My experience covers frontend, backend, APIs, Backend for Frontend (BFF), automated tests, CI/CD, performance, security, and development best practices. Day to day, I work with technologies such as Angular, React, TypeScript, Node.js, NestJS, Microfrontends, and Design Systems.",
+          "I also join software architecture discussions when needed, mostly to help build solutions that are easier to maintain, scale, and evolve. It is a topic I enjoy and continue to study.",
+          "In recent projects, I have been using Artificial Intelligence more actively in my workflow, with an AI-first approach to support development, refactoring, test generation, documentation, code analysis, and automation of repetitive tasks."
+        ]
       },
       "itens": [
         {
           "id": 1,
-          "title": "Age",
-          "anchor": false,
-          "description": {
-            "text": "30 years"
-          }
-        },
-        {
-          "id": 2,
           "title": "E-mail",
           "anchor": true,
           "description": {
@@ -142,7 +197,7 @@
           }
         },
         {
-          "id": 3,
+          "id": 2,
           "title": "Phone",
           "anchor": false,
           "description": {
@@ -150,7 +205,7 @@
           }
         },
         {
-          "id": 4,
+          "id": 3,
           "title": "WhatsApp",
           "anchor": true,
           "description": {
@@ -161,7 +216,7 @@
           }
         },
         {
-          "id": 5,
+          "id": 4,
           "title": "LinkedIn",
           "anchor": true,
           "description": {
@@ -172,7 +227,7 @@
           }
         },
         {
-          "id": 6,
+          "id": 5,
           "title": "GitHub",
           "anchor": true,
           "description": {
@@ -185,7 +240,50 @@
       ]
     },
     "skills": {
-      "title": "Some Skills",
+      "title": "Skills",
+      "groups": [
+        {
+          "title": "Frontend",
+          "items": [
+            "Angular",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Microfrontends",
+            "Design Systems"
+          ]
+        },
+        {
+          "title": "Backend",
+          "items": [
+            "Node.js",
+            "NestJS",
+            "REST APIs",
+            "Backend for Frontend (BFF)",
+            "Databases"
+          ]
+        },
+        {
+          "title": "Quality and DevOps",
+          "items": [
+            "Unit tests",
+            "Integration",
+            "E2E",
+            "CI/CD",
+            "GitHub Actions"
+          ]
+        },
+        {
+          "title": "Engineering",
+          "items": [
+            "AI-first Development",
+            "Performance",
+            "Security",
+            "Code Review",
+            "Best practices"
+          ]
+        }
+      ],
       "skillRight": [
         {
           "name": "UX/UI",
@@ -193,7 +291,7 @@
           "progress": 90
         },
         {
-          "name": "Tests (unitary, behavior, integration, e2e)",
+          "name": "Tests (unitary, behavior, integration, E2E)",
           "class": "bg-warning",
           "progress": 92
         },
@@ -212,10 +310,24 @@
       "items": [
         {
           "id": 1,
-          "title": "Bachelor's Degree in Internet Systems",
+          "title": "Technology Degree in Internet Systems",
           "subtitle": "Centro Universitário Senac (Brazil)",
           "period": "2013 - 2016",
           "description": "Develop totally original applications and also use others ready for implementation in new structures. Create and execute projects for the various web vehicles, with discernment and balance between needs, both in interactive projects for the web and mobile devices."
+        },
+        {
+          "id": 2,
+          "title": "Bachelor's Degree in Computer Science",
+          "subtitle": "Descomplica Faculdade Digital",
+          "period": "2024 - 2028",
+          "description": "Ongoing degree focused on computing fundamentals, software development, data structures, architecture, software engineering, and disciplines related to building systems."
+        },
+        {
+          "id": 3,
+          "title": "Scientific Research Methodology",
+          "subtitle": "UFES",
+          "period": "12/2023 - 01/2024",
+          "description": "Course focused on scientific research fundamentals, investigation methods, academic writing structure, and study organization."
         }
       ]
     }
