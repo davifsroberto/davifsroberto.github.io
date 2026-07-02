@@ -4,7 +4,7 @@
     "subtitle": "Clique no botão abaixo para gerar a versão em PDF.",
     "name": "Davi Roberto",
     "carrer": "Principal Software Engineer",
-    "btnDownload": "GERAR PDF",
+    "btnDownload": "BAIXAR PDF",
     "about": {
       "title": "Sobre mim",
       "me": {
@@ -171,7 +171,7 @@
     "subtitle": "Click the button below to generate the PDF version.",
     "name": "Davi Roberto",
     "carrer": "Principal Software Engineer",
-    "btnDownload": "GENERATE PDF",
+    "btnDownload": "DOWNLOAD PDF",
     "about": {
       "title": "About me",
       "me": {

@@ -15,6 +15,10 @@ import cv from '../../locales/cv/index.json';
 
 const CvPage: NextPage = () => {
   const selectedLanguage = language();
+  const cvPdfFile =
+    selectedLanguage === 'pt'
+      ? 'Davi-Roberto_CV.pdf'
+      : 'Davi-Roberto_Resume.pdf';
   const aboutParagraphs = cv[selectedLanguage].about.me.paragraphs || [
     cv[selectedLanguage].about.me.one,
     cv[selectedLanguage].about.me.two,
@@ -46,14 +50,14 @@ const CvPage: NextPage = () => {
                 <p className="text-white">{cv[selectedLanguage].carrer}</p>
                 <br />
 
-                <button
+                <a
                   className="btn btn-default-reverse"
-                  type="button"
-                  onClick={() => window.print()}
+                  href={`/${cvPdfFile}`}
+                  download={cvPdfFile}
                 >
                   {cv[selectedLanguage].btnDownload} &nbsp;
                   <i className="fa fa-download" />
-                </button>
+                </a>
               </div>
             </div>
           </article>
