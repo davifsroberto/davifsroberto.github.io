@@ -56,6 +56,10 @@ export const Container = styled.article.attrs(
 
     .card-body {
       background-color: #222;
+
+      section:last-child {
+        white-space: pre-line;
+      }
     }
   }
 

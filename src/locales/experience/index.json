@@ -164,25 +164,25 @@
         "title": "Frontend Engineer",
         "period": "04/22 - 01/24 (1 ano e 10 meses)",
         "tag": ["#Angular, #React, #Node.js"],
-        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React.js, Node.js, TypeScript, teste unitário, teste e2e, UI/UX.",
+        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React, Node.js, TypeScript, teste unitário, teste E2E, UI/UX.",
         "classPosition": " text-end "
       },
       {
         "id": 11,
         "company": {
-          "name": "Hsystem",
+          "name": "HSystem",
           "link": "https://www.linkedin.com/company/hsystem",
           "image": {
             "src": "/assets/images/experience/hsystem-logo.png",
-            "alt": "Hsystem Experience",
+            "alt": "HSystem Experience",
             "width": 280,
             "height": 75
           }
         },
-        "title": "Frontend Engineer",
+        "title": "Principal Software Engineer",
         "period": "01/24 - Atual",
-        "tag": ["#Angular"],
-        "description": "Atuo como desenvolvedor sênior na definição e desenvolvimento de aplicações Angular, abrangendo soluções com e sem abordagem de Microfrontend. Também trabalho com Node.js na criação e implementação de APIs eficientes e escaláveis. Sou responsável por garantir a qualidade do código por meio de testes (unitários, E2E e integração) e por atuar como referência técnica, orientando colegas menos experientes. Focado em boas práticas, alta performance, segurança e uma experiência de usuário otimizada. Principais tecnologias utilizadas: Angular, Microfrontend, Node.js, TypeScript, Testing e Storybook.",
+        "tag": ["#Angular", "#TypeScript", "#Node.js", "#NestJS"],
+        "description": "Atuo como Principal Software Engineer na HSystem, trabalhando no desenvolvimento e evolução de soluções de software de ponta a ponta.\n\nNo dia a dia, participo da análise técnica, implementação, revisão de código, testes e entrega em produção. Trabalho principalmente com aplicações web, APIs e Backend for Frontend (BFF), usando tecnologias como Angular, TypeScript, Node.js e NestJS.\n\nMinha atuação não fica limitada ao frontend. Também contribuo com backend, integrações, banco de dados, performance, segurança, CI/CD e melhoria contínua das aplicações. Quando necessário, participo das discussões de arquitetura para ajudar o time a tomar decisões mais simples, sustentáveis e fáceis de evoluir.\n\nTambém atuo próximo de outros desenvolvedores, fazendo code reviews, compartilhando boas práticas e ajudando na qualidade técnica das entregas.\n\nNos últimos projetos, venho usando Inteligência Artificial de forma cada vez mais presente no fluxo de desenvolvimento, com uma abordagem AI-first. Utilizo ferramentas e agentes de IA para apoiar implementação de funcionalidades, refatorações, geração de testes, documentação, análise de código e automação de tarefas repetitivas.",
         "classPosition": " text-start "
       }
     ]
@@ -352,25 +352,25 @@
         "title": "Frontend Engineer",
         "period": "04/22 - 01/24 (1 yr 10 mos)",
         "tag": ["#Angular, #React, #Node.js"],
-        "description": "Development of web applications with the Angular framework. During development, always attentive to best practices to follow a high level of code standards and in development with tests. Helps less experienced developers day by day to evolve technically together and deliver a highly scalable project. Some technologies used: Angular, React.js, Node.js, TypeScript, unit testing, end-to-end testing, UI/UX.",
+        "description": "Development of web applications with the Angular framework. During development, always attentive to best practices to follow a high level of code standards and in development with tests. Helps less experienced developers day by day to evolve technically together and deliver a highly scalable project. Some technologies used: Angular, React, Node.js, TypeScript, unit testing, E2E testing, UI/UX.",
         "classPosition": " text-end "
       },
       {
         "id": 11,
         "company": {
-          "name": "Hsystem",
+          "name": "HSystem",
           "link": "https://www.linkedin.com/company/hsystem",
           "image": {
             "src": "/assets/images/experience/hsystem-logo.png",
-            "alt": "Hsystem Experience",
+            "alt": "HSystem Experience",
             "width": 280,
             "height": 75
           }
         },
-        "title": "Frontend Engineer",
+        "title": "Principal Software Engineer",
         "period": "01/24 - Current",
-        "tag": ["#Angular"],
-        "description": "I work as a senior developer defining and developing Angular applications, covering solutions with and without a Microfrontend approach. I also work with Node.js to create and implement efficient and scalable APIs. I am responsible for ensuring code quality through testing (unit, E2E and integration) and for acting as a technical reference, guiding less experienced colleagues. Focused on best practices, high performance, security and an optimized user experience. Main technologies used: Angular, Microfrontend, Node.js, TypeScript, Testing and Storybook.",
+        "tag": ["#Angular", "#TypeScript", "#Node.js", "#NestJS"],
+        "description": "I work as a Principal Software Engineer at HSystem, developing and evolving end-to-end software solutions.\n\nDay to day, I participate in technical analysis, implementation, code review, testing, and production delivery. I mainly work with web applications, APIs, and Backend for Frontend (BFF), using technologies such as Angular, TypeScript, Node.js, and NestJS.\n\nMy work is not limited to frontend. I also contribute to backend, integrations, databases, performance, security, CI/CD, and continuous improvement of applications. When needed, I join architecture discussions to help the team make simpler, sustainable decisions that are easier to evolve.\n\nI also work closely with other developers, doing code reviews, sharing best practices, and helping improve the technical quality of deliveries.\n\nIn recent projects, I have been using Artificial Intelligence more actively in the development workflow, with an AI-first approach. I use AI tools and agents to support feature implementation, refactoring, test generation, documentation, code analysis, and automation of repetitive tasks.",
         "classPosition": " text-start "
       }
     ]

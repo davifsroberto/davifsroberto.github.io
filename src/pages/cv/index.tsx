@@ -4,18 +4,26 @@ import { Container } from './styles';
 import {
   mountAboutItemsCvHelper,
   mountMenuCvHelper,
-  mountSkillLeftCvHelper,
-  mountSkillRightCvHelper,
+  mountSkillGroupsCvHelper,
   mountTimelineEducationCvHelper,
   mountTimelineExperienceCvHelper,
 } from './cv.helper';
 import { Header } from '../../components/Header';
-import { Skill } from '../../components/Skill';
 import { Timeline } from '../../components/Timeline';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import cv from '../../locales/cv/index.json';
 
 const CvPage: NextPage = () => {
+  const selectedLanguage = language();
+  const cvPdfFile =
+    selectedLanguage === 'pt'
+      ? 'Davi-Roberto_CV.pdf'
+      : 'Davi-Roberto_Resume.pdf';
+  const aboutParagraphs = cv[selectedLanguage].about.me.paragraphs || [
+    cv[selectedLanguage].about.me.one,
+    cv[selectedLanguage].about.me.two,
+  ];
+
   return (
     <Container>
       <section className="bg-header-default">
@@ -24,8 +32,8 @@ const CvPage: NextPage = () => {
 
       <div className="container-xl py-5">
         <section className="pb-4">
-          <p className="paragraph">{cv[language()].title}</p>
-          <h3 className="mb-sm-5 mb-4">{cv[language()].subtitle}</h3>
+          <p className="paragraph">{cv[selectedLanguage].title}</p>
+          <h3 className="mb-sm-5 mb-4">{cv[selectedLanguage].subtitle}</h3>
         </section>
 
         <section className="bg-page">
@@ -36,20 +44,18 @@ const CvPage: NextPage = () => {
               </section>
 
               <div className="col-lg-8 col-md-7 text-center text-md-start">
-                <h2 className="h1 mt-2 text-white">{cv[language()].name}</h2>
-                <p className="text-white">{cv[language()].carrer}</p>
+                <h2 className="h1 mt-2 text-white">
+                  {cv[selectedLanguage].name}
+                </h2>
+                <p className="text-white">{cv[selectedLanguage].carrer}</p>
                 <br />
 
                 <a
                   className="btn btn-default-reverse"
-                  href={
-                    language() === 'pt'
-                      ? '/Davi-Roberto_CV.pdf'
-                      : 'Davi-Roberto_Resume.pdf'
-                  }
-                  download={true}
+                  href={`/${cvPdfFile}`}
+                  download={cvPdfFile}
                 >
-                  {cv[language()].btnDownload} &nbsp;
+                  {cv[selectedLanguage].btnDownload} &nbsp;
                   <i className="fa fa-download" />
                 </a>
               </div>
@@ -57,26 +63,20 @@ const CvPage: NextPage = () => {
           </article>
 
           <article className="about pb-4 px-3 px-md-5">
-            <div className="row">
-              <section className="col-md-5">
-                <h2 className="h3 mb-3">{cv[language()].about.title}</h2>
-                <p>
-                  {cv[language()].about.me.one}
-                  <br />
-                  <br />
-
-                  {cv[language()].about.me.two}
-                </p>
+            <div className="row gx-lg-5 gy-4">
+              <section className="about-summary col-lg-8">
+                <h2 className="h3 mb-3">{cv[selectedLanguage].about.title}</h2>
+                {aboutParagraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </section>
 
-              <article className="about-item col-md-7 mt-4 text-start">
+              <article className="about-item col-lg-4 text-start">
                 {mountAboutItemsCvHelper().map((item) => (
-                  <section key={item.id} className="row pb-sm-3 pb-1">
-                    <section className="col-3 text-md-end">
-                      {item.title}
-                    </section>
+                  <section key={item.id} className="contact-item">
+                    <strong>{item.title}</strong>
 
-                    <section className="col-9">
+                    <span>
                       {item.anchor ? (
                         <a
                           className={item.description.class}
@@ -88,7 +88,7 @@ const CvPage: NextPage = () => {
                       ) : (
                         item.description.text
                       )}
-                    </section>
+                    </span>
                   </section>
                 ))}
               </article>
@@ -97,28 +97,36 @@ const CvPage: NextPage = () => {
           <hr />
 
           <article className="py-5 px-3 px-md-5">
-            <h2 className="h3 mb-3">{cv[language()].skills.title}</h2>
-            <div className="row">
-              <div className="col-md-6">
-                <Skill skills={mountSkillLeftCvHelper()} />
-              </div>
-
-              <div className="col-md-6">
-                <Skill skills={mountSkillRightCvHelper()} />
-              </div>
+            <h2 className="h3 mb-3">{cv[selectedLanguage].skills.title}</h2>
+            <div className="row skill-groups">
+              {mountSkillGroupsCvHelper().map((group, index) => (
+                <section
+                  className={`skill-group skill-group-${
+                    index + 1
+                  } col-md-6 mb-4`}
+                  key={group.title}
+                >
+                  <h4>{group.title}</h4>
+                  <ul>
+                    {group.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </section>
+              ))}
             </div>
           </article>
           <hr />
 
           <article className="py-5 px-3 px-md-5">
-            <h2 className="h3 mb-4">{cv[language()].experience.title}</h2>
+            <h2 className="h3 mb-4">{cv[selectedLanguage].experience.title}</h2>
 
             <Timeline border={2} times={mountTimelineExperienceCvHelper()} />
           </article>
           <hr />
 
           <article className="py-5 px-3 px-md-5">
-            <h2 className="h3 mb-4">{cv[language()].education.title}</h2>
+            <h2 className="h3 mb-4">{cv[selectedLanguage].education.title}</h2>
 
             <Timeline times={mountTimelineEducationCvHelper()} />
           </article>
