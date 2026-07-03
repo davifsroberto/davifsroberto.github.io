@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-export const Container = styled.article.attrs(
-  (props: { border: number }) => props
-)`
-  border-left: ${(props) => props.border + 'px'} solid #e6e9ed;
+type ContainerProps = {
+  $border: number;
+};
+
+export const Container = styled.article<ContainerProps>`
+  border-left: ${(props) => props.$border}px solid #e6e9ed;
   padding: 1rem 0;
 
   .timeline-card {

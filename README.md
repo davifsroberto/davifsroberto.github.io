@@ -40,8 +40,8 @@ This is my personal website, where I report about my career in frontend web deve
 
 ## ✅ Required
 
-- Node 14 (LTS Version)
-- Yarn 1.22.17
+- Node 20.9+ (Node 24 LTS recommended)
+- Yarn 1.22.x
   <br />
   <br />
 
@@ -73,7 +73,7 @@ Run `yarn dev` for start local server.
 
 ## ⚙️ Build
 
-- Run `yarn build` to generate a build of the project.
+- Run `yarn build` to generate the production build and static export in `out`.
   <br />
   <br />
 

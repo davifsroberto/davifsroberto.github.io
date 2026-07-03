@@ -1,7 +1,7 @@
 import React, { FormEvent, useState } from 'react';
 
 import { toast } from 'react-toastify';
-import { send } from 'emailjs-com';
+import { send } from '@emailjs/browser';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { Container } from './styles';

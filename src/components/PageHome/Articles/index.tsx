@@ -58,10 +58,6 @@ export function Articles() {
   const [articles, setArticles] = useState<ArticleType>({} as ArticleType);
 
   useEffect(() => {
-    getArticles();
-  }, []);
-
-  function getArticles(): void {
     axios
       .get(
         'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@davifsroberto'
@@ -70,7 +66,7 @@ export function Articles() {
         setArticles(response.data);
       })
       .catch((error) => console.error(error));
-  }
+  }, []);
 
   function formatDateArticle(date: string): string {
     let dataFormated: string;
@@ -96,7 +92,9 @@ export function Articles() {
     return html?.match(/<img[^>]+src="([^">]+)"/)?.[1];
   }
 
-  function getArticleImage(item: ArticleType['items'][number]): string | undefined {
+  function getArticleImage(
+    item: ArticleType['items'][number]
+  ): string | undefined {
     return (
       item.thumbnail ||
       item.enclosure?.link ||

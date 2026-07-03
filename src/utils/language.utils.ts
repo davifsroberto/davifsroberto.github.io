@@ -1,7 +1,18 @@
 import { useRouter } from 'next/router';
 
-export function SetLanguageUtils() {
-  const router = useRouter();
+export type Language = 'pt' | 'en';
 
-  return router.locale === 'pt' ? 'pt' : 'en';
+export function SetLanguageUtils(): Language {
+  const router = useRouter();
+  const path = router.asPath.split(/[?#]/)[0];
+
+  return path === '/en' || path.startsWith('/en/') ? 'en' : 'pt';
+}
+
+export function getLocalizedPath(path: string, selectedLanguage: Language) {
+  if (selectedLanguage !== 'en') {
+    return path;
+  }
+
+  return path === '/' ? '/en' : `/en${path}`;
 }

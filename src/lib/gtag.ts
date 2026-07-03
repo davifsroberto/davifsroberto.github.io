@@ -7,7 +7,7 @@ type GTagEvent = {
 
 export const GA_TRACKING_ID = 'G-H8BYG6E98W';
 
-export const pageview = (url: URL): void => {
+export const pageview = (url: string): void => {
   window.gtag('config', GA_TRACKING_ID, {
     page_path: url,
   });

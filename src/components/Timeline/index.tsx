@@ -8,7 +8,7 @@ type TimelineProps = {
 
 export function Timeline({ times, border }: TimelineProps) {
   return (
-    <Container border={border}>
+    <Container $border={border ?? 0}>
       {times.map((time) => (
         <section
           key={time.id}

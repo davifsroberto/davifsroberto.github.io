@@ -1,11 +1,12 @@
 import Image from 'next/image';
 
 import { Container } from './styles';
-import { originRouterUtils } from '../../../utils/route.utils';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
 import profile from '../../../locales/home/contact/profile.json';
 
 export default function Profile() {
+  const selectedLanguage = language();
+
   return (
     <Container>
       <section className="head">
@@ -13,9 +14,9 @@ export default function Profile() {
           className="img"
           width={150}
           height={150}
-          src={`${originRouterUtils()}/assets/images/general/perfil_davifsroberto.jpg`}
+          src="/assets/images/general/perfil_davifsroberto.jpg"
           alt="Davi Roberto - Frontend Engineer"
-        ></Image>
+        />
         <h4>Davi Roberto</h4>
         <h5>Frontend Engineer</h5>
       </section>
@@ -23,12 +24,12 @@ export default function Profile() {
       <section className="body">
         <p>
           <a
-            href={profile[language()].whats.link}
+            href={profile[selectedLanguage].whats.link}
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa fa-whatsapp fw-bolder" />
-            &nbsp;{profile[language()].whats.label}
+            &nbsp;{profile[selectedLanguage].whats.label}
           </a>
 
           <a href="mailto:davifsroberto@outlook.com">
@@ -47,7 +48,7 @@ export default function Profile() {
             rel="noreferrer"
           >
             <i className="fa fa-map-marker" />
-            &nbsp;{profile[language()].local}
+            &nbsp;{profile[selectedLanguage].local}
           </a>
         </p>
       </section>
