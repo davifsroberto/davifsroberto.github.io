@@ -69,7 +69,7 @@ export function Contact() {
       .then(() => {
         setLoading(false);
 
-        toast.success('Message sent successfully');
+        toast.success(contact[selectedLanguage].form.sendSuccess);
 
         clearFormFields();
       })
