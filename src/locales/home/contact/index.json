@@ -6,9 +6,11 @@
       "labelOne": "Nome",
       "labelTwo": "Assunto",
       "labelTree": "E-mail - Opcional",
-      "labelFour": "Telefone - Optional",
+      "labelFour": "Telefone - Opcional",
       "labelFive": "Mensagem",
-      "btnForm": "ENVIAR"
+      "btnForm": "ENVIAR",
+      "invalidEmail": "Informe um e-mail válido.",
+      "sendError": "Erro ao enviar mensagem! Tente novamente mais tarde."
     },
     "messageSend": "Enviando..."
   },
@@ -22,7 +24,9 @@
       "labelTree": "Mail - Optional",
       "labelFour": "Phone - Optional",
       "labelFive": "Message",
-      "btnForm": "SEND"
+      "btnForm": "SEND",
+      "invalidEmail": "Enter a valid email address.",
+      "sendError": "Error sending message! Try again later."
     },
     "messageSend": "Send..."
   }
