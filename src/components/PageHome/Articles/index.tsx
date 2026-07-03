@@ -54,6 +54,7 @@ type ArticleType = {
 };
 
 export function Articles() {
+  const selectedLanguage = language();
   const [articles, setArticles] = useState<ArticleType>({} as ArticleType);
 
   useEffect(() => {
@@ -74,7 +75,7 @@ export function Articles() {
   function formatDateArticle(date: string): string {
     let dataFormated: string;
 
-    if (language() === 'en') {
+    if (selectedLanguage === 'en') {
       dataFormated = `
       ${new Date(date).getFullYear()}/
       ${new Date(date).getMonth() + 1}/
@@ -107,8 +108,10 @@ export function Articles() {
   return (
     <Container id="articles">
       <div className="container">
-        <p className="paragraph">{articlesLang[language()].title}</p>
-        <h3 className="mb-sm-5 mb-4">{articlesLang[language()].subtitle}</h3>
+        <p className="paragraph">{articlesLang[selectedLanguage].title}</p>
+        <h3 className="mb-sm-5 mb-4">
+          {articlesLang[selectedLanguage].subtitle}
+        </h3>
 
         {!articles.items && (
           <h5>
@@ -117,7 +120,7 @@ export function Articles() {
               target="_blank"
               rel="noreferrer"
             >
-              {articlesLang[language()].redirect} 😉
+              {articlesLang[selectedLanguage].redirect} 😉
             </a>
           </h5>
         )}
@@ -156,7 +159,7 @@ export function Articles() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {articlesLang[language()].read}
+                        {articlesLang[selectedLanguage].read}
                       </a>
                     </section>
                   </section>

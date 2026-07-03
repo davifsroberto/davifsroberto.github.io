@@ -11,6 +11,7 @@ import Spinner from '../Spinner';
 import Profile from './Profile';
 
 export function Contact() {
+  const selectedLanguage = language();
   const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
@@ -26,15 +27,43 @@ export function Contact() {
     message,
   };
 
+  function isValidEmail(value: string): boolean {
+    if (!value) {
+      return true;
+    }
+
+    return /^[^\s@]+@[a-zA-Z0-9][a-zA-Z0-9-]{1,62}(\.[a-zA-Z]{2,})+$/.test(
+      value
+    );
+  }
+
+  function clearFormFields(): void {
+    setName('');
+    setSubject('');
+    setEmail('');
+    setPhone('');
+    setMessage('');
+  }
+
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    const normalizedEmail = email.trim();
+
+    if (!isValidEmail(normalizedEmail)) {
+      toast.error(contact[selectedLanguage].form.invalidEmail);
+      return;
+    }
 
     setLoading(true);
 
     send(
       'davifsroberto_mailersend',
       'template_pygyvlc',
-      form,
+      {
+        ...form,
+        email: normalizedEmail,
+      },
       'Uk5RjMiwi1zjJYErr'
     )
       .then(() => {
@@ -42,18 +71,19 @@ export function Contact() {
 
         toast.success('Message sent successfully');
 
-        (document.getElementById('contact-form') as HTMLFormElement).reset();
+        clearFormFields();
       })
-      .catch(() => {
+      .catch((error) => {
         setLoading(false);
 
-        toast.error('Error sending message! Try again later');
+        console.error('EmailJS send error:', error);
+        toast.error(contact[selectedLanguage].form.sendError);
       });
   }
 
   return (
     <Container id="contact">
-      <Spinner loading={loading} text={contact[language()].messageSend} />
+      <Spinner loading={loading} text={contact[selectedLanguage].messageSend} />
 
       <AnimationOnScroll
         duration={1}
@@ -61,9 +91,11 @@ export function Contact() {
         animateIn="animate__fadeIn"
       >
         <div className="container">
-          <p className="paragraph">{contact[language()].title}</p>
+          <p className="paragraph">{contact[selectedLanguage].title}</p>
 
-          <h3 className="mb-sm-5 mb-4">{contact[language()].subtitle}😉</h3>
+          <h3 className="mb-sm-5 mb-4">
+            {contact[selectedLanguage].subtitle}😉
+          </h3>
 
           <article className="row">
             <section className="col-md-6 text-center">
@@ -77,9 +109,10 @@ export function Contact() {
                     <input
                       onChange={(e) => setName(e.target.value)}
                       name="name"
-                      placeholder={contact[language()].form.labelOne}
+                      placeholder={contact[selectedLanguage].form.labelOne}
                       className="input"
                       type="text"
+                      value={name}
                       minLength={2}
                       maxLength={50}
                       required
@@ -92,9 +125,10 @@ export function Contact() {
                     <input
                       onChange={(e) => setSubject(e.target.value)}
                       name="subject"
-                      placeholder={contact[language()].form.labelTwo}
+                      placeholder={contact[selectedLanguage].form.labelTwo}
                       className="input"
                       type="text"
+                      value={subject}
                       minLength={2}
                       maxLength={50}
                       required
@@ -107,11 +141,14 @@ export function Contact() {
                     <input
                       onChange={(e) => setEmail(e.target.value)}
                       name="email"
-                      placeholder={contact[language()].form.labelTree}
+                      placeholder={contact[selectedLanguage].form.labelTree}
                       className="input"
                       type="email"
+                      value={email}
                       minLength={5}
                       maxLength={50}
+                      pattern="[^\s@]+@[a-zA-Z0-9][a-zA-Z0-9-]{1,62}(\.[a-zA-Z]{2,})+"
+                      title={contact[selectedLanguage].form.invalidEmail}
                     />
                   </div>
                 </section>
@@ -121,9 +158,10 @@ export function Contact() {
                     <input
                       onChange={(e) => setPhone(e.target.value)}
                       name="phone"
-                      placeholder={contact[language()].form.labelFour}
+                      placeholder={contact[selectedLanguage].form.labelFour}
                       className="input"
                       type="number"
+                      value={phone}
                       min={0}
                       step="1"
                     />
@@ -135,8 +173,9 @@ export function Contact() {
                     <textarea
                       onChange={(e) => setMessage(e.target.value)}
                       name="message"
-                      placeholder={contact[language()].form.labelFive}
+                      placeholder={contact[selectedLanguage].form.labelFive}
                       className="form-control"
+                      value={message}
                       minLength={5}
                       maxLength={500}
                       required
@@ -148,7 +187,7 @@ export function Contact() {
                   type="submit"
                   className="btn btn-default btn-default-big"
                 >
-                  {contact[language()].form.btnForm} &nbsp;
+                  {contact[selectedLanguage].form.btnForm} &nbsp;
                   <i className="fa fa-paper-plane" />
                 </button>
               </form>
