@@ -36,10 +36,12 @@ export const Container = styled.article`
     }
 
     .bg-article {
-      height: 12em;
       height: 10em;
       border-top-right-radius: 0.3em;
       border-top-left-radius: 0.3em;
+      background: linear-gradient(135deg, #041822 0%, #46348a 100%);
+      background-position: center !important;
+      background-repeat: no-repeat !important;
       background-size: cover !important;
     }
   }

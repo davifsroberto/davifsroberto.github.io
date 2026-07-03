@@ -45,6 +45,11 @@ type ArticleType = {
     guid: string;
     author: string;
     thumbnail?: string;
+    content?: string;
+    description?: string;
+    enclosure?: {
+      link?: string;
+    };
   }[];
 };
 
@@ -86,6 +91,19 @@ export function Articles() {
     return dataFormated;
   }
 
+  function getImageFromHtml(html?: string): string | undefined {
+    return html?.match(/<img[^>]+src="([^">]+)"/)?.[1];
+  }
+
+  function getArticleImage(item: ArticleType['items'][number]): string | undefined {
+    return (
+      item.thumbnail ||
+      item.enclosure?.link ||
+      getImageFromHtml(item.content) ||
+      getImageFromHtml(item.description)
+    );
+  }
+
   return (
     <Container id="articles">
       <div className="container">
@@ -106,37 +124,45 @@ export function Articles() {
 
         {articles.items && (
           <Carousel responsive={responsive} autoPlaySpeed={99999}>
-            {articles.items.map((item) => (
-              <section key={item.guid} className="px-1 pt-2">
-                <section className="card">
-                  <section
-                    className="bg-article"
-                    style={{ background: `url(${item.thumbnail}) no-repeat` }}
-                  ></section>
+            {articles.items.map((item) => {
+              const articleImage = getArticleImage(item);
 
-                  <section className="card-body">
-                    <h6>{item.title}</h6>
+              return (
+                <section key={item.guid} className="px-1 pt-2">
+                  <section className="card">
+                    <section
+                      className="bg-article"
+                      style={
+                        articleImage
+                          ? { backgroundImage: `url(${articleImage})` }
+                          : undefined
+                      }
+                    ></section>
 
-                    <p className="card-text pt-1">
-                      <span>Davi Roberto</span>
+                    <section className="card-body">
+                      <h6>{item.title}</h6>
 
-                      <span className="text-end">
-                        {formatDateArticle(item.pubDate)}
-                      </span>
-                    </p>
+                      <p className="card-text pt-1">
+                        <span>Davi Roberto</span>
 
-                    <a
-                      className="btn btn-default-reverse"
-                      href={item.link}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {articlesLang[language()].read}
-                    </a>
+                        <span className="text-end">
+                          {formatDateArticle(item.pubDate)}
+                        </span>
+                      </p>
+
+                      <a
+                        className="btn btn-default-reverse"
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {articlesLang[language()].read}
+                      </a>
+                    </section>
                   </section>
                 </section>
-              </section>
-            ))}
+              );
+            })}
           </Carousel>
         )}
       </div>
