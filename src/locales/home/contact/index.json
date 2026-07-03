@@ -9,6 +9,7 @@
       "labelFour": "Telefone - Opcional",
       "labelFive": "Mensagem",
       "btnForm": "ENVIAR",
+      "sendSuccess": "Mensagem enviada com sucesso.",
       "invalidEmail": "Informe um e-mail válido.",
       "sendError": "Erro ao enviar mensagem! Tente novamente mais tarde."
     },
@@ -25,6 +26,7 @@
       "labelFour": "Phone - Optional",
       "labelFive": "Message",
       "btnForm": "SEND",
+      "sendSuccess": "Message sent successfully.",
       "invalidEmail": "Enter a valid email address.",
       "sendError": "Error sending message! Try again later."
     },
