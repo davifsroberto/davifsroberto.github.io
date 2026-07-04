@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import { ExperienceType } from '../../types/experience.type';
-import { originRouterUtils } from '../../utils/route.utils';
 import { Container } from './styles';
 
 type ExperienceProps = {
@@ -11,14 +10,14 @@ type ExperienceProps = {
 export function Experience({ experience }: ExperienceProps) {
   return (
     <Container className="row">
-      <section className={'col-md-12' + experience.classPosition}>
+      <section className={`col-md-12${experience.classPosition ?? ''}`}>
         <figure>
           <Image
             width={experience.company.image.width}
             height={experience.company.image.height}
-            src={originRouterUtils() + experience.company.image.src}
+            src={experience.company.image.src}
             alt={experience.company.image.alt}
-          ></Image>
+          />
         </figure>
 
         <i className="h6 d-block">

@@ -3,27 +3,40 @@ import type { NextPage } from 'next';
 import { Container } from './styles';
 import { Experience } from '../../components/Experience';
 import { Header } from '../../components/Header';
+import { Seo } from '../../components/Seo';
+import { seo } from '../../data/seo';
 import { mountAllExperienceHelper } from './helper.experience';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import experience from '../../locales/experience/index.json';
 
 const ExperiencePage: NextPage = () => {
+  const selectedLanguage = language();
+  const pageSeo = seo.experience[selectedLanguage];
+
   return (
     <Container>
+      <Seo
+        title={pageSeo.title}
+        description={pageSeo.description}
+        path={selectedLanguage === 'pt' ? '/experience' : '/en/experience'}
+      />
+
       <section className="bg-header-default">
         <Header menuCustom={mountMenuSecondaryHeaderUtils()} />
       </section>
 
       <div className="container py-5">
-        <p className="paragraph">{experience[language()].title}</p>
-        <h3 className="mb-sm-5 mb-4">{experience[language()].subtitle}</h3>
+        <p className="paragraph">{experience[selectedLanguage].title}</p>
+        <h3 className="mb-sm-5 mb-4">
+          {experience[selectedLanguage].subtitle}
+        </h3>
 
         <div className="row mb-5">
           <section className="col-sm-12">
-            <h4>{experience[language()].posTitle}</h4>
+            <h4>{experience[selectedLanguage].posTitle}</h4>
 
-            <p>{experience[language()].info}</p>
+            <p>{experience[selectedLanguage].info}</p>
           </section>
         </div>
 

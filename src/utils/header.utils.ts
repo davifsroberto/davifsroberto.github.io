@@ -5,25 +5,22 @@ export function mountMenuSecondaryHeaderUtils(): ItemMenuType[] {
   return [
     {
       name: 'Home',
-      link: `${setInfoBylanguage('/', '/en')}`,
+      link: setInfoBylanguage('/', '/en'),
     },
 
     {
-      name: `${setInfoBylanguage('Contato', 'Contact')}`,
+      name: setInfoBylanguage('Contato', 'Contact'),
       link: '#contact',
       className: ' fw-bold text-decoration-underline ',
     },
 
     {
       name: 'CV',
-      link: `${setInfoBylanguage('/cv', '/en/cv')}`,
+      link: setInfoBylanguage('/cv', '/en/cv'),
     },
   ];
-
-
 }
 
 function setInfoBylanguage(infoPt: string, infoEn: string): string {
-  return SetLanguageUtils() === 'pt' ? infoPt : infoEn
+  return SetLanguageUtils() === 'pt' ? infoPt : infoEn;
 }
-

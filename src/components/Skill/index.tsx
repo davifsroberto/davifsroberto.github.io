@@ -13,11 +13,15 @@ export function Skill({ skills }: SkillProps) {
           <h4>{skill.name}</h4>
 
           <div className="progress">
-            <section
+            <div
               className={skill.class}
               style={{ width: skill.progress + '%' }}
+              role="progressbar"
+              aria-label={skill.name}
+              aria-valuemin={0}
               aria-valuenow={skill.progress}
-            ></section>
+              aria-valuemax={100}
+            ></div>
           </div>
         </section>
       ))}

@@ -9,12 +9,15 @@ import {
   mountTimelineExperienceCvHelper,
 } from './cv.helper';
 import { Header } from '../../components/Header';
+import { Seo } from '../../components/Seo';
 import { Timeline } from '../../components/Timeline';
+import { seo } from '../../data/seo';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import cv from '../../locales/cv/index.json';
 
 const CvPage: NextPage = () => {
   const selectedLanguage = language();
+  const pageSeo = seo.cv[selectedLanguage];
   const cvPdfFile =
     selectedLanguage === 'pt'
       ? 'Davi-Roberto_CV.pdf'
@@ -26,6 +29,12 @@ const CvPage: NextPage = () => {
 
   return (
     <Container>
+      <Seo
+        title={pageSeo.title}
+        description={pageSeo.description}
+        path={selectedLanguage === 'pt' ? '/cv' : '/en/cv'}
+      />
+
       <section className="bg-header-default">
         <Header menuCustom={mountMenuCvHelper()} />
       </section>
