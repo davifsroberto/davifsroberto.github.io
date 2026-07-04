@@ -33,6 +33,7 @@ describe('language utils', () => {
     ['/', 'en', '/en'],
     ['/cv', 'en', '/en/cv'],
     ['/portfolio?from=home#projects', 'en', '/en/portfolio?from=home#projects'],
+    ['?from=home#top', 'en', '/en?from=home#top'],
     ['/en', 'pt', '/'],
     ['/en/cv', 'pt', '/cv'],
     ['/en/portfolio?from=home#projects', 'pt', '/portfolio?from=home#projects'],
