@@ -1,7 +1,7 @@
-import { ItemMenuType } from '../components/Header/ItemMenuType';
+import { NavigationItem } from '../types/navigation.type';
 import { SetLanguageUtils } from './language.utils';
 
-export function mountMenuSecondaryHeaderUtils(): ItemMenuType[] {
+export function mountMenuSecondaryHeaderUtils(): NavigationItem[] {
   return [
     {
       name: 'Home',

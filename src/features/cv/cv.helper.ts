@@ -1,4 +1,3 @@
-import { ItemMenuType } from '../../components/Header/ItemMenuType';
 import { education } from '../../data/education';
 import {
   cvSecondarySkills,
@@ -6,6 +5,7 @@ import {
   primarySkills,
 } from '../../data/skills';
 import { ExperienceType } from '../../types/experience.type';
+import { NavigationItem } from '../../types/navigation.type';
 import { SkillGroup, SkillType } from '../../types/skill.type';
 import { TimelineType } from '../../types/timeline.type';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
@@ -25,9 +25,9 @@ type AboutItem = {
   };
 };
 
-export function mountMenuCvHelper(): ItemMenuType[] {
+export function mountMenuCvHelper(): NavigationItem[] {
   return mountMenuSecondaryHeaderUtils().filter(
-    (itemMenu: ItemMenuType) => itemMenu.name !== 'CV'
+    (itemMenu: NavigationItem) => itemMenu.name !== 'CV'
   );
 }
 
