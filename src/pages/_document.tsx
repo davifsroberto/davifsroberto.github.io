@@ -2,8 +2,11 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
+    const page = this.props.__NEXT_DATA__.page;
+    const lang = page === '/en' || page.startsWith('/en/') ? 'en' : 'pt-BR';
+
     return (
-      <Html>
+      <Html lang={lang}>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -8,12 +8,20 @@ type GTagEvent = {
 export const GA_TRACKING_ID = 'G-H8BYG6E98W';
 
 export const pageview = (url: string): void => {
+  if (typeof window.gtag !== 'function') {
+    return;
+  }
+
   window.gtag('config', GA_TRACKING_ID, {
     page_path: url,
   });
 };
 
 export const event = ({ action, category, label, value }: GTagEvent): void => {
+  if (typeof window.gtag !== 'function') {
+    return;
+  }
+
   window.gtag('event', action, {
     event_category: category,
     event_label: label,

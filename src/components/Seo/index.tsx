@@ -15,10 +15,14 @@ export function Seo({
   path,
   image = defaultOgImage,
 }: SeoProps) {
-  const canonicalUrl = new URL(path, siteUrl).toString();
+  const canonicalPath =
+    path === '/' || path === '/404' || path.endsWith('/') ? path : `${path}/`;
+  const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
   const imageUrl = image.startsWith('http')
     ? image
     : new URL(image, siteUrl).toString();
+  const isEnglishPage = path === '/en' || path.startsWith('/en/');
+  const locale = isEnglishPage ? 'en_US' : 'pt_BR';
 
   return (
     <Head>
@@ -35,6 +39,7 @@ export function Seo({
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={imageUrl} />
+      <meta property="og:locale" content={locale} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />

@@ -10,7 +10,7 @@ type ExperienceProps = {
 export function Experience({ experience }: ExperienceProps) {
   return (
     <Container className="row">
-      <section className={'col-md-12' + experience.classPosition}>
+      <section className={`col-md-12${experience.classPosition ?? ''}`}>
         <figure>
           <Image
             width={experience.company.image.width}
