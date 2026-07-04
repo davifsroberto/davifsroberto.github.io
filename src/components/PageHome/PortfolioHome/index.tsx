@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 import { Container } from './styles';
+import { mountPortfolioHomeHelper } from '../../../features/home/home.helper';
 import { Portfolio } from '../../Portfolio';
-import { mountPortfolioHomeHelper } from '../home.helper';
 import {
   getLocalizedPath,
   SetLanguageUtils as language,

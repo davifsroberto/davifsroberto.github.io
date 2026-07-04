@@ -3,6 +3,10 @@ import { useRouter } from 'next/router';
 import { Container, SubMenu } from './styles';
 import { ItemMenu } from '../ItemMenu';
 import { ItemMenuType } from '../ItemMenuType';
+import {
+  getPathForLanguage,
+  SetLanguageUtils as language,
+} from '../../../utils/language.utils';
 
 type menuProps = {
   menu?: ItemMenuType[];
@@ -15,16 +19,10 @@ enum Lang {
 
 export function Menu({ menu }: menuProps) {
   const router = useRouter();
+  const selectedLanguage = language();
 
-  function setLanguage(language: string): void {
-    router.push(
-      {
-        query: router.query,
-      },
-
-      router.asPath,
-      { locale: language }
-    );
+  function setLanguage(nextLanguage: Lang): void {
+    router.push(getPathForLanguage(router.asPath, nextLanguage));
   }
 
   return (
@@ -45,14 +43,14 @@ export function Menu({ menu }: menuProps) {
 
       <ul className="language">
         <li
-          className={router.locale === Lang.pt ? Lang.pt : ''}
+          className={selectedLanguage === Lang.pt ? Lang.pt : ''}
           onClick={() => setLanguage(Lang.pt)}
         >
           PT
         </li>
 
         <li
-          className={router.locale === Lang.en ? Lang.en : ''}
+          className={selectedLanguage === Lang.en ? Lang.en : ''}
           onClick={() => setLanguage(Lang.en)}
         >
           EN

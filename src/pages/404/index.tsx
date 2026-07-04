@@ -7,7 +7,7 @@ import {
   getLocalizedPath,
   SetLanguageUtils as language,
 } from '../../utils/language.utils';
-import { Seo } from '../../components/Seo';
+import { Seo } from '../../components/ui/Seo';
 import { seo } from '../../data/seo';
 import page404 from '../../locales/404/index.json';
 

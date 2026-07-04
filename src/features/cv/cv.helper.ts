@@ -1,6 +1,12 @@
 import { ItemMenuType } from '../../components/Header/ItemMenuType';
+import { education } from '../../data/education';
+import {
+  cvSecondarySkills,
+  cvSkillGroups,
+  primarySkills,
+} from '../../data/skills';
 import { ExperienceType } from '../../types/experience.type';
-import { SkillType } from '../../types/skill.type';
+import { SkillGroup, SkillType } from '../../types/skill.type';
 import { TimelineType } from '../../types/timeline.type';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 import { mountAllExperienceHelper } from '../experience/helper.experience';
@@ -19,11 +25,6 @@ type AboutItem = {
   };
 };
 
-export type SkillGroup = {
-  title: string;
-  items: string[];
-};
-
 export function mountMenuCvHelper(): ItemMenuType[] {
   return mountMenuSecondaryHeaderUtils().filter(
     (itemMenu: ItemMenuType) => itemMenu.name !== 'CV'
@@ -35,31 +36,15 @@ export function mountAboutItemsCvHelper(): AboutItem[] {
 }
 
 export function mountSkillGroupsCvHelper(): SkillGroup[] {
-  return cv[language()].skills.groups;
+  return cvSkillGroups[language()];
 }
 
 export function mountSkillLeftCvHelper(): SkillType[] {
-  return [
-    {
-      name: 'Angular',
-      class: 'bg-primary',
-      progress: 97,
-    },
-    {
-      name: 'React',
-      class: 'bg-primary',
-      progress: 90,
-    },
-    {
-      name: 'Node.js',
-      class: 'bg-primary',
-      progress: 80,
-    },
-  ];
+  return primarySkills;
 }
 
 export function mountSkillRightCvHelper(): SkillType[] {
-  return cv[language()].skills.skillRight;
+  return cvSecondarySkills[language()];
 }
 
 export function mountTimelineExperienceCvHelper(): TimelineType[] {
@@ -79,5 +64,5 @@ export function mountTimelineExperienceCvHelper(): TimelineType[] {
 }
 
 export function mountTimelineEducationCvHelper(): TimelineType[] {
-  return cv[language()].education.items;
+  return education[language()];
 }

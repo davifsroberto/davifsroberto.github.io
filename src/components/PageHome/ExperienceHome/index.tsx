@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 import { Container } from './styles';
+import { mountExperienceHomeHelper } from '../../../features/home/home.helper';
 import { Experience } from '../../Experience';
-import { mountExperienceHomeHelper } from '../home.helper';
 import {
   getLocalizedPath,
   SetLanguageUtils as language,

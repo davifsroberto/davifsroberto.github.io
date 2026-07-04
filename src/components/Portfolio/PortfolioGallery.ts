@@ -1,6 +1,3 @@
-export type PortfolioGallery = {
-  id: number;
-  bgBox: string;
-  titleBox: string;
-  images: Array<string>;
-};
+import { Project } from '../../types/project.type';
+
+export type PortfolioGallery = Project;

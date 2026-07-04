@@ -9,7 +9,7 @@ import { GA_TRACKING_ID } from '../lib/gtag';
 
 import GlobalStyles from '../styles/global';
 import { MoveToUp } from '../components/MoveToUp';
-import { Footer } from '../components/Footer';
+import { Footer } from '../components/layout/Footer';
 import { Contact } from '../components/Contact';
 
 const isProduction = process.env.NODE_ENV === 'production';

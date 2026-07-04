@@ -1,13 +1,13 @@
 import { PortfolioGallery } from '../../components/Portfolio/PortfolioGallery';
+import { homeExperiences } from '../../data/experience';
+import { homeProjects } from '../../data/projects';
 import { ExperienceType } from '../../types/experience.type';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
-import experience from '../../locales/home/experience/index.json';
-import portfolio from '../../locales/home/portfolio/index.json';
 
 export function mountExperienceHomeHelper(): ExperienceType[] {
-  return experience[language()].experiencesHome;
+  return homeExperiences[language()];
 }
 
 export function mountPortfolioHomeHelper(): PortfolioGallery[] {
-  return portfolio[language()].portfolioHome;
+  return homeProjects[language()];
 }

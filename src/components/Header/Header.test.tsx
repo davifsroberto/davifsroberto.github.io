@@ -70,7 +70,7 @@ describe('Header', () => {
     expect(menuToggle).toBeChecked();
   });
 
-  it('requests language changes through Next router', async () => {
+  it('navigates to the matching physical route when changing to Portuguese', async () => {
     const user = userEvent.setup();
     setMockRouter({
       asPath: '/en/cv',
@@ -82,10 +82,23 @@ describe('Header', () => {
 
     await user.click(screen.getByText('PT'));
 
+    expect(routerPushMock).toHaveBeenCalledWith('/cv');
+  });
+
+  it('navigates to the matching physical route when changing to English', async () => {
+    const user = userEvent.setup();
+    setMockRouter({
+      asPath: '/portfolio?source=test#projects',
+      locale: 'pt',
+      query: { source: 'test' },
+    });
+
+    render(<Header />);
+
+    await user.click(screen.getByText('EN'));
+
     expect(routerPushMock).toHaveBeenCalledWith(
-      { query: { source: 'test' } },
-      '/en/cv',
-      { locale: 'pt' }
+      '/en/portfolio?source=test#projects'
     );
   });
 });

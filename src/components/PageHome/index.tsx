@@ -1,7 +1,7 @@
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { Container } from './style';
-import { Header } from '../Header';
+import { Header } from '../layout/Header';
 import { Recommendations } from '../Recommendations';
 import { About } from './About';
 import { Articles } from './Articles';

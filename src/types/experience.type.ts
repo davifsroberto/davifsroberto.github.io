@@ -1,4 +1,4 @@
-export type ExperienceType = {
+export type Experience = {
   id: number;
   company: {
     image: CompanyImage;
@@ -12,6 +12,8 @@ export type ExperienceType = {
   tag?: string[];
   last?: boolean;
 };
+
+export type ExperienceType = Experience;
 
 type CompanyImage = {
   src: string;

@@ -2,10 +2,10 @@ import type { NextPage } from 'next';
 
 import { Container } from './styles';
 import { Experience } from '../../components/Experience';
-import { Header } from '../../components/Header';
-import { Seo } from '../../components/Seo';
+import { Header } from '../../components/layout/Header';
+import { Seo } from '../../components/ui/Seo';
 import { seo } from '../../data/seo';
-import { mountAllExperienceHelper } from './helper.experience';
+import { mountAllExperienceHelper } from '../../features/experience/helper.experience';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import experience from '../../locales/experience/index.json';

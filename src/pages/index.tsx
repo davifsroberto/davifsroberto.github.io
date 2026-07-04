@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
 import Home from '../components/PageHome';
-import { Seo } from '../components/Seo';
+import { Seo } from '../components/ui/Seo';
 import { seo } from '../data/seo';
 import {
   getLocalizedPath,

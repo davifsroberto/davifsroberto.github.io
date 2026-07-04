@@ -1,19 +1,9 @@
-import { Language } from '../utils/language.utils';
-
-type SeoContent = {
-  title: string;
-  description: string;
-};
-
-type PageSeo = Record<Language, SeoContent>;
+import { SiteSeoMetadata } from '../types/seo.type';
 
 export const siteUrl = 'https://davifsroberto.github.io';
 export const defaultOgImage = '/assets/images/general/site-thumbnail.png';
 
-export const seo: Record<
-  'home' | 'cv' | 'experience' | 'portfolio' | '404',
-  PageSeo
-> = {
+export const seo: SiteSeoMetadata = {
   home: {
     pt: {
       title: 'Davi Roberto - Frontend Engineer',

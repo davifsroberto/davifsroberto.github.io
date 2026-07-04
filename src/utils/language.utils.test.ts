@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest';
 
-import { getLocalizedPath, SetLanguageUtils } from './language.utils';
+import {
+  getLocalizedPath,
+  getPathForLanguage,
+  SetLanguageUtils,
+} from './language.utils';
 import { setMockRouter } from '../test/mocks/next-router';
 
 describe('language utils', () => {
@@ -24,4 +28,18 @@ describe('language utils', () => {
   ] as const)('localizes %s for %s', (path, language, expectedPath) => {
     expect(getLocalizedPath(path, language)).toBe(expectedPath);
   });
+
+  it.each([
+    ['/', 'en', '/en'],
+    ['/cv', 'en', '/en/cv'],
+    ['/portfolio?from=home#projects', 'en', '/en/portfolio?from=home#projects'],
+    ['/en', 'pt', '/'],
+    ['/en/cv', 'pt', '/cv'],
+    ['/en/portfolio?from=home#projects', 'pt', '/portfolio?from=home#projects'],
+  ] as const)(
+    'builds the route %s for %s',
+    (asPath, language, expectedPath) => {
+      expect(getPathForLanguage(asPath, language)).toBe(expectedPath);
+    }
+  );
 });

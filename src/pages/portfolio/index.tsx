@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 
 import { Container } from './styles';
-import { Header } from '../../components/Header';
+import { Header } from '../../components/layout/Header';
 import { Portfolio } from '../../components/Portfolio';
-import { Seo } from '../../components/Seo';
+import { Seo } from '../../components/ui/Seo';
 import { seo } from '../../data/seo';
-import { mountPortfolioHelper } from './portfolio.helper';
+import { mountPortfolioHelper } from '../../features/portfolio/portfolio.helper';
 import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import portfolio from '../../locales/portfolio/index.json';

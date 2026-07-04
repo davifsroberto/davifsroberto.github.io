@@ -1,10 +1,10 @@
 import React, { FormEvent, useState } from 'react';
 
 import { toast } from 'react-toastify';
-import { send } from '@emailjs/browser';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { Container } from './styles';
+import { sendContactEmail } from '../../lib/emailjs';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import contact from '../../locales/home/contact/index.json';
 import Spinner from '../Spinner';
@@ -57,15 +57,10 @@ export function Contact() {
 
     setLoading(true);
 
-    send(
-      'davifsroberto_mailersend',
-      'template_pygyvlc',
-      {
-        ...form,
-        email: normalizedEmail,
-      },
-      'Uk5RjMiwi1zjJYErr'
-    )
+    sendContactEmail({
+      ...form,
+      email: normalizedEmail,
+    })
       .then(() => {
         setLoading(false);
 

@@ -1,17 +1,17 @@
 import { NextPage } from 'next';
 
 import { Container } from './styles';
+import { Header } from '../../components/layout/Header';
+import { Seo } from '../../components/ui/Seo';
+import { Timeline } from '../../components/ui/Timeline';
+import { seo } from '../../data/seo';
 import {
   mountAboutItemsCvHelper,
   mountMenuCvHelper,
   mountSkillGroupsCvHelper,
   mountTimelineEducationCvHelper,
   mountTimelineExperienceCvHelper,
-} from './cv.helper';
-import { Header } from '../../components/Header';
-import { Seo } from '../../components/Seo';
-import { Timeline } from '../../components/Timeline';
-import { seo } from '../../data/seo';
+} from '../../features/cv/cv.helper';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import cv from '../../locales/cv/index.json';
 
