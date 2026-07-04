@@ -16,15 +16,22 @@
     "build": "next build",
     "start": "next start",
     "export": "next build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:related": "vitest related --run --passWithNoTests",
+    "test:coverage": "vitest run --coverage",
     "lint": "eslint src --max-warnings=0",
-    "pretty:format": "prettier --config ./.prettierrc --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
+    "pretty:fix": "prettier --config ./.prettierrc --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
     "pretty:check": "prettier --config ./.prettierrc --check \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
     "postinstall": "husky install"
   },
   "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx,json}": [
+      "yarn test:related"
+    ],
     "src/**/*": [
       "yarn lint --fix",
-      "yarn run pretty:check"
+      "yarn run pretty:fix"
     ]
   },
   "dependencies": {
@@ -42,15 +49,22 @@
     "styled-components": "^6.4.3"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/gtag.js": "^0.0.10",
     "@types/node": "^24",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
+    "@vitest/coverage-v8": "^4.1.9",
     "eslint": "^9",
     "eslint-config-next": "^16.2.10",
     "husky": "^7.0.4",
+    "jsdom": "^29.1.1",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.9"
   }
 }

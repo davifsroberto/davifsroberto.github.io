@@ -59,7 +59,7 @@ Run `yarn dev` for start local server.
 
 ## 📈 Prettier
 
-- Run `yarn run pretty:format` to format project files using prettier settings.
+- Run `yarn run pretty:fix` to format project files using prettier settings.
 
 - Run `yarn run pretty:check` to validate that the files are formatted in the configured prettier pattern.
   <br />

@@ -8,7 +8,7 @@ type GTagEvent = {
 export const GA_TRACKING_ID = 'G-H8BYG6E98W';
 
 export const pageview = (url: string): void => {
-  if (typeof window.gtag !== 'function') {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') {
     return;
   }
 
@@ -18,7 +18,7 @@ export const pageview = (url: string): void => {
 };
 
 export const event = ({ action, category, label, value }: GTagEvent): void => {
-  if (typeof window.gtag !== 'function') {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') {
     return;
   }
 

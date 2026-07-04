@@ -19,6 +19,7 @@ const HomePage: NextPage = () => {
         description={pageSeo.description}
         path={getLocalizedPath('/', selectedLanguage)}
       />
+
       <Home />
     </>
   );
