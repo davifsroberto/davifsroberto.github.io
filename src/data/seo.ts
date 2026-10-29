@@ -16,14 +16,14 @@ export const seo: Record<
 > = {
   home: {
     pt: {
-      title: 'Davi Roberto - Frontend Engineer',
+      title: 'Davi Roberto - Desenvolvedor Full Stack',
       description:
-        'Site pessoal de Davi Roberto com currículo, experiências profissionais, projetos e artigos sobre desenvolvimento frontend.',
+        'Site pessoal de Davi Roberto com currículo, experiências profissionais, projetos e artigos sobre desenvolvimento de software.',
     },
     en: {
-      title: 'Davi Roberto - Frontend Engineer',
+      title: 'Davi Roberto - Full Stack Developer',
       description:
-        'Personal website of Davi Roberto with resume, professional experience, projects, and articles about frontend development.',
+        'Personal website of Davi Roberto with resume, professional experience, projects, and articles about software development.',
     },
   },
   cv: {
@@ -53,13 +53,11 @@ export const seo: Record<
   portfolio: {
     pt: {
       title: 'Portfólio - Davi Roberto',
-      description:
-        'Projetos de portfólio desenvolvidos por Davi Roberto como frontend engineer.',
+      description: 'Projetos de frontend desenvolvidos por Davi Roberto.',
     },
     en: {
       title: 'Portfolio - Davi Roberto',
-      description:
-        'Portfolio projects developed by Davi Roberto as a frontend engineer.',
+      description: 'Frontend projects developed by Davi Roberto.',
     },
   },
   404: {

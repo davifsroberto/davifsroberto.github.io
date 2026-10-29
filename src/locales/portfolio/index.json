@@ -3,7 +3,7 @@
     "title": "Portifólio",
     "subtitle": "Alguns projeto que já realizei",
     "posTitle": "Referente a esse Portifólio",
-    "infoOne": "Segue abaixo alguns projetos que já realizei durante a minha jornada como desenvolvedor web, apesar de também ter atuado com backend, busquei trazer em meu portifólio apenas projetos que desenvolvi o frontend, pois é o meu foco.",
+    "infoOne": "Ao longo da minha jornada como desenvolvedor web, atuei com frontend e backend. Neste portfólio, apresento projetos nos quais desenvolvi o frontend.",
     "infoTwo": "Alguns projetos eu realizei com uma equipe de desenvolvedores de frontend e destaquei apenas as features que fiz, além disso, trouxe projetos onde atuei sozinho e desenvolvi por completo todo o frontend do sistema.",
     "infoTree": "Aqui não tem <i>todos os sistemas</i> que desenvolvi, alguns são projeto privados, onde não posso compartilhá-los por questão de segurança e exigência da empresa contratante, outros eu simplesmente me esqueci de pegar evidências, e o sistema não existe mais. Porém, apresento a maioria dos projetos onde atuei com minhas habilidades de frontend engineer.",
     "portfolio": [
@@ -217,7 +217,7 @@
     "title": "Portfolio",
     "subtitle": "Some projects I've done",
     "posTitle": "About this Portfolio",
-    "infoOne": "Below are some projects that I've done during my journey as a web developer, despite having also worked with backend, I tried to bring in my portfolio only projects that I developed the frontend, because it's my focus.",
+    "infoOne": "Throughout my journey as a web developer, I have worked with frontend and backend. This portfolio presents projects where I developed the frontend.",
     "infoTwo": "Some projects I carried out with a team of frontend developers and I highlighted only the features I made, in addition, I brought projects where I worked alone and completely developed the entire frontend of the system.",
     "infoTree": "Here there are not <i>all the systems</i> that I have developed, some are private projects, where I cannot share them due to security reasons and requirements of the contracting company, others I simply forgot to get evidence, and the system no longer exists. However, I present most of the projects where I worked with my frontend engineer skills.",
     "portfolio": [

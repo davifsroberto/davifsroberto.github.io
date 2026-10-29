@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Container } from './styles';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
 import profile from '../../../locales/home/contact/profile.json';
+import professionalProfile from '../../../locales/profile/index.json';
 
 export default function Profile() {
   const selectedLanguage = language();
@@ -15,10 +16,10 @@ export default function Profile() {
           width={150}
           height={150}
           src="/assets/images/general/perfil_davifsroberto.jpg"
-          alt="Davi Roberto - Frontend Engineer"
+          alt={`Davi Roberto - ${professionalProfile[selectedLanguage].role}`}
         />
         <h4>Davi Roberto</h4>
-        <h5>Frontend Engineer</h5>
+        <h5>{professionalProfile[selectedLanguage].role}</h5>
       </section>
 
       <section className="body">

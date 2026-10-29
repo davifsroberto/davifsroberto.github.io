@@ -3,6 +3,7 @@ import { SocialMedia } from '../SocialMedias';
 import { mountSocialMediasUtils } from '../../utils/social-medias.utils';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import callToAction from '../../locales/home/callToAction/index.json';
+import profile from '../../locales/profile/index.json';
 
 export function CallToAction() {
   return (
@@ -19,7 +20,7 @@ export function CallToAction() {
             </p>
 
             <span className="mb-1 d-block">
-              Davi Roberto - <strong>Frontend Engineer</strong>
+              Davi Roberto - <strong>{profile[language()].role}</strong>
             </span>
 
             <SocialMedia socialMedia={mountSocialMediasUtils()} />

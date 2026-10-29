@@ -1,10 +1,10 @@
 <section align="center">
 
-# Davi Roberto - Frontend Engineer
+# Davi Roberto - Full Stack Developer
 
 ## Hello, world 💻
 
-This is my personal website, where I report about my career in frontend web development.
+This is my personal website, where I share my career in software development.
 
 <a href="https://davifsroberto.github.io" target="_blank">
   <img src="./public/assets/images/general/davifsroberto.gif" />

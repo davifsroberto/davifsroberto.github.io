@@ -44,6 +44,23 @@ async function fillRequiredFields() {
 }
 
 describe('Contact', () => {
+  it.each([
+    ['/', 'pt', 'Desenvolvedor Full Stack'],
+    ['/en', 'en', 'Full Stack Developer'],
+  ] as const)(
+    'renders the localized professional profile for %s',
+    (asPath, locale, role) => {
+      setMockRouter({ asPath, locale });
+
+      render(<Contact />);
+
+      expect(screen.getByRole('heading', { name: role })).toBeInTheDocument();
+      expect(
+        screen.getByRole('img', { name: `Davi Roberto - ${role}` })
+      ).toBeInTheDocument();
+    }
+  );
+
   it('renders the expected form fields', () => {
     setMockRouter({ asPath: '/', locale: 'pt' });
 

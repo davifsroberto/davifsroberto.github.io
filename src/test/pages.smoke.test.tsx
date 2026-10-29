@@ -24,6 +24,19 @@ describe('pages smoke tests', () => {
     render(<HomePage />);
 
     expect(screen.getAllByText(banner.pt.welcomeThree)[0]).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'e sou Desenvolvedor Full Stack' })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText('Angular, React.js, Node.js, NestJS')
+    ).toBeInTheDocument();
+    expect(screen.getAllByText('Desenvolvedor Full Stack')).toHaveLength(2);
+    expect(
+      screen.getByText(
+        'Sou desenvolvedor Full Stack e busco sempre me aperfeiçoar e ficar atualizado em minha área de atuação.',
+        { exact: false }
+      )
+    ).toBeInTheDocument();
     expectHeaderLink('Sobre Mim', '#about');
     expectHeaderLink('CV', '/cv');
   });
@@ -34,6 +47,19 @@ describe('pages smoke tests', () => {
     render(<HomePage />);
 
     expect(screen.getByText(banner.en.welcomeOne)).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: "and I'm a Full Stack Developer" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText('Angular, React.js, Node.js, NestJS')
+    ).toBeInTheDocument();
+    expect(screen.getAllByText('Full Stack Developer')).toHaveLength(2);
+    expect(
+      screen.getByText(
+        "I'm a Full Stack Developer, always striving to improve and stay up-to-date in my field.",
+        { exact: false }
+      )
+    ).toBeInTheDocument();
     expectHeaderLink('About Me', '#about');
     expectHeaderLink('CV', '/en/cv');
   });
