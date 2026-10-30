@@ -6,6 +6,7 @@ import { mountMenuSecondaryHeaderUtils } from '../../utils/header.utils';
 import { mountAllExperienceHelper } from '../experience/helper.experience';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import cv from '../../locales/cv/index.json';
+import { experienceOrder } from '../../locales/cv-pdf/index.json';
 
 type AboutItem = {
   id: number;
@@ -75,7 +76,19 @@ export function mountTimelineExperienceCvHelper(): TimelineType[] {
     });
   });
 
-  return timelineExperience.sort((a, b) => b.id - a.id);
+  const order = new Set(experienceOrder);
+  if (
+    order.size !== experienceOrder.length ||
+    timelineExperience.length !== order.size ||
+    new Set(timelineExperience.map((item) => item.id)).size !== order.size ||
+    timelineExperience.some((item) => !order.has(item.id))
+  ) {
+    throw new Error('CV experience order must match the site experiences.');
+  }
+
+  return timelineExperience.sort(
+    (a, b) => experienceOrder.indexOf(a.id) - experienceOrder.indexOf(b.id)
+  );
 }
 
 export function mountTimelineEducationCvHelper(): TimelineType[] {

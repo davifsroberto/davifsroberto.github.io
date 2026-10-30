@@ -40,6 +40,12 @@ class GenerateCvTests(unittest.TestCase):
             self.assertIn(generate_cv.normalize(job["company"]), text)
             for bullet in job["bullets"]:
                 self.assertIn(generate_cv.normalize(bullet), text)
+        company_positions = [text.index(generate_cv.normalize(job["company"])) for job in values["jobs"]]
+        self.assertEqual(company_positions, sorted(company_positions))
+        for label in ("LinkedIn:", "GitHub:", values["contact_labels"]["website"] + ":"):
+            self.assertIn(generate_cv.normalize(label), text)
+        self.assertIn(generate_cv.normalize(values["contact_labels"]["email"] + ":"), text)
+        self.assertIn(generate_cv.normalize(values["contact_labels"]["phone"] + ":"), text)
         self.assertEqual(len(values["studies"]), 2)
         for study in values["studies"]:
             self.assertIn(generate_cv.normalize(study["title"]), text)
@@ -86,6 +92,19 @@ class GenerateCvTests(unittest.TestCase):
                         self.assertIn("my career", bullet)
                     else:
                         self.assertTrue(bullet.startswith("I "), bullet)
+
+    def test_experience_order_is_reverse_chronological(self):
+        for language in ("pt", "en"):
+            with self.subTest(language=language):
+                experiences = {
+                    item["id"]: item
+                    for item in self.data["experience"][language]["experiencies"]
+                }
+                starts = [
+                    experiences[identifier]["period"][:5]
+                    for identifier in self.data["pdf"]["experienceOrder"]
+                ]
+                self.assertEqual(starts, sorted(starts, key=lambda value: value[3:5] + value[:2], reverse=True))
 
     def test_changes_to_shared_role_are_rendered(self):
         data = copy.deepcopy(self.data)

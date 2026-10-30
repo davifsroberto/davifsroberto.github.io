@@ -24,9 +24,9 @@ JOB_SLOTS = [
     (1, 52, 154),
     (1, 182, 282),
     (1, 309, 355),
-    (1, 382, 453),
-    (1, 481, 511),
-    (1, 539, 569),
+    (1, 370, 416),
+    (1, 430, 482),
+    (1, 496, 572),
     (1, 597, 655),
 ]
 STUDY_SLOTS = [(710, 725, 721.2), (728, 744, 739.5), (746, 762, 758)]
@@ -140,6 +140,11 @@ def content(data, language):
         "github": contacts[5],
         "role": data["profile"][language]["role"],
         "technologies": data["banner"][language]["technologies"].split(", "),
+        "contact_labels": {
+            "email": "E-mail",
+            "phone": "Telefone" if language == "pt" else "Phone",
+            "website": "Portfólio" if language == "pt" else "Portfolio",
+        },
         "localized": localized,
         "jobs": jobs,
         "studies": studies,
@@ -148,11 +153,12 @@ def content(data, language):
 
 def template_matches(doc, data):
     localized = data["localized"]
+    labels = data["contact_labels"]
     regions = [
         (0, 30, 55.8, data["name"].upper()),
         (0, 55.8, 73, " | ".join([data["role"]] + data["technologies"])),
-        (0, 77, 90.5, f"{data['location']} | {data['email']['text']} | {data['phone']['text']}"),
-        (0, 90.5, 103.5, f"{data['linkedin']['text']} | {data['github']['text']} | {data['website']['text']}"),
+        (0, 77, 90.5, f"{data['location']} | {labels['email']}: {data['email']['text']} | {labels['phone']}: {data['phone']['text']}"),
+        (0, 90.5, 103.5, f"LinkedIn: {data['linkedin']['text']} | GitHub: {data['github']['text']} | {labels['website']}: {data['website']['text']}"),
         (0, 126, 140, localized["profileTitle"]),
         (0, 149, 214, localized["summary"]),
         (0, 248, 261.5, localized["skillsTitle"]),
@@ -165,7 +171,7 @@ def template_matches(doc, data):
     for job, (page, top, bottom) in zip(data["jobs"], JOB_SLOTS):
         expected = " ".join(
             [job["title"], "·", job["company"], job["period"]]
-            + ["› " + bullet for bullet in job["bullets"]]
+            + ["- " + bullet for bullet in job["bullets"]]
         )
         regions.append((page, top, bottom, expected))
     for index, (top, bottom, _) in enumerate(STUDY_SLOTS):
@@ -256,7 +262,7 @@ def draw_job(page, fonts, job, top, bottom):
         raise ValueError(f"Descrição excede o espaço da experiência: {title}")
     y = top + 26
     for name, lines in wrapped:
-        draw_text(page, fonts, 38, y, "›", body_size, BLUE, bold=True)
+        draw_text(page, fonts, 38, y, "-", body_size, BLUE, bold=True)
         for index, line in enumerate(lines):
             page.insert_text((46.5 if index == 0 else 51, y), line, fontname=name, fontsize=body_size, color=DARK)
             y += step
@@ -301,14 +307,17 @@ def draw_study(page, fonts, study, baseline):
 
 
 def draw_contact(page, fonts, data):
-    contact = f"{data['location']}   |   {data['email']['text']}   |   {data['phone']['text']}"
+    labels = data["contact_labels"]
+    contact = f"{data['location']}   |   {labels['email']}: {data['email']['text']}   |   {labels['phone']}: {data['phone']['text']}"
     draw_text(page, fonts, 38, 87.2, contact, 9.5, MUTED)
     for link in page.get_links():
         page.delete_link(link)
     x = 38
-    for index, item in enumerate((data["linkedin"], data["github"], data["website"])):
+    links = (("LinkedIn", data["linkedin"]), ("GitHub", data["github"]), (labels["website"], data["website"]))
+    for index, (label, item) in enumerate(links):
         if index:
             x += draw_text(page, fonts, x, 100.2, "   |   ", 9.5, MUTED, max_width=WIDTH - (x - 38))
+        x += draw_text(page, fonts, x, 100.2, f"{label}: ", 9.5, MUTED, max_width=WIDTH - (x - 38))
         width = draw_text(page, fonts, x, 100.2, item["text"], 9.5, BLUE, max_width=WIDTH - (x - 38))
         page.insert_link({"kind": fitz.LINK_URI, "from": fitz.Rect(x, 90, x + width, 103), "uri": item["link"]})
         x += width

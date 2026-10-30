@@ -4,15 +4,15 @@
     "text": "davifsroberto.com",
     "link": "https://davifsroberto.com/"
   },
-  "experienceOrder": [11, 10, 9, 7, 6, 5, 2, 3, 4, 1],
+  "experienceOrder": [11, 10, 9, 7, 6, 4, 3, 5, 2, 1],
   "educationOrder": [2, 1],
   "pt": {
     "location": "Barueri, SP — Brasil",
-    "profileTitle": "Perfil profissional",
+    "profileTitle": "Resumo profissional",
     "skillsTitle": "Competências técnicas",
     "experienceTitle": "Experiência profissional",
     "educationTitle": "Formação acadêmica",
-    "summary": "Sou desenvolvedor Full Stack com mais de 15 anos de experiência na construção e evolução de aplicações web. Atuo de ponta a ponta, da análise técnica à entrega em produção, com Angular, React, TypeScript, Node.js e NestJS. Contribuo com backend, integrações, testes, performance, segurança e CI/CD; também participo de discussões de arquitetura e compartilho boas práticas com o time. Utilizo ferramentas e agentes de IA para apoiar implementação, testes, refatoração, documentação e automação.",
+    "summary": "Sou desenvolvedor Full Stack com mais de 15 anos de experiência em aplicações web. Atuo da análise técnica à produção com Angular, React, TypeScript, Node.js e NestJS, incluindo APIs REST, integrações e testes. Contribuo com arquitetura, performance, segurança e CI/CD, além de compartilhar boas práticas e usar IA para apoiar o desenvolvimento.",
     "skills": [
       {
         "title": "Frontend",
@@ -29,7 +29,13 @@
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "NestJS", "APIs REST", "BFF", "SQL/NoSQL"]
+        "items": [
+          "Node.js",
+          "NestJS",
+          "APIs REST",
+          "Backend for Frontend (BFF)",
+          "SQL/NoSQL"
+        ]
       },
       {
         "title": "Qualidade",
@@ -60,8 +66,8 @@
     },
     "experienceBullets": {
       "11": [
-        "Atuo no desenvolvimento de aplicações web, APIs e BFF, da análise técnica à entrega em produção, com Angular, TypeScript, Node.js e NestJS.",
-        "Contribuo com backend, integrações, bancos de dados, testes, performance, segurança e CI/CD; participo de discussões de arquitetura quando necessário.",
+        "Atuo da análise à produção de aplicações web, APIs e Backend for Frontend (BFF) com Angular, TypeScript, Node.js e NestJS.",
+        "Contribuo com integrações, bancos de dados, testes, performance, segurança e CI/CD; participo de discussões de arquitetura.",
         "Utilizo ferramentas e agentes de IA para apoiar implementação, refatorações, testes, documentação, análise de código e automação.",
         "Faço revisões de código e compartilho boas práticas com o time."
       ],
@@ -110,11 +116,11 @@
   },
   "en": {
     "location": "Barueri, SP — Brazil",
-    "profileTitle": "Professional profile",
+    "profileTitle": "Professional summary",
     "skillsTitle": "Technical skills",
     "experienceTitle": "Professional experience",
     "educationTitle": "Education",
-    "summary": "I am a Full Stack Developer with over 15 years of experience building and evolving web applications. I work end to end, from technical analysis through production delivery, using Angular, React, TypeScript, Node.js and NestJS. I contribute to backend, integrations, testing, performance, security and CI/CD; I also participate in architecture discussions and share best practices with the team. I use AI tools and agents to support implementation, testing, refactoring, documentation and automation.",
+    "summary": "I am a Full Stack Developer with over 15 years of experience building web applications. I work from technical analysis to production with Angular, React, TypeScript, Node.js and NestJS, including REST APIs, integrations and testing. I contribute to architecture, performance, security and CI/CD, share best practices and use AI to support development.",
     "skills": [
       {
         "title": "Frontend",
@@ -131,7 +137,13 @@
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "NestJS", "REST APIs", "BFF", "SQL/NoSQL"]
+        "items": [
+          "Node.js",
+          "NestJS",
+          "REST APIs",
+          "Backend for Frontend (BFF)",
+          "SQL/NoSQL"
+        ]
       },
       {
         "title": "Quality",
@@ -162,8 +174,8 @@
     },
     "experienceBullets": {
       "11": [
-        "I develop web applications, APIs and BFFs, from technical analysis through production delivery, using Angular, TypeScript, Node.js and NestJS.",
-        "I contribute to backend, integrations, databases, testing, performance, security and CI/CD, and join architecture discussions when needed.",
+        "I develop web applications, APIs and Backend for Frontend (BFF) solutions from analysis to production with Angular, TypeScript, Node.js and NestJS.",
+        "I contribute to integrations, databases, testing, performance, security and CI/CD, and participate in architecture discussions.",
         "I use AI tools and agents to support implementation, refactoring, testing, documentation, code analysis and automation.",
         "I review code and share best practices with the team."
       ],
