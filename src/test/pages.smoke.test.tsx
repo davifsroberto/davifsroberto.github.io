@@ -14,7 +14,11 @@ import page404 from '../locales/404/index.json';
 import { setMockRouter } from './mocks/next-router';
 
 function expectHeaderLink(name: string, href: string) {
-  expect(screen.getByRole('link', { name })).toHaveAttribute('href', href);
+  const navigation = screen.getByRole('navigation');
+  expect(within(navigation).getByRole('link', { name })).toHaveAttribute(
+    'href',
+    href
+  );
 }
 
 describe('pages smoke tests', () => {
@@ -25,7 +29,10 @@ describe('pages smoke tests', () => {
 
     expect(screen.getAllByText(banner.pt.welcomeThree)[0]).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: 'e sou Desenvolvedor Full Stack' })
+      screen.getByRole('heading', {
+        level: 4,
+        name: 'e sou Desenvolvedor Full Stack',
+      })
     ).toBeInTheDocument();
     expect(
       screen.getByText('Angular, React.js, Node.js, NestJS')
@@ -48,7 +55,10 @@ describe('pages smoke tests', () => {
 
     expect(screen.getByText(banner.en.welcomeOne)).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: "and I'm a Full Stack Developer" })
+      screen.getByRole('heading', {
+        level: 4,
+        name: "and I'm a Full Stack Developer",
+      })
     ).toBeInTheDocument();
     expect(
       screen.getByText('Angular, React.js, Node.js, NestJS')
