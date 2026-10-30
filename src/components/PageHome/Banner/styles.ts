@@ -50,6 +50,13 @@ export const Container = styled.section`
       font-weight: 300;
     }
 
+    .technologies {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 300;
+      opacity: 0.85;
+    }
+
     .btn-next {
       background: transparent;
       border: 2px solid #fff;

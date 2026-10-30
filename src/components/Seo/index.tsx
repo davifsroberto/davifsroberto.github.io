@@ -31,7 +31,7 @@ export function Seo({
       <meta name="author" content="davifsroberto" />
       <meta
         name="keywords"
-        content="Davi Roberto, davifsroberto, frontend engineer, React, Next.js, TypeScript"
+        content="Davi Roberto, davifsroberto, full stack developer, frontend, backend, Angular, React, Node.js, NestJS, TypeScript"
       />
       <link rel="canonical" href={canonicalUrl} />
       <meta property="og:type" content="website" />

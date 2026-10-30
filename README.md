@@ -1,10 +1,10 @@
 <section align="center">
 
-# Davi Roberto - Frontend Engineer
+# Davi Roberto - Full Stack Developer
 
 ## Hello, world 💻
 
-This is my personal website, where I report about my career in frontend web development.
+This is my personal website, where I share my career in software development.
 
 <a href="https://davifsroberto.github.io" target="_blank">
   <img src="./public/assets/images/general/davifsroberto.gif" />
@@ -56,6 +56,35 @@ Run `yarn` for intall dependencies.
 Run `yarn dev` for start local server.
 <br />
 <br />
+
+## 📄 Generate the CV PDFs locally
+
+The downloads are static files. They are generated during development, not when
+someone clicks the download button. Python 3.9 or newer is required.
+
+```bash
+python3 -m venv .venv-cv
+source .venv-cv/bin/activate
+python -m pip install -r requirements-cv.txt
+python scripts/cv/generate_cv.py
+python -m unittest discover -s scripts/cv -p 'test_*.py'
+```
+
+The command updates `public/Davi-Roberto_CV.pdf` and
+`public/Davi-Roberto_Resume.pdf`. Commit both PDFs when their content changes.
+The Portuguese PDF is preserved byte-for-byte when its data matches
+`scripts/cv/template.pdf`; the English PDF uses the same two-page layout.
+
+Edit the concise PDF-specific summaries, skills, bullet points and ordering in
+`src/locales/cv-pdf/index.json`, in both languages. The generator also reads
+the role and technologies from `src/locales/profile/index.json` and
+`src/locales/home/banner/index.json`, and the experience titles, companies and
+dates, education and contact details from the site's existing locale data.
+Experience and education IDs in the PDF data must match those in the site.
+The template has fixed space for 10 experiences and 3 education entries; the
+script reports an error instead of silently cutting off text that does not fit.
+Carlito fonts used for edited text are bundled under the SIL Open Font License
+in `scripts/cv/fonts/OFL.txt`.
 
 ## 📈 Prettier
 

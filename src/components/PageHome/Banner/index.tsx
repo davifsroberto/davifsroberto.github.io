@@ -3,6 +3,7 @@ import { SocialMedia } from '../../SocialMedias';
 import { mountSocialMediasUtils } from '../../../utils/social-medias.utils';
 import { SetLanguageUtils as language } from '../../../utils/language.utils';
 import banner from '../../../locales/home/banner/index.json';
+import profile from '../../../locales/profile/index.json';
 
 export function Banner() {
   return (
@@ -25,8 +26,9 @@ export function Banner() {
 
             <h4>
               {banner[language()].welcomeFour}
-              <strong>Frontend Engineer</strong>
+              <strong>{profile[language()].role}</strong>
             </h4>
+            <p className="technologies">{banner[language()].technologies}</p>
 
             <div className="mt-5 social-media-box">
               <SocialMedia socialMedia={mountSocialMediasUtils()} />
