@@ -12,21 +12,27 @@ class GenerateCvTests(unittest.TestCase):
         cls.data = generate_cv.load_data()
         cls.template = generate_cv.TEMPLATE.read_bytes()
 
-    def test_portuguese_pdf_matches_original_template_exactly(self):
-        generated = generate_cv.generate_pdf("pt", self.data, self.template)
-        self.assertEqual(generated, self.template)
+    def test_pdfs_contain_localized_content_and_links_in_order(self):
+        for language in ("pt", "en"):
+            with self.subTest(language=language):
+                self.check_localized_pdf(language)
 
-    def test_english_pdf_contains_localized_content_and_links_in_order(self):
-        generated = generate_cv.generate_pdf("en", self.data, self.template)
+    def check_localized_pdf(self, language):
+        generated = generate_cv.generate_pdf(language, self.data, self.template)
         doc = fitz.open(stream=generated, filetype="pdf")
         self.assertEqual(len(doc), 2)
         text = generate_cv.normalize(" ".join(page.get_text() for page in doc))
-        values = generate_cv.content(self.data, "en")
+        values = generate_cv.content(self.data, language)
         self.assertIn(generate_cv.normalize(values["localized"]["summary"]), text)
-        self.assertIn("staff software engineer · hsystem jan 2024 – present", text)
-        self.assertIn("full stack developer | angular | react.js | node.js | nestjs", text)
-        self.assertLess(text.index("professional profile"), text.index("professional experience"))
-        self.assertLess(text.index("professional experience"), text.index("education"))
+        present = "presente" if language == "pt" else "present"
+        self.assertIn(f"staff software engineer · hsystem jan 2024 – {present}", text)
+        role_line = " | ".join([values["role"]] + values["technologies"])
+        self.assertIn(generate_cv.normalize(role_line), text)
+        profile = generate_cv.normalize(values["localized"]["profileTitle"])
+        experience = generate_cv.normalize(values["localized"]["experienceTitle"])
+        education = generate_cv.normalize(values["localized"]["educationTitle"])
+        self.assertLess(text.index(profile), text.index(experience))
+        self.assertLess(text.index(experience), text.index(education))
         self.assertNotIn("\x00", text)
         self.assertNotIn("\u00a0", text)
         for job in values["jobs"]:
@@ -34,6 +40,20 @@ class GenerateCvTests(unittest.TestCase):
             self.assertIn(generate_cv.normalize(job["company"]), text)
             for bullet in job["bullets"]:
                 self.assertIn(generate_cv.normalize(bullet), text)
+        company_positions = [text.index(generate_cv.normalize(job["company"])) for job in values["jobs"]]
+        self.assertEqual(company_positions, sorted(company_positions))
+        for label in ("LinkedIn:", "GitHub:", values["contact_labels"]["website"] + ":"):
+            self.assertIn(generate_cv.normalize(label), text)
+        self.assertIn(generate_cv.normalize(values["contact_labels"]["email"] + ":"), text)
+        self.assertIn(generate_cv.normalize(values["contact_labels"]["phone"] + ":"), text)
+        self.assertEqual(len(values["studies"]), 2)
+        for study in values["studies"]:
+            self.assertIn(generate_cv.normalize(study["title"]), text)
+            self.assertIn(generate_cv.normalize(study["institution"]), text)
+            self.assertIn(generate_cv.normalize(study["period"]), text)
+        self.assertNotIn("ufes", text)
+        self.assertNotIn("metodologia da pesquisa científica", text)
+        self.assertNotIn("scientific research methodology", text)
         actual_links = {link["uri"] for page in doc for link in page.get_links()}
         expected_links = {values[key]["link"] for key in ("linkedin", "github", "website")}
         self.assertEqual(actual_links, expected_links)
@@ -42,6 +62,49 @@ class GenerateCvTests(unittest.TestCase):
                 for line in block.get("lines", []):
                     for span in line["spans"]:
                         self.assertTrue(page.rect.contains(fitz.Rect(span["bbox"])), span["text"])
+        output = generate_cv.ROOT / "public" / generate_cv.OUTPUTS[language]
+        self.assertEqual(generated, output.read_bytes())
+
+    def test_experience_bullets_use_first_person(self):
+        portuguese_starts = {
+            "11": ("Atuo", "Contribuo", "Utilizo", "Faço"),
+            "10": ("Desenvolvi", "Contribuí", "Integrei", "Mentorei"),
+            "9": ("Arquitetei", "Desenvolvi", "Reestruturei", "Criei"),
+            "7": ("Construí", "Desenvolvi", "Atuei", "Implementei"),
+            "6": ("Desenvolvi", "Atuei", "Apliquei"),
+            "5": ("Desenvolvi", "Atuei"),
+            "2": ("Fui contratado", "Construí"),
+            "3": ("Atuei",),
+            "4": ("Atuei",),
+            "1": ("Iniciei", "Experiência que abriu a porta para minha carreira"),
+        }
+        for identifier, starts in portuguese_starts.items():
+            with self.subTest(language="pt", experience=identifier):
+                bullets = self.data["pdf"]["pt"]["experienceBullets"][identifier]
+                self.assertEqual(len(bullets), len(starts))
+                for bullet, start in zip(bullets, starts):
+                    self.assertTrue(bullet.startswith(start), bullet)
+
+        for identifier, bullets in self.data["pdf"]["en"]["experienceBullets"].items():
+            for index, bullet in enumerate(bullets):
+                with self.subTest(language="en", experience=identifier, bullet=index):
+                    if identifier == "1" and index == 1:
+                        self.assertIn("my career", bullet)
+                    else:
+                        self.assertTrue(bullet.startswith("I "), bullet)
+
+    def test_experience_order_is_reverse_chronological(self):
+        for language in ("pt", "en"):
+            with self.subTest(language=language):
+                experiences = {
+                    item["id"]: item
+                    for item in self.data["experience"][language]["experiencies"]
+                }
+                starts = [
+                    experiences[identifier]["period"][:5]
+                    for identifier in self.data["pdf"]["experienceOrder"]
+                ]
+                self.assertEqual(starts, sorted(starts, key=lambda value: value[3:5] + value[:2], reverse=True))
 
     def test_changes_to_shared_role_are_rendered(self):
         data = copy.deepcopy(self.data)
@@ -78,6 +141,32 @@ class GenerateCvTests(unittest.TestCase):
         data["experience"]["pt"]["experiencies"].append(experience)
         with self.assertRaisesRegex(ValueError, "mesmos IDs"):
             generate_cv.generate_pdf("pt", data, self.template)
+
+    def test_education_order_rejects_too_many_or_duplicate_entries(self):
+        data = copy.deepcopy(self.data)
+        data["pdf"]["educationOrder"] = [1, 2, 3, 4]
+        with self.assertRaisesRegex(ValueError, "entre 1 e 3"):
+            generate_cv.content(data, "pt")
+        data["pdf"]["educationOrder"] = [1, 1]
+        with self.assertRaisesRegex(ValueError, "distintas"):
+            generate_cv.content(data, "pt")
+
+    def test_unused_template_study_slot_does_not_restore_removed_education(self):
+        data = copy.deepcopy(self.data)
+        extra_study = copy.deepcopy(data["cv"]["pt"]["education"]["items"][0])
+        extra_study.update({
+            "id": 3,
+            "title": "Curso adicional",
+            "subtitle": "Instituição adicional",
+        })
+        data["cv"]["pt"]["education"]["items"].append(extra_study)
+        data["pdf"]["educationOrder"].append(3)
+        template_with_extra_study = generate_cv.generate_pdf("pt", data, self.template)
+
+        generated = generate_cv.generate_pdf("pt", self.data, template_with_extra_study)
+        text = " ".join(page.get_text() for page in fitz.open(stream=generated, filetype="pdf"))
+        self.assertNotIn("Curso adicional", text)
+        self.assertNotIn("Instituição adicional", text)
 
     def test_english_generation_is_reproducible(self):
         first = generate_cv.generate_pdf("en", self.data, self.template)

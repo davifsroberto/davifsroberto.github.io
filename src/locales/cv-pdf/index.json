@@ -4,15 +4,15 @@
     "text": "davifsroberto.com",
     "link": "https://davifsroberto.com/"
   },
-  "experienceOrder": [11, 10, 9, 7, 6, 5, 2, 3, 4, 1],
-  "educationOrder": [2, 3, 1],
+  "experienceOrder": [11, 10, 9, 7, 6, 4, 3, 5, 2, 1],
+  "educationOrder": [2, 1],
   "pt": {
     "location": "Barueri, SP — Brasil",
-    "profileTitle": "Perfil profissional",
+    "profileTitle": "Resumo profissional",
     "skillsTitle": "Competências técnicas",
     "experienceTitle": "Experiência profissional",
     "educationTitle": "Formação acadêmica",
-    "summary": "Desenvolvedor Full Stack com mais de 15 anos de experiência na construção e evolução de aplicações web. Atuo de ponta a ponta, da análise técnica à entrega em produção, com Angular, React, TypeScript, Node.js e NestJS. Contribuo com backend, integrações, testes, performance, segurança e CI/CD; também participo de discussões de arquitetura e compartilho boas práticas com o time. Utilizo ferramentas e agentes de IA para apoiar implementação, testes, refatoração, documentação e automação.",
+    "summary": "Sou desenvolvedor Full Stack com mais de 15 anos de experiência em aplicações web. Atuo da análise técnica à produção com Angular, React, TypeScript, Node.js e NestJS, incluindo APIs REST, integrações e testes. Contribuo com arquitetura, performance, segurança e CI/CD, além de compartilhar boas práticas e usar IA para apoiar o desenvolvimento.",
     "skills": [
       {
         "title": "Frontend",
@@ -29,7 +29,13 @@
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "NestJS", "APIs REST", "BFF", "SQL/NoSQL"]
+        "items": [
+          "Node.js",
+          "NestJS",
+          "APIs REST",
+          "Backend for Frontend (BFF)",
+          "SQL/NoSQL"
+        ]
       },
       {
         "title": "Qualidade",
@@ -60,61 +66,61 @@
     },
     "experienceBullets": {
       "11": [
-        "Atuo no desenvolvimento de aplicações web, APIs e BFF, da análise técnica à entrega em produção, com Angular, TypeScript, Node.js e NestJS.",
-        "Contribuo com backend, integrações, bancos de dados, testes, performance, segurança e CI/CD; participo de discussões de arquitetura quando necessário.",
+        "Atuo da análise à produção de aplicações web, APIs e Backend for Frontend (BFF) com Angular, TypeScript, Node.js e NestJS.",
+        "Contribuo com integrações, bancos de dados, testes, performance, segurança e CI/CD; participo de discussões de arquitetura.",
         "Utilizo ferramentas e agentes de IA para apoiar implementação, refatorações, testes, documentação, análise de código e automação.",
         "Faço revisões de código e compartilho boas práticas com o time."
       ],
       "10": [
-        "Desenvolveu aplicações Angular de missão crítica em ambiente bancário de grande escala, com forte disciplina de testes unitários e E2E.",
-        "Contribuiu para a evolução do Design System interno, elevando consistência e velocidade de entrega entre squads.",
-        "Integrou APIs REST e camadas BFF para sustentar produtos digitais do banco, também com React e Node.js em frentes específicas.",
-        "Mentorou desenvolvedores menos experientes no dia a dia, apoiando a evolução técnica do time e a entrega de um projeto altamente escalável."
+        "Desenvolvi aplicações Angular de missão crítica em ambiente bancário de grande escala, com forte disciplina de testes unitários e E2E.",
+        "Contribuí para a evolução do Design System interno, elevando consistência e velocidade de entrega entre squads.",
+        "Integrei APIs REST e camadas BFF para sustentar produtos digitais do banco, também com React e Node.js em frentes específicas.",
+        "Mentorei desenvolvedores menos experientes no dia a dia, apoiando a evolução técnica do time e a entrega de um projeto altamente escalável."
       ],
       "9": [
-        "Arquitetou e implementou Microfrontends em Angular com Module Federation, permitindo squads independentes evoluírem em paralelo.",
-        "Desenvolveu aplicações para a frente de delivery, backoffice e totens de autoatendimento, com foco em performance e testes.",
-        "Reestruturou projetos legados para uma arquitetura de frontend escalável e definiu padrões técnicos adotados pelo time de engenharia.",
-        "Criou interfaces sem depender de UI designer quando necessário, aplicando noções sólidas de UI/UX."
+        "Arquitetei e implementei Microfrontends em Angular com Module Federation, permitindo squads independentes evoluírem em paralelo.",
+        "Desenvolvi aplicações para a frente de delivery, backoffice e totens de autoatendimento, com foco em performance e testes.",
+        "Reestruturei projetos legados para uma arquitetura de frontend escalável e defini padrões técnicos adotados pelo time de engenharia.",
+        "Criei interfaces sem depender de UI designer quando necessário, aplicando noções sólidas de UI/UX."
       ],
       "7": [
-        "Construiu soluções de pagamento digital utilizadas por milhões de usuários, incluindo dashboards e sistemas de monitoramento de transações financeiras.",
-        "Desenvolveu relatórios e ferramentas para identificar instabilidades em serviços de transação, com Angular, React, Node.js, Sass e Bootstrap.",
-        "Atuou em squads ágeis (Scrum) com foco em qualidade, priorizando performance e estabilidade em produção.",
-        "Implementou testes automatizados, elevando a cobertura de código do time."
+        "Construí soluções de pagamento digital utilizadas por milhões de usuários, incluindo dashboards e sistemas de monitoramento de transações financeiras.",
+        "Desenvolvi relatórios e ferramentas para identificar instabilidades em serviços de transação, com Angular, React, Node.js, Sass e Bootstrap.",
+        "Atuei em squads ágeis (Scrum) com foco em qualidade, priorizando performance e estabilidade em produção.",
+        "Implementei testes automatizados, elevando a cobertura de código do time."
       ],
       "6": [
-        "Desenvolveu sistemas web para grandes corporações, com foco em qualidade de código, performance, segurança e experiência do usuário.",
-        "Atuou em frontend (HTML5, CSS3, Sass, JavaScript/ES6+, jQuery, VueJS, Angular, Webpack) e backend (.NET, ASP.NET Core, C#, SQL Server, Dapper, Entity Framework Core).",
-        "Aplicou padrões MVC/MVVM, REST, Web API, SPA e JWT em projetos componentizados, com GitHub e TFS para versionamento."
+        "Desenvolvi sistemas web para grandes corporações, com foco em qualidade de código, performance, segurança e experiência do usuário.",
+        "Atuei em frontend (HTML5, CSS3, Sass, JavaScript/ES6+, jQuery, VueJS, Angular, Webpack) e backend (.NET, ASP.NET Core, C#, SQL Server, Dapper, Entity Framework Core).",
+        "Apliquei padrões MVC/MVVM, REST, Web API, SPA e JWT em projetos componentizados, com GitHub e TFS para versionamento."
       ],
       "5": [
-        "Desenvolveu sites institucionais e sistemas CMS em WordPress, com HTML5, CSS, JavaScript/jQuery, PHP e MySQL.",
-        "Atuou em projetos paralelos da agência, entregando interfaces web responsivas e interativas."
+        "Desenvolvi sites institucionais e sistemas CMS em WordPress, com HTML5, CSS, JavaScript/jQuery, PHP e MySQL.",
+        "Atuei em projetos paralelos da agência, entregando interfaces web responsivas e interativas."
       ],
       "2": [
-        "Contratado como jovem aprendiz em período integral; desenvolveu e deu suporte contínuo a sistemas web essenciais para a equipe de call center.",
-        "Construiu ferramentas de análise e gerenciamento de consumo de internet dos clientes, com PHP, MySQL, HTML, CSS, JavaScript e Git."
+        "Fui contratado como jovem aprendiz em período integral; desenvolvi e dei suporte contínuo a sistemas web essenciais para a equipe de call center.",
+        "Construí ferramentas de análise e gerenciamento de consumo de internet dos clientes, com PHP, MySQL, HTML, CSS, JavaScript e Git."
       ],
       "3": [
-        "Estagiário focado em frontend, atuando no desenvolvimento dos sites dos clientes da empresa."
+        "Atuei como estagiário, com foco em frontend, no desenvolvimento dos sites dos clientes da empresa."
       ],
       "4": [
-        "Estagiário atuando com frontend e backend no desenvolvimento dos sites dos clientes da empresa."
+        "Atuei como estagiário, trabalhando com frontend e backend no desenvolvimento dos sites dos clientes da empresa."
       ],
       "1": [
-        "Iniciou como office boy interno e migrou para o setor de TI, onde teve o primeiro contato com programação observando o desenvolvimento de um sistema.",
-        "Experiência que abriu a porta para a carreira em Desenvolvimento Web."
+        "Iniciei como office boy interno e migrei para o setor de TI, onde tive o primeiro contato com programação observando o desenvolvimento de um sistema.",
+        "Experiência que abriu a porta para minha carreira em Desenvolvimento Web."
       ]
     }
   },
   "en": {
     "location": "Barueri, SP — Brazil",
-    "profileTitle": "Professional profile",
+    "profileTitle": "Professional summary",
     "skillsTitle": "Technical skills",
     "experienceTitle": "Professional experience",
     "educationTitle": "Education",
-    "summary": "Full Stack Developer with over 15 years of experience building and evolving web applications. I work end to end, from technical analysis through production delivery, using Angular, React, TypeScript, Node.js and NestJS. I contribute to backend, integrations, testing, performance, security and CI/CD; I also participate in architecture discussions and share best practices with the team. I use AI tools and agents to support implementation, testing, refactoring, documentation and automation.",
+    "summary": "I am a Full Stack Developer with over 15 years of experience building web applications. I work from technical analysis to production with Angular, React, TypeScript, Node.js and NestJS, including REST APIs, integrations and testing. I contribute to architecture, performance, security and CI/CD, share best practices and use AI to support development.",
     "skills": [
       {
         "title": "Frontend",
@@ -131,7 +137,13 @@
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "NestJS", "REST APIs", "BFF", "SQL/NoSQL"]
+        "items": [
+          "Node.js",
+          "NestJS",
+          "REST APIs",
+          "Backend for Frontend (BFF)",
+          "SQL/NoSQL"
+        ]
       },
       {
         "title": "Quality",
@@ -162,51 +174,51 @@
     },
     "experienceBullets": {
       "11": [
-        "I develop web applications, APIs and BFFs, from technical analysis through production delivery, using Angular, TypeScript, Node.js and NestJS.",
-        "I contribute to backend, integrations, databases, testing, performance, security and CI/CD, and join architecture discussions when needed.",
+        "I develop web applications, APIs and Backend for Frontend (BFF) solutions from analysis to production with Angular, TypeScript, Node.js and NestJS.",
+        "I contribute to integrations, databases, testing, performance, security and CI/CD, and participate in architecture discussions.",
         "I use AI tools and agents to support implementation, refactoring, testing, documentation, code analysis and automation.",
         "I review code and share best practices with the team."
       ],
       "10": [
-        "Developed mission-critical Angular applications in a large-scale banking environment, with strong unit and end-to-end testing practices.",
-        "Contributed to the internal Design System, improving consistency and delivery speed across squads.",
-        "Integrated REST APIs and BFF layers to support the bank's digital products, also using React and Node.js on specific initiatives.",
-        "Mentored less experienced developers, supporting the team's technical growth and the delivery of a highly scalable project."
+        "I developed mission-critical Angular applications in a large-scale banking environment, with strong unit and end-to-end testing practices.",
+        "I contributed to the internal Design System, improving consistency and delivery speed across squads.",
+        "I integrated REST APIs and BFF layers to support the bank's digital products, also using React and Node.js on specific initiatives.",
+        "I mentored less experienced developers, supporting the team's technical growth and the delivery of a highly scalable project."
       ],
       "9": [
-        "Architected and implemented Angular microfrontends with Module Federation, enabling independent squads to evolve in parallel.",
-        "Developed delivery, back-office and self-service kiosk applications, focusing on performance and testing.",
-        "Restructured legacy projects into a scalable frontend architecture and defined technical standards adopted by the engineering team.",
-        "Created interfaces independently when needed, applying UI/UX knowledge."
+        "I architected and implemented Angular microfrontends with Module Federation, enabling independent squads to evolve in parallel.",
+        "I developed delivery, back-office and self-service kiosk applications, focusing on performance and testing.",
+        "I restructured legacy projects into a scalable frontend architecture and defined technical standards adopted by the engineering team.",
+        "I created interfaces independently when needed, applying UI/UX knowledge."
       ],
       "7": [
-        "Built digital payment solutions used by millions, including dashboards and financial transaction monitoring systems.",
-        "Developed reports and tools to identify transaction service instability using Angular, React, Node.js, Sass and Bootstrap.",
-        "Worked in agile Scrum squads focused on quality, prioritizing production performance and stability.",
-        "Implemented automated tests, increasing the team's code coverage."
+        "I built digital payment solutions used by millions, including dashboards and financial transaction monitoring systems.",
+        "I developed reports and tools to identify transaction service instability using Angular, React, Node.js, Sass and Bootstrap.",
+        "I worked in agile Scrum squads focused on quality, prioritizing production performance and stability.",
+        "I implemented automated tests, increasing the team's code coverage."
       ],
       "6": [
-        "Developed web systems for large corporations, focusing on code quality, performance, security and user experience.",
-        "Worked on frontend (HTML5, CSS3, Sass, JavaScript/ES6+, jQuery, VueJS, Angular, Webpack) and backend (.NET, ASP.NET Core, C#, SQL Server, Dapper, Entity Framework Core).",
-        "Applied MVC/MVVM, REST, Web API, SPA and JWT patterns in component-based projects, using GitHub and TFS for version control."
+        "I developed web systems for large corporations, focusing on code quality, performance, security and user experience.",
+        "I worked on frontend (HTML5, CSS3, Sass, JavaScript/ES6+, jQuery, VueJS, Angular, Webpack) and backend (.NET, ASP.NET Core, C#, SQL Server, Dapper, Entity Framework Core).",
+        "I applied MVC/MVVM, REST, Web API, SPA and JWT patterns in component-based projects, using GitHub and TFS for version control."
       ],
       "5": [
-        "Developed corporate websites and WordPress CMS systems with HTML5, CSS, JavaScript/jQuery, PHP and MySQL.",
-        "Worked on parallel agency projects, delivering responsive and interactive web interfaces."
+        "I developed corporate websites and WordPress CMS systems with HTML5, CSS, JavaScript/jQuery, PHP and MySQL.",
+        "I worked on parallel agency projects, delivering responsive and interactive web interfaces."
       ],
       "2": [
-        "Hired as a full-time apprentice; developed and continuously supported web systems essential to the call center team.",
-        "Built tools to analyze and manage customers' internet usage using PHP, MySQL, HTML, CSS, JavaScript and Git."
+        "I was hired as a full-time apprentice; I developed and continuously supported web systems essential to the call center team.",
+        "I built tools to analyze and manage customers' internet usage using PHP, MySQL, HTML, CSS, JavaScript and Git."
       ],
       "3": [
-        "Frontend-focused intern developing websites for the company's clients."
+        "I worked as a frontend-focused intern, developing websites for the company's clients."
       ],
       "4": [
-        "Intern working on frontend and backend development of websites for the company's clients."
+        "I worked as an intern on frontend and backend development of websites for the company's clients."
       ],
       "1": [
-        "Started in an internal office support role and moved to IT, where observing system development led to a first encounter with programming.",
-        "This experience opened the door to a career in web development."
+        "I started in an internal office support role and moved to IT, where observing system development led to my first encounter with programming.",
+        "This experience opened the door to my career in web development."
       ]
     }
   }

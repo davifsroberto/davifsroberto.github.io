@@ -110,7 +110,7 @@
         "title": "Web Developer Full Stack",
         "period": "01/17 - 10/19 (2 anos e 10 meses)",
         "tag": ["#Angular", "#React", "#Vue", "#ASP.NET Core"],
-        "description": "Analisar e desenvolver sistemas web para grandes corporações, sempre com foco em soluções para o cliente e suas necessidades de negócios, envolvendo questões como alto padrão de qualidade de código, performance, segurança e experiência do usuário. Algumas tecnologias que utilizava neste processo: Front-End: HTML5, CSS3, Sass, JavaScript, ECMAScript 6+, jQuery, JSON, VueJS, Angular, UX, Photoshop, WebPack; Back-End: .NET, ASP.NET CORE, C#, SQL Server, Dapper, Entity Framework Core. Geral: MVC, MVVM, TFS, GitHub, SEO, WEB API, SPA, Componentização, NPM, REST, JWT, P.O.O, entre outros.",
+        "description": "Analisei e desenvolvi sistemas web para grandes corporações, sempre com foco em soluções para o cliente e suas necessidades de negócios, envolvendo questões como alto padrão de qualidade de código, performance, segurança e experiência do usuário. Algumas tecnologias que utilizava neste processo: Front-End: HTML5, CSS3, Sass, JavaScript, ECMAScript 6+, jQuery, JSON, VueJS, Angular, UX, Photoshop, WebPack; Back-End: .NET, ASP.NET CORE, C#, SQL Server, Dapper, Entity Framework Core. Geral: MVC, MVVM, TFS, GitHub, SEO, WEB API, SPA, Componentização, NPM, REST, JWT, P.O.O, entre outros.",
         "classPosition": " text-start "
       },
       {
@@ -128,7 +128,7 @@
         "title": "Frontend Engineer",
         "period": "10/19 - 10/21 (2 anos e 1 mês)",
         "tag": ["#Angular, #React, #Node.js"],
-        "description": "Desenvolvimento de sistemas para a área financeira, criação de dashboards, aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Algumas tecnologias que utilizava nesse processo: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "description": "Desenvolvi sistemas para a área financeira e criei dashboards e aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Algumas tecnologias que utilizava nesse processo: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "classPosition": " text-end "
       },
       {
@@ -164,7 +164,7 @@
         "title": "Frontend Engineer",
         "period": "04/22 - 01/24 (1 ano e 10 meses)",
         "tag": ["#Angular, #React, #Node.js"],
-        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React, Node.js, TypeScript, teste unitário, teste E2E, UI/UX.",
+        "description": "Desenvolvi aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React, Node.js, TypeScript, teste unitário, teste E2E, UI/UX.",
         "classPosition": " text-end "
       },
       {
@@ -298,7 +298,7 @@
         "title": "Web Developer Full Stack",
         "period": "01/17 - 10/19 (2 yrs 10 mos)",
         "tag": ["#Angular", "#React", "#Vue", "#ASP.NET Core"],
-        "description": "Analyze and develop web systems for large corporations, always focusing on solutions for the client and their business needs, involving issues such as high code quality standards, performance, security, and user experience. Some technologies used in this process: Front-End: HTML5, CSS3, Sass, JavaScript, ECMAScript 6+, jQuery, JSON, VueJS, Angular, UX, Photoshop, WebPack; Back-End: .NET, ASP.NET CORE, C#, SQL Server, Dapper, Entity Framework Core. General: MVC, MVVM, TFS, GitHub, SEO, WEB API, SPA, Componentization, NPM, REST, JWT, O.O.P, among others.",
+        "description": "I analyzed and developed web systems for large corporations, always focusing on solutions for the client and their business needs, involving issues such as high code quality standards, performance, security, and user experience. Some technologies used in this process: Front-End: HTML5, CSS3, Sass, JavaScript, ECMAScript 6+, jQuery, JSON, VueJS, Angular, UX, Photoshop, WebPack; Back-End: .NET, ASP.NET CORE, C#, SQL Server, Dapper, Entity Framework Core. General: MVC, MVVM, TFS, GitHub, SEO, WEB API, SPA, Componentization, NPM, REST, JWT, O.O.P, among others.",
         "classPosition": " text-start "
       },
       {
@@ -316,7 +316,7 @@
         "title": "Frontend Engineer",
         "period": "10/19 - 10/21 (2 yrs 1 mo)",
         "tag": ["#Angular, #React, #Node.js"],
-        "description": "Development of systems for the financial area, creation of dashboards, applications that monitor services and generate reports on the instabilities of financial transaction services. Some technologies used in this process: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "description": "I developed systems for the financial area and created dashboards and applications that monitor services and generate reports on the instabilities of financial transaction services. Some technologies used in this process: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "classPosition": " text-end "
       },
       {
@@ -334,7 +334,7 @@
         "title": "Principal Frontend Engineer",
         "period": "10/21 - 04/22 (7 mos)",
         "tag": ["#Angular, #Node.js"],
-        "description": "Develop applications for the delivery front, back office applications, and self-service kiosks. Always attentive to development with tests, performance, and best practices. Helps less experienced developers and works on restructuring old projects for a scalable frontend architecture. When necessary, creates interfaces without depending on a UI designer. Has notions of UI/UX and enjoys the subject. Some technologies used in this process: Angular, Node.js, Monorepo, Nx Workspace (nx.dev), Module Federation.",
+        "description": "I develop applications for the delivery front, back office applications, and self-service kiosks. I am always attentive to development with tests, performance, and best practices. I help less experienced developers and work on restructuring old projects for a scalable frontend architecture. When necessary, I create interfaces without depending on a UI designer. I have notions of UI/UX and enjoy the subject. Some technologies used in this process: Angular, Node.js, Monorepo, Nx Workspace (nx.dev), Module Federation.",
         "classPosition": " text-start "
       },
       {
@@ -352,7 +352,7 @@
         "title": "Frontend Engineer",
         "period": "04/22 - 01/24 (1 yr 10 mos)",
         "tag": ["#Angular, #React, #Node.js"],
-        "description": "Development of web applications with the Angular framework. During development, always attentive to best practices to follow a high level of code standards and in development with tests. Helps less experienced developers day by day to evolve technically together and deliver a highly scalable project. Some technologies used: Angular, React, Node.js, TypeScript, unit testing, E2E testing, UI/UX.",
+        "description": "I developed web applications with the Angular framework. During development, I was always attentive to best practices to follow a high level of code standards and in development with tests. I helped less experienced developers day by day to evolve technically together and deliver a highly scalable project. Some technologies used: Angular, React, Node.js, TypeScript, unit testing, E2E testing, UI/UX.",
         "classPosition": " text-end "
       },
       {

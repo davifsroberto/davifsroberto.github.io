@@ -49,7 +49,6 @@ export const Container = styled.ul`
 
     li {
       cursor: pointer;
-      padding: 0 0.3em;
       font-weight: 200;
 
       &:hover {
@@ -58,6 +57,8 @@ export const Container = styled.ul`
 
       a {
         color: inherit;
+        display: block;
+        padding: 0 0.3em;
       }
     }
 

@@ -39,6 +39,7 @@ const coverage = {
 export default defineConfig({
   test: {
     environment: 'jsdom',
+    maxWorkers: 2,
     globals: false,
     setupFiles: ['./src/test/setup.ts'],
     exclude: ['node_modules/**', '.next/**', 'out/**', 'coverage/**'],

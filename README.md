@@ -81,7 +81,7 @@ the role and technologies from `src/locales/profile/index.json` and
 `src/locales/home/banner/index.json`, and the experience titles, companies and
 dates, education and contact details from the site's existing locale data.
 Experience and education IDs in the PDF data must match those in the site.
-The template has fixed space for 10 experiences and 3 education entries; the
+The template has fixed space for 10 experiences and up to 3 education entries; the
 script reports an error instead of silently cutting off text that does not fit.
 Carlito fonts used for edited text are bundled under the SIL Open Font License
 in `scripts/cv/fonts/OFL.txt`.

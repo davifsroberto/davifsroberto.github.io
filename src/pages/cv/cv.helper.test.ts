@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import {
   mountAboutItemsCvHelper,
@@ -10,7 +10,9 @@ import {
   mountTimelineExperienceCvHelper,
 } from './cv.helper';
 import cv from '../../locales/cv/index.json';
+import { experienceOrder } from '../../locales/cv-pdf/index.json';
 import experience from '../../locales/experience/index.json';
+import * as experienceHelper from '../experience/helper.experience';
 import { setMockRouter } from '../../test/mocks/next-router';
 
 describe('cv helper', () => {
@@ -49,20 +51,65 @@ describe('cv helper', () => {
     ]);
   });
 
-  it('maps experiences into a descending timeline', () => {
-    setMockRouter({ asPath: '/experience', locale: 'pt' });
+  it.each([
+    ['/cv', 'pt'],
+    ['/en/cv', 'en'],
+  ] as const)(
+    'maps experiences for %s in the same order as the PDF',
+    (asPath, language) => {
+      setMockRouter({ asPath, locale: language });
 
-    const timeline = mountTimelineExperienceCvHelper();
-    const expected = [...experience.pt.experiencies]
-      .map((item) => ({
+      const timeline = mountTimelineExperienceCvHelper();
+      const expected = [...experience[language].experiencies].map((item) => ({
         id: item.id,
         title: item.title,
         subtitle: item.company.name,
         period: item.period,
         description: item.description,
-      }))
-      .sort((a, b) => b.id - a.id);
+      }));
 
-    expect(timeline).toEqual(expected);
+      expect(timeline.map((item) => item.id)).toEqual([
+        11, 10, 9, 7, 6, 4, 3, 5, 2, 1,
+      ]);
+      expect(timeline).toHaveLength(expected.length);
+      expect(timeline).toEqual(expect.arrayContaining(expected));
+    }
+  );
+
+  it('rejects duplicate IDs in the PDF experience order', () => {
+    const original = experienceOrder[1];
+    experienceOrder[1] = experienceOrder[0];
+    try {
+      expect(() => mountTimelineExperienceCvHelper()).toThrow(
+        'CV experience order must match the site experiences.'
+      );
+    } finally {
+      experienceOrder[1] = original;
+    }
   });
+
+  it.each(['missing', 'duplicate', 'unknown'])(
+    'rejects %s experience IDs',
+    (invalid) => {
+      const items = [...experience.pt.experiencies];
+      if (invalid === 'missing') {
+        items.pop();
+      } else if (invalid === 'duplicate') {
+        items[0] = items[1];
+      } else {
+        items[0] = { ...items[0], id: 999 };
+      }
+
+      const mocked = vi
+        .spyOn(experienceHelper, 'mountAllExperienceHelper')
+        .mockReturnValue(items);
+      try {
+        expect(() => mountTimelineExperienceCvHelper()).toThrow(
+          'CV experience order must match the site experiences.'
+        );
+      } finally {
+        mocked.mockRestore();
+      }
+    }
+  );
 });

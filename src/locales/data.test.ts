@@ -76,4 +76,45 @@ describe('critical locale data', () => {
       });
     }
   });
+
+  it('uses first-person descriptions for the updated experiences', () => {
+    const expected = {
+      pt: {
+        'Fast Solutions': 'Analisei e desenvolvi',
+        Cielo: 'Desenvolvi sistemas',
+        'Banco BV': 'Desenvolvi aplicações',
+      },
+      en: {
+        'Fast Solutions': 'I analyzed and developed',
+        Cielo: 'I developed systems',
+        Mottu: 'I develop applications',
+        'Banco BV': 'I developed web applications',
+      },
+    };
+
+    for (const locale of ['pt', 'en'] as const) {
+      for (const [company, start] of Object.entries(expected[locale])) {
+        const item = experience[locale].experiencies.find(
+          (entry) => entry.company.name === company
+        );
+        expect(item?.description).toMatch(new RegExp(`^${start}`));
+      }
+
+      for (const company of ['Cielo', 'Banco BV'] as const) {
+        const item = homeExperience[locale].experiencesHome.find(
+          (entry) => entry.company.name === company
+        );
+        expect(item?.description).toMatch(
+          new RegExp(`^${expected[locale][company]}`)
+        );
+      }
+    }
+
+    const mottu = experience.en.experiencies.find(
+      (entry) => entry.company.name === 'Mottu'
+    );
+    expect(mottu?.description).toContain('I help less experienced developers');
+    expect(mottu?.description).toContain('I create interfaces');
+    expect(mottu?.description).toContain('I have notions of UI/UX');
+  });
 });

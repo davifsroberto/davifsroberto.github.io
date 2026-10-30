@@ -37,7 +37,7 @@
         "title": "Frontend Engineer",
         "period": "04/22 - 01/24 (1 ano e 10 meses)",
         "tag": ["#Angular, #React, Node.js"],
-        "description": "Desenvolvimento de aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React, Node.js, TypeScript, teste unitário, teste E2E, UI/UX.",
+        "description": "Desenvolvi aplicações web com framework Angular. Durante o desenvolvimento, estou sempre atento às melhores práticas para seguir um alto nível de padrões de código, e no desenvolvimento com testes. Ajudo desenvolvedores menos experientes no dia a dia a evoluir tecnicamente juntos e entregar um projeto altamente escalável. Algumas tecnologias que utilizo: Angular, React, Node.js, TypeScript, teste unitário, teste E2E, UI/UX.",
         "classPosition": " text-end "
       },
       {
@@ -55,7 +55,7 @@
         "title": "Frontend Engineer",
         "period": "10/19 - 10/22 (2 anos e 1 mês)",
         "tag": ["#Angular, #React, Node.js"],
-        "description": "Desenvolvimento de sistemas para a área financeira, criação de dashboards, aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Utilizava em minha rotina de desenvolvimento: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "description": "Desenvolvi sistemas para a área financeira e criei dashboards e aplicativos que monitoram os serviços e geram relatórios sobre as instabilidades dos serviços de transações financeiras. Utilizava em minha rotina de desenvolvimento: Angular, Node.js, React, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "last": true
       }
     ]
@@ -99,7 +99,7 @@
         "title": "Frontend Engineer",
         "period": "04/22 - 01/24 (1 yr 10 mos)",
         "tag": ["#Angular, #React, Node.js"],
-        "description": "Development of web applications with the Angular framework. During development, I am always aware of best practices to follow a high level of code standards, and in development with tests. I help less experienced developers on a day-to-day basis to technically evolve together and deliver a highly scalable project. Some technologies I use: Angular, React, Node.js, TypeScript, unit test, E2E test, UI/UX.",
+        "description": "I developed web applications with the Angular framework. During development, I am always aware of best practices to follow a high level of code standards, and in development with tests. I help less experienced developers on a day-to-day basis to technically evolve together and deliver a highly scalable project. Some technologies I use: Angular, React, Node.js, TypeScript, unit test, E2E test, UI/UX.",
         "classPosition": " text-end "
       },
       {
@@ -117,7 +117,7 @@
         "title": "Frontend Engineer",
         "period": "10/19 - 10/22 (2 yrs 1 mo)",
         "tag": ["#Angular, #React, Node.js"],
-        "description": "Development of systems for the financial area, creation of dashboards, applications that monitor services and generate reports on instabilities of financial transaction services. I used in my development routine: Angular, React, Node.js, UI/UX, Sass, Bootstrap, Agile Scrum.",
+        "description": "I developed systems for the financial area and created dashboards and applications that monitor services and generate reports on instabilities of financial transaction services. I used in my development routine: Angular, React, Node.js, UI/UX, Sass, Bootstrap, Agile Scrum.",
         "last": true
       }
     ]
