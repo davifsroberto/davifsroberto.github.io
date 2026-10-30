@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it } from 'vitest';
+import { renderToString } from 'react-dom/server';
+import { describe, expect, it, vi } from 'vitest';
 
 import { Header } from './index';
-import { routerPushMock, setMockRouter } from '../../test/mocks/next-router';
+import { setMockRouter } from '../../test/mocks/next-router';
 
 describe('Header', () => {
   it('renders the Portuguese primary navigation', () => {
@@ -70,22 +71,63 @@ describe('Header', () => {
     expect(menuToggle).toBeChecked();
   });
 
-  it('requests language changes through Next router', async () => {
-    const user = userEvent.setup();
+  it('links to the English version of the current Portuguese page', () => {
     setMockRouter({
-      asPath: '/en/cv',
-      locale: 'en',
-      query: { source: 'test' },
+      asPath: '/cv?source=test#experience',
+      locale: 'pt',
     });
 
     render(<Header />);
 
-    await user.click(screen.getByText('PT'));
-
-    expect(routerPushMock).toHaveBeenCalledWith(
-      { query: { source: 'test' } },
-      '/en/cv',
-      { locale: 'pt' }
+    expect(screen.getByRole('link', { name: 'EN' })).toHaveAttribute(
+      'href',
+      '/en/cv?source=test#experience'
     );
+    expect(screen.getByRole('link', { name: 'PT' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    );
+  });
+
+  it('links back to Portuguese and selects English based on the path', () => {
+    setMockRouter({
+      asPath: '/en/cv?source=test#experience',
+      locale: 'pt',
+    });
+
+    render(<Header />);
+
+    expect(screen.getByRole('link', { name: 'PT' })).toHaveAttribute(
+      'href',
+      '/cv?source=test#experience'
+    );
+    expect(screen.getByRole('link', { name: 'EN' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    );
+  });
+
+  it('hydrates language links with the current query and hash', () => {
+    setMockRouter({ pathname: '/cv', asPath: '/cv/' });
+    const container = document.createElement('div');
+    container.innerHTML = renderToString(<Header />);
+    document.body.appendChild(container);
+    setMockRouter({
+      pathname: '/cv',
+      asPath: '/cv/?source=test#experience',
+    });
+    const consoleError = vi.spyOn(console, 'error');
+
+    const { unmount } = render(<Header />, { container, hydrate: true });
+
+    expect(screen.getByRole('link', { name: 'EN' })).toHaveAttribute(
+      'href',
+      '/en/cv/?source=test#experience'
+    );
+    expect(consoleError).not.toHaveBeenCalled();
+
+    unmount();
+    container.remove();
+    consoleError.mockRestore();
   });
 });

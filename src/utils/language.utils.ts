@@ -16,3 +16,15 @@ export function getLocalizedPath(path: string, selectedLanguage: Language) {
 
   return path === '/' ? '/en' : `/en${path}`;
 }
+
+export function getLanguageSwitchPath(
+  asPath: string,
+  selectedLanguage: Language
+) {
+  const path = asPath.replace(/^\/en(?=\/|[?#]|$)/, '');
+
+  return getLocalizedPath(
+    path.startsWith('/') ? path : `/${path}`,
+    selectedLanguage
+  );
+}
