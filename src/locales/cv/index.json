@@ -1,7 +1,7 @@
 {
   "pt": {
     "title": "Meu CV online",
-    "subtitle": "Clique no botão abaixo para gerar a versão em PDF.",
+    "subtitle": "Clique no botão abaixo para baixar a versão em PDF.",
     "name": "Davi Roberto",
     "carrer": "Staff Software Engineer",
     "btnDownload": "BAIXAR PDF",
@@ -168,7 +168,7 @@
 
   "en": {
     "title": "My Online Resume",
-    "subtitle": "Click the button below to generate the PDF version.",
+    "subtitle": "Click the button below to download the PDF version.",
     "name": "Davi Roberto",
     "carrer": "Staff Software Engineer",
     "btnDownload": "DOWNLOAD PDF",

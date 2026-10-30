@@ -1,5 +1,8 @@
 # dependencies
 /node_modules
+/.venv-cv/
+__pycache__/
+*.py[cod]
 /.pnp
 .pnp.js
 
@@ -32,5 +35,3 @@ yarn-error.log*
 # sw stuff
 public/sw.js
 public/workbox-*.js
-
-
