@@ -14,6 +14,7 @@ import { Timeline } from '../../components/Timeline';
 import { seo } from '../../data/seo';
 import { SetLanguageUtils as language } from '../../utils/language.utils';
 import cv from '../../locales/cv/index.json';
+import profile from '../../locales/profile/index.json';
 
 const CvPage: NextPage = () => {
   const selectedLanguage = language();
@@ -56,7 +57,7 @@ const CvPage: NextPage = () => {
                 <h2 className="h1 mt-2 text-white">
                   {cv[selectedLanguage].name}
                 </h2>
-                <p className="text-white">{cv[selectedLanguage].carrer}</p>
+                <p className="text-white">{profile[selectedLanguage].role}</p>
                 <br />
 
                 <a

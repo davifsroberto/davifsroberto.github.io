@@ -5,9 +5,10 @@ import portfolio from './portfolio/index.json';
 import experience from './experience/index.json';
 import homeExperience from './home/experience/index.json';
 import cv from './cv/index.json';
+import profile from './profile/index.json';
 
 describe('critical locale data', () => {
-  it('uses the current role consistently in both languages', () => {
+  it('distinguishes the professional profile from the HSystem role', () => {
     for (const locale of ['pt', 'en'] as const) {
       const currentExperience = experience[locale].experiencies.find(
         (item) => item.company.name === 'HSystem'
@@ -24,11 +25,10 @@ describe('critical locale data', () => {
       expect(homeCurrentExperience?.description).toContain(
         'Staff Software Engineer'
       );
-      expect(cv[locale].carrer).toBe('Staff Software Engineer');
-      expect(cv[locale].about.me.one).toContain('Staff Software Engineer');
-      expect(cv[locale].about.me.paragraphs[0]).toContain(
-        'Staff Software Engineer'
+      expect(cv[locale].about.me.one.toLowerCase()).toContain(
+        profile[locale].role.toLowerCase()
       );
+      expect(cv[locale].about.me.paragraphs[0]).toBe(cv[locale].about.me.one);
     }
   });
 

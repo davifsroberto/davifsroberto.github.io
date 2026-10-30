@@ -3,15 +3,14 @@
     "title": "Meu CV online",
     "subtitle": "Clique no botão abaixo para baixar a versão em PDF.",
     "name": "Davi Roberto",
-    "carrer": "Staff Software Engineer",
     "btnDownload": "BAIXAR PDF",
     "about": {
       "title": "Sobre mim",
       "me": {
-        "one": "Sou Staff Software Engineer com mais de 15 anos de experiência em desenvolvimento de software, principalmente na construção e evolução de aplicações web.",
+        "one": "Sou desenvolvedor Full Stack com mais de 15 anos de experiência em desenvolvimento de software, principalmente na construção e evolução de aplicações web.",
         "two": "Gosto de atuar perto do código, entendendo o problema, propondo soluções e participando da entrega de ponta a ponta, desde a análise técnica até a aplicação em produção.",
         "paragraphs": [
-          "Sou Staff Software Engineer com mais de 15 anos de experiência em desenvolvimento de software, principalmente na construção e evolução de aplicações web.",
+          "Sou desenvolvedor Full Stack com mais de 15 anos de experiência em desenvolvimento de software, principalmente na construção e evolução de aplicações web.",
           "Gosto de atuar perto do código, entendendo o problema, propondo soluções e participando da entrega de ponta a ponta, desde a análise técnica até a aplicação em produção.",
           "Minha experiência passa por frontend, backend, APIs, Backend for Frontend (BFF), testes automatizados, CI/CD, performance, segurança e boas práticas de desenvolvimento. No dia a dia, trabalho com tecnologias como Angular, React, TypeScript, Node.js, NestJS, Microfrontends e Design Systems.",
           "Também participo de discussões de arquitetura de software quando necessário, principalmente para ajudar a construir soluções mais simples de manter, escalar e evoluir. É um tema que gosto bastante e procuro estudar continuamente.",
@@ -170,15 +169,14 @@
     "title": "My Online Resume",
     "subtitle": "Click the button below to download the PDF version.",
     "name": "Davi Roberto",
-    "carrer": "Staff Software Engineer",
     "btnDownload": "DOWNLOAD PDF",
     "about": {
       "title": "About me",
       "me": {
-        "one": "I am a Staff Software Engineer with over 15 years of experience in software development, mainly building and evolving web applications.",
+        "one": "I am a Full Stack Developer with over 15 years of experience in software development, mainly building and evolving web applications.",
         "two": "I like working close to the code, understanding the problem, proposing solutions, and participating in end-to-end delivery, from technical analysis to production rollout.",
         "paragraphs": [
-          "I am a Staff Software Engineer with over 15 years of experience in software development, mainly building and evolving web applications.",
+          "I am a Full Stack Developer with over 15 years of experience in software development, mainly building and evolving web applications.",
           "I like working close to the code, understanding the problem, proposing solutions, and participating in end-to-end delivery, from technical analysis to production rollout.",
           "My experience covers frontend, backend, APIs, Backend for Frontend (BFF), automated tests, CI/CD, performance, security, and development best practices. Day to day, I work with technologies such as Angular, React, TypeScript, Node.js, NestJS, Microfrontends, and Design Systems.",
           "I also join software architecture discussions when needed, mostly to help build solutions that are easier to maintain, scale, and evolve. It is a topic I enjoy and continue to study.",

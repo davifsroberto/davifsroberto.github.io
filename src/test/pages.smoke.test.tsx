@@ -73,6 +73,11 @@ describe('pages smoke tests', () => {
     expect(
       screen.getByRole('heading', { name: cv.pt.name })
     ).toBeInTheDocument();
+    expect(screen.getByText('Desenvolvedor Full Stack')).toBeInTheDocument();
+    expect(screen.getByText(cv.pt.about.me.one)).toBeInTheDocument();
+    expect(
+      screen.getByText('Staff Software Engineer', { selector: '.title-card' })
+    ).toHaveTextContent('Staff Software Engineer - HSystem');
     expect(screen.getByRole('link', { name: /baixar pdf/i })).toHaveAttribute(
       'href',
       '/Davi-Roberto_CV.pdf'
@@ -88,6 +93,11 @@ describe('pages smoke tests', () => {
     expect(
       screen.getByRole('heading', { name: cv.en.name })
     ).toBeInTheDocument();
+    expect(screen.getByText('Full Stack Developer')).toBeInTheDocument();
+    expect(screen.getByText(cv.en.about.me.one)).toBeInTheDocument();
+    expect(
+      screen.getByText('Staff Software Engineer', { selector: '.title-card' })
+    ).toHaveTextContent('Staff Software Engineer - HSystem');
     expect(screen.getByRole('link', { name: /download pdf/i })).toHaveAttribute(
       'href',
       '/Davi-Roberto_Resume.pdf'
