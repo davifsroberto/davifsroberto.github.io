@@ -40,6 +40,14 @@ class GenerateCvTests(unittest.TestCase):
             self.assertIn(generate_cv.normalize(job["company"]), text)
             for bullet in job["bullets"]:
                 self.assertIn(generate_cv.normalize(bullet), text)
+        self.assertEqual(len(values["studies"]), 2)
+        for study in values["studies"]:
+            self.assertIn(generate_cv.normalize(study["title"]), text)
+            self.assertIn(generate_cv.normalize(study["institution"]), text)
+            self.assertIn(generate_cv.normalize(study["period"]), text)
+        self.assertNotIn("ufes", text)
+        self.assertNotIn("metodologia da pesquisa científica", text)
+        self.assertNotIn("scientific research methodology", text)
         actual_links = {link["uri"] for page in doc for link in page.get_links()}
         expected_links = {values[key]["link"] for key in ("linkedin", "github", "website")}
         self.assertEqual(actual_links, expected_links)
@@ -114,6 +122,32 @@ class GenerateCvTests(unittest.TestCase):
         data["experience"]["pt"]["experiencies"].append(experience)
         with self.assertRaisesRegex(ValueError, "mesmos IDs"):
             generate_cv.generate_pdf("pt", data, self.template)
+
+    def test_education_order_rejects_too_many_or_duplicate_entries(self):
+        data = copy.deepcopy(self.data)
+        data["pdf"]["educationOrder"] = [1, 2, 3, 4]
+        with self.assertRaisesRegex(ValueError, "entre 1 e 3"):
+            generate_cv.content(data, "pt")
+        data["pdf"]["educationOrder"] = [1, 1]
+        with self.assertRaisesRegex(ValueError, "distintas"):
+            generate_cv.content(data, "pt")
+
+    def test_unused_template_study_slot_does_not_restore_removed_education(self):
+        data = copy.deepcopy(self.data)
+        extra_study = copy.deepcopy(data["cv"]["pt"]["education"]["items"][0])
+        extra_study.update({
+            "id": 3,
+            "title": "Curso adicional",
+            "subtitle": "Instituição adicional",
+        })
+        data["cv"]["pt"]["education"]["items"].append(extra_study)
+        data["pdf"]["educationOrder"].append(3)
+        template_with_extra_study = generate_cv.generate_pdf("pt", data, self.template)
+
+        generated = generate_cv.generate_pdf("pt", self.data, template_with_extra_study)
+        text = " ".join(page.get_text() for page in fitz.open(stream=generated, filetype="pdf"))
+        self.assertNotIn("Curso adicional", text)
+        self.assertNotIn("Instituição adicional", text)
 
     def test_english_generation_is_reproducible(self):
         first = generate_cv.generate_pdf("en", self.data, self.template)

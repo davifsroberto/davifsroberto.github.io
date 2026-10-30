@@ -76,6 +76,16 @@ describe('pages smoke tests', () => {
     expect(screen.getByText('Desenvolvedor Full Stack')).toBeInTheDocument();
     expect(screen.getByText(cv.pt.about.me.one)).toBeInTheDocument();
     expect(
+      screen.getByText('Bacharelado em Ciência da Computação', { exact: false })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText('Tecnólogo em Sistemas para Internet', { exact: false })
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(/Metodologia da Pesquisa Científica/i)
+    ).toBeNull();
+    expect(screen.queryByText(/UFES/i)).toBeNull();
+    expect(
       screen.getByText('Staff Software Engineer', { selector: '.title-card' })
     ).toHaveTextContent('Staff Software Engineer - HSystem');
     expect(screen.getByRole('link', { name: /baixar pdf/i })).toHaveAttribute(
@@ -95,6 +105,18 @@ describe('pages smoke tests', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('Full Stack Developer')).toBeInTheDocument();
     expect(screen.getByText(cv.en.about.me.one)).toBeInTheDocument();
+    expect(
+      screen.getByText("Bachelor's Degree in Computer Science", {
+        exact: false,
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText('Technology Degree in Internet Systems', {
+        exact: false,
+      })
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/Scientific Research Methodology/i)).toBeNull();
+    expect(screen.queryByText(/UFES/i)).toBeNull();
     expect(
       screen.getByText('Staff Software Engineer', { selector: '.title-card' })
     ).toHaveTextContent('Staff Software Engineer - HSystem');

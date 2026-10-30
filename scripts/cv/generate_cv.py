@@ -29,6 +29,7 @@ JOB_SLOTS = [
     (1, 539, 569),
     (1, 597, 655),
 ]
+STUDY_SLOTS = [(710, 725, 721.2), (728, 744, 739.5), (746, 762, 758)]
 MONTHS = {
     "pt": ("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"),
     "en": ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"),
@@ -95,8 +96,10 @@ def content(data, language):
         raise ValueError("As experiências do site e do currículo PDF devem ter os mesmos IDs.")
     if set(localized["experienceBullets"]) != {str(identifier) for identifier in order}:
         raise ValueError("As descrições do currículo PDF devem corresponder às experiências.")
-    if len(pdf["educationOrder"]) != 3 or len(set(pdf["educationOrder"])) != 3:
-        raise ValueError("O modelo requer exatamente 3 formações distintas.")
+    if not 1 <= len(pdf["educationOrder"]) <= len(STUDY_SLOTS):
+        raise ValueError(f"O modelo requer entre 1 e {len(STUDY_SLOTS)} formações.")
+    if len(set(pdf["educationOrder"])) != len(pdf["educationOrder"]):
+        raise ValueError("As formações do currículo PDF devem ser distintas.")
     if set(pdf["educationOrder"]) != set(education):
         raise ValueError("As formações do site e do currículo PDF devem ter os mesmos IDs.")
     if not set(localized["educationStatus"]).issubset({str(identifier) for identifier in education}):
@@ -121,13 +124,10 @@ def content(data, language):
         years = re.findall(r"20\d{2}", item["period"])
         if len(years) != 2:
             raise ValueError(f"Formato de período de formação não suportado: {item['period']!r}")
-        institution = item["subtitle"]
-        if identifier == 3:
-            institution += " – Universidade Federal do ES" if language == "pt" else " – Federal University of Espírito Santo"
         status = localized["educationStatus"].get(str(identifier))
         studies.append({
             "title": item["title"],
-            "institution": institution,
+            "institution": item["subtitle"],
             "period": f"{years[0]} – {years[1]}" + (f" ({status})" if status else ""),
         })
     return {
@@ -168,8 +168,13 @@ def template_matches(doc, data):
             + ["› " + bullet for bullet in job["bullets"]]
         )
         regions.append((page, top, bottom, expected))
-    for study, (top, bottom) in zip(data["studies"], ((710, 725), (728, 744), (746, 762))):
-        regions.append((1, top, bottom, f"{study['title']} — {study['institution']} {study['period']}"))
+    for index, (top, bottom, _) in enumerate(STUDY_SLOTS):
+        if index < len(data["studies"]):
+            study = data["studies"][index]
+            expected = f"{study['title']} — {study['institution']} {study['period']}"
+        else:
+            expected = ""
+        regions.append((1, top, bottom, expected))
     links = {normalized_url(link["uri"]) for page in doc for link in page.get_links() if link.get("uri")}
     required_links = {normalized_url(item["link"]) for item in (data["linkedin"], data["github"], data["website"])}
     return links == required_links and all(
@@ -335,7 +340,7 @@ def generate_pdf(language, data, template_bytes):
     for job, (page_index, top, bottom) in zip(values["jobs"], JOB_SLOTS):
         draw_job(pages[page_index], fonts[page_index], job, top, bottom)
     draw_text(second, second_fonts, 38, 699, localized["educationTitle"].upper(), 10.5, BLUE, bold=True)
-    for study, baseline in zip(values["studies"], (721.2, 739.5, 758)):
+    for study, (_, _, baseline) in zip(values["studies"], STUDY_SLOTS):
         draw_study(second, second_fonts, study, baseline)
     return doc.tobytes(garbage=4, deflate=True, no_new_id=True)
 
